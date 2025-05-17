@@ -8,10 +8,11 @@ import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import { AuthContext } from './global/AuthContext'
 import { useContext } from 'react';
+import GenerateTest from './components/GenerateTest';
 
 function App() {
    const { user } = useContext(AuthContext);
-   console.log("user is ", user)
+  //  console.log("user is ", user)
   
   return (
     <Router>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/generate-test" element={<GenerateTest />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
 

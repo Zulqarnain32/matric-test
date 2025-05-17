@@ -11,7 +11,7 @@ const Home = () => {
         <p className="text-xl ">
           Generate custom tests for your Computer Science study material in just a few clicks.
         </p>
-        <Link to="/test-generator">
+        <Link to="/generate-test">
           <button className="mt-5  w-[270px] xs:mr-0 bg-navbar hover:bg-black text-white text-lg py-2 rounded-lg shadow-lg ">
             Start Generating Test
           </button>
