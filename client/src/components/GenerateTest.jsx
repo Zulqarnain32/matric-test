@@ -203,13 +203,13 @@ const TestGenerator = () => {
       {selectedQuestions.length > 0 && (
         <div className="mt-10">
           <h2 className="text-2xl font-bold mb-4 text-indigo-700">Final Paper</h2>
-          <ol className="list-decimal list-inside space-y-3">
+          <ol className="list-decimal list-inside space-y-1">
             {selectedQuestions.map((idx) => {
               const q = generatedQuestions[idx];
               return (
                 <li
                   key={idx}
-                  className="bg-white border border-indigo-400 rounded p-3 shadow-sm"
+                  className="bg-white rounded py-[2px] "
                 >
                   {q.question}
                  
