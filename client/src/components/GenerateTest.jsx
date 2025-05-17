@@ -8,6 +8,7 @@ const TestGenerator = () => {
   const [selectedType, setSelectedType] = useState("all"); // short, long, all
   const [filteredChapters, setFilteredChapters] = useState([]);
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
+  const [selectedQuestions, setSelectedQuestions] = useState([]);
 
   // Fetch all questions once
   useEffect(() => {
@@ -23,29 +24,20 @@ const TestGenerator = () => {
   // Filter chapters when class or subject changes
   useEffect(() => {
     if (selectedClass && selectedSubject) {
-      console.log("Filtering for:", selectedClass, selectedSubject);
-      console.log("allQuestions sample:", allQuestions[0]);
-      const filtered = allQuestions.filter((q) => {
-        // Use string-to-string comparison for class
-        const classMatch = String(q.class) === String(selectedClass);
-        const subjectMatch =
-          typeof q.subject === "string" &&
-          q.subject.toLowerCase() === selectedSubject.toLowerCase();
-
-        console.log(
-          `Checking chapter "${q.chapterName}": classMatch=${classMatch}, subjectMatch=${subjectMatch}`
-        );
-
-        return classMatch && subjectMatch;
-      });
-      console.log("Filtered chapters:", filtered);
+      const filtered = allQuestions.filter(
+        (q) =>
+          q.class === Number(selectedClass) &&
+          q.subject.toLowerCase() === selectedSubject.toLowerCase()
+      );
       setFilteredChapters(filtered);
       setSelectedChapters([]);
       setGeneratedQuestions([]);
+      setSelectedQuestions([]);
     } else {
       setFilteredChapters([]);
       setSelectedChapters([]);
       setGeneratedQuestions([]);
+      setSelectedQuestions([]);
     }
   }, [selectedClass, selectedSubject, allQuestions]);
 
@@ -88,6 +80,17 @@ const TestGenerator = () => {
       }
     });
     setGeneratedQuestions(questions);
+    // IMPORTANT: start with NO questions selected
+    setSelectedQuestions([]);
+  };
+
+  // Toggle question selection
+  const toggleQuestionSelection = (index) => {
+    setSelectedQuestions((prev) =>
+      prev.includes(index)
+        ? prev.filter((i) => i !== index)
+        : [...prev, index]
+    );
   };
 
   return (
@@ -141,29 +144,22 @@ const TestGenerator = () => {
 
       {/* Chapters multi-select checkboxes */}
       <div>
-        <label className="block mb-2 font-semibold text-gray-700">
-          Select Chapters
-        </label>
-
+        <label className="block mb-2 font-semibold text-gray-700">Select Chapters</label>
         <div className="border border-gray-300 rounded max-h-48 overflow-y-auto p-3 space-y-2">
-          {filteredChapters.length === 0 ? (
-            <p className="text-gray-500 text-sm italic">No chapters found.</p>
-          ) : (
-            filteredChapters.map((chapter) => (
-              <label
-                key={chapter.chapterName}
-                className="flex items-center gap-2 cursor-pointer"
-              >
-                <input
-                  type="checkbox"
-                  checked={selectedChapters.includes(chapter.chapterName)}
-                  onChange={() => toggleChapter(chapter.chapterName)}
-                  className="cursor-pointer"
-                />
-                <span className="select-none">{chapter.chapterName}</span>
-              </label>
-            ))
-          )}
+          {filteredChapters.map((chapter) => (
+            <label
+              key={chapter.chapterName}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                checked={selectedChapters.includes(chapter.chapterName)}
+                onChange={() => toggleChapter(chapter.chapterName)}
+                className="cursor-pointer"
+              />
+              <span className="select-none">{chapter.chapterName}</span>
+            </label>
+          ))}
         </div>
       </div>
 
@@ -177,20 +173,49 @@ const TestGenerator = () => {
         </button>
       </div>
 
-      {/* Display Generated Questions */}
+      {/* Display Generated Questions with selection */}
       {generatedQuestions.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-2xl font-bold mb-4 text-indigo-700">Generated Test</h2>
-          <ol className="list-decimal list-inside space-y-3">
+          <h2 className="text-2xl font-bold mb-4 text-indigo-700">Select Questions</h2>
+          <ol className="list-decimal list-inside space-y-3 max-h-96 overflow-y-auto">
             {generatedQuestions.map((q, idx) => (
               <li
                 key={idx}
-                className="bg-gray-50 border border-gray-300 rounded p-3 shadow-sm"
+                className="bg-gray-50 border border-gray-300 rounded p-3 shadow-sm flex items-start gap-3"
               >
-                {q.question}
-              
+                <input
+                  type="checkbox"
+                  checked={selectedQuestions.includes(idx)}
+                  onChange={() => toggleQuestionSelection(idx)}
+                  className="mt-1"
+                />
+                <div>
+                  {q.question}
+                
+                </div>
               </li>
             ))}
+          </ol>
+        </div>
+      )}
+
+      {/* Final Paper */}
+      {selectedQuestions.length > 0 && (
+        <div className="mt-10">
+          <h2 className="text-2xl font-bold mb-4 text-indigo-700">Final Paper</h2>
+          <ol className="list-decimal list-inside space-y-3">
+            {selectedQuestions.map((idx) => {
+              const q = generatedQuestions[idx];
+              return (
+                <li
+                  key={idx}
+                  className="bg-white border border-indigo-400 rounded p-3 shadow-sm"
+                >
+                  {q.question}
+                 
+                </li>
+              );
+            })}
           </ol>
         </div>
       )}
