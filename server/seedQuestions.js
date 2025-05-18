@@ -13,11 +13,19 @@ const questions = [
       "What is a computer?",
       "Define hardware.",
       "What is the difference between input and output?",
-      "Give two examples of input devices."
+      "Give two examples of input devices.",
+      "What is a computer?",
+      "Define hardware.",
+      "What is the difference between input and output?",
+      "What is a computer?",
+      "Define hardware.",
+      "What is the difference between input and output?",
     ],
     longQuestions: [
       "Explain the main components of a computer with examples.",
-      "Discuss the characteristics and limitations of a computer."
+      "Discuss the characteristics and limitations of a computer.",
+      "Discuss the characteristics and limitations of a computer.",
+      "Discuss the characteristics and limitations of a computer.",
     ]
   },
   {
@@ -29,14 +37,21 @@ const questions = [
       "What is CPU?",
       "Define RAM and ROM.",
       "What is the function of ALU?",
-      "Name any two storage devices."
+      "Name any two storage devices.",
+       "Define RAM and ROM.",
+      "What is the function of ALU?",
+      "Name any two storage devices.",
+       "Define RAM and ROM.",
+      "What is the function of ALU?",
+      "Name any two storage devices.",
     ],
     longQuestions: [
       "Describe the major components of the CPU and their functions.",
-      "Explain different types of computer memory with examples."
+      "Explain different types of computer memory with examples.",
+      "Explain different types of computer memory with examples.",
+      "Explain different types of computer memory with examples.",
     ]
   },
-  // 🟡 Add the rest of the chapters here (I'll give you the full JSON if you want)
 ];
 
 const seedQuestions = async () => {
