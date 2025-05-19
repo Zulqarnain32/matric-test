@@ -10,8 +10,10 @@ const TestGenerator = () => {
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
-  const [showFinalPaper,setShowFinalPaper] = useState(false)
-  // const [ showAddQuestionBtn,setShowAddQuestionBtn ] = useState(false)
+  // const [showFinalPaper,setShowFinalPaper] = useState(false)
+  const [questionBlocks, setQuestionBlocks] = useState([]);
+  const [ignoreQuestions,setIgnoreQuestions] = useState()
+
 
   // Fetch all questions once
   useEffect(() => {
@@ -108,8 +110,24 @@ const showAddQuestionBtn =
   selectedQuestions.length === Number(totalQuestionsAllowed);
 
   const handleShowPaper = () => {
-    setShowFinalPaper(true)
-  }
+  if (selectedQuestions.length === 0) return;
+
+  const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
+
+  setQuestionBlocks((prev) => [
+    ...prev,
+    {
+      count: selected.length,
+      questions: selected,
+    },
+  ]);
+
+  // Reset selections for next batch
+  setSelectedQuestions([]);
+  setTotalQuestionsAllowed("");
+
+};
+
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-10">
@@ -181,6 +199,7 @@ const showAddQuestionBtn =
           </label>
           <input
             type="number"
+            onChange={(e) => setIgnoreQuestions(e.target.value)}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           />
         </div>
@@ -263,51 +282,55 @@ const showAddQuestionBtn =
       }
 
       {/* Final Paper */}
-      {showFinalPaper && (
-        <div className="mt-10 bg-white p-6">
-          {/* School Template */}
-          <div className="mb-6 text-gray-800 text-lg space-y-2">
-            <h2 className="text-2xl font-bold text-center mb-4 capitalize">
-              The Quest High School
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <strong>Student Name:</strong> ______________________
-              </div>
-              <div>
-                <strong>Father's Name:</strong> ______________________
-              </div>
-              <div>
-                <strong>Roll No:</strong> ______________________
-              </div>
-              <div>
-                <strong>Date:</strong> ______________________
-              </div>
-            </div>
-            <div>
-              <strong>Instructions:</strong>
-              <ul className="list-disc pl-6">
-                <li>Attempt all questions.</li>
-                <li>Write clearly and neatly.</li>
-                <li>Use of unfair means is prohibited.</li>
-              </ul>
-            </div>
-          </div>
-           <h3 className="text-xl font-bold mb-4 text-gray-800">
-        Answer the following {selectedQuestions.length} questions:
-      </h3>
-          <ol className="list-decimal list-inside space-y-1">
-            {selectedQuestions.map((idx) => {
-              const q = generatedQuestions[idx];
-              return (
-                <li key={idx} className="bg-none rounded py-[2px] ">
-                  {q.question}
-                </li>
-              );
-            })}
-          </ol>
+      {questionBlocks.length > 0 && (
+  <div className="mt-10 bg-white p-6">
+    {/* School Template */}
+    <div className="mb-6 text-gray-800 text-lg space-y-2">
+      <h2 className="text-2xl font-bold text-center mb-4 capitalize">
+        The Quest High School
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <strong>Student Name:</strong> ______________________
         </div>
-      )}
+        <div>
+          <strong>Father's Name:</strong> ______________________
+        </div>
+        <div>
+          <strong>Roll No:</strong> ______________________
+        </div>
+        <div>
+          <strong>Date:</strong> ______________________
+        </div>
+      </div>
+      <div>
+        <strong>Instructions:</strong>
+        <ul className="list-disc pl-6">
+          <li>Attempt all questions.</li>
+          <li>Write clearly and neatly.</li>
+          <li>Use of unfair means is prohibited.</li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Render blocks */}
+    {questionBlocks.map((block, blockIdx) => (
+      <div key={blockIdx} className="mb-6">
+        <h3 className="font-bold text-text mb-2">
+          Answer the following  questions  (Any  {block.count - ignoreQuestions})
+          {/* {block.count > 1 ? "s" : ""} */}
+        </h3>
+        <ol className="list-decimal list-inside space-y-1">
+          {block.questions.map((q, i) => (
+            <li key={i}>{q.question}</li>
+          ))}
+        </ol>
+      </div>
+    ))}
+  </div>
+)}
+
+    
     </div>
   );
 };
