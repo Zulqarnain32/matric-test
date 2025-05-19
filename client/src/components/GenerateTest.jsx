@@ -10,6 +10,7 @@ const TestGenerator = () => {
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
+  const [showFinalPaper,setShowFinalPaper] = useState(false)
   // const [ showAddQuestionBtn,setShowAddQuestionBtn ] = useState(false)
 
   // Fetch all questions once
@@ -105,6 +106,10 @@ const TestGenerator = () => {
 const showAddQuestionBtn =
   selectedQuestions.length !== 0 &&
   selectedQuestions.length === Number(totalQuestionsAllowed);
+
+  const handleShowPaper = () => {
+    setShowFinalPaper(true)
+  }
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-10">
@@ -250,13 +255,15 @@ const showAddQuestionBtn =
 
       {
         showAddQuestionBtn && (
-          <button className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+          <button 
+            onClick={() => handleShowPaper()}
+          className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
 >Add Questions</button>
         )
       }
 
       {/* Final Paper */}
-      {selectedQuestions.length > 0 && (
+      {showFinalPaper && (
         <div className="mt-10 bg-white p-6">
           {/* School Template */}
           <div className="mb-6 text-gray-800 text-lg space-y-2">
@@ -286,6 +293,9 @@ const showAddQuestionBtn =
               </ul>
             </div>
           </div>
+           <h3 className="text-xl font-bold mb-4 text-gray-800">
+        Answer the following {selectedQuestions.length} questions:
+      </h3>
           <ol className="list-decimal list-inside space-y-1">
             {selectedQuestions.map((idx) => {
               const q = generatedQuestions[idx];
