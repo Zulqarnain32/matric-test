@@ -1,6 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { AuthContext } from "../global/AuthContext";
+import html2pdf from "html2pdf.js";
+import { toast } from "react-toastify";
 
 const TestGenerator = () => {
+  const { user } = useContext(AuthContext);
   const [allQuestions, setAllQuestions] = useState([]);
   const [selectedClass, setSelectedClass] = useState("");
   const [selectedSubject, setSelectedSubject] = useState("");
@@ -10,10 +14,8 @@ const TestGenerator = () => {
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
-  // const [showFinalPaper,setShowFinalPaper] = useState(false)
   const [questionBlocks, setQuestionBlocks] = useState([]);
-  const [ignoreQuestions,setIgnoreQuestions] = useState()
-
+  const [ignoreQuestions, setIgnoreQuestions] = useState();
 
   // Fetch all questions once
   useEffect(() => {
@@ -99,35 +101,48 @@ const TestGenerator = () => {
     ) {
       alert(`You can only select ${totalQuestionsAllowed} questions.`);
       return;
-    } 
+    }
     setSelectedQuestions((prev) =>
       isAlreadySelected ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
 
-const showAddQuestionBtn =
-  selectedQuestions.length !== 0 &&
-  selectedQuestions.length === Number(totalQuestionsAllowed);
+  const showAddQuestionBtn =
+    selectedQuestions.length !== 0 &&
+    selectedQuestions.length === Number(totalQuestionsAllowed);
 
   const handleShowPaper = () => {
-  if (selectedQuestions.length === 0) return;
+    if (selectedQuestions.length === 0) return;
 
-  const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
+    const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
 
-  setQuestionBlocks((prev) => [
-    ...prev,
-    {
-      count: selected.length,
-      questions: selected,
-    },
-  ]);
+    setQuestionBlocks((prev) => [
+      ...prev,
+      {
+        count: selected.length,
+        questions: selected,
+      },
+    ]);
 
-  // Reset selections for next batch
-  setSelectedQuestions([]);
-  setTotalQuestionsAllowed("");
+    // Reset selections for next batch
+    setSelectedQuestions([]);
+    setTotalQuestionsAllowed("");
+  };
 
-};
+  const downloadAsPDF = () => {
+    const element = document.getElementById("pdf-content");
+    toast.success("PDF has been downloaded");
 
+    const opt = {
+      margin: 0.5,
+      filename: "test.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(opt).from(element).save();
+  };
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-10">
@@ -272,65 +287,71 @@ const showAddQuestionBtn =
         </div>
       )}
 
-      {
-        showAddQuestionBtn && (
-          <button 
-            onClick={() => handleShowPaper()}
+      {showAddQuestionBtn && (
+        <button
+          onClick={() => handleShowPaper()}
           className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
->Add Questions</button>
-        )
-      }
+        >
+          Add Questions
+        </button>
+      )}
 
       {/* Final Paper */}
       {questionBlocks.length > 0 && (
-  <div className="mt-10 bg-white p-6">
-    {/* School Template */}
-    <div className="mb-6 text-gray-800 text-lg space-y-2">
-      <h2 className="text-2xl font-bold text-center mb-4 capitalize">
-        The Quest High School
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <strong>Student Name:</strong> ______________________
-        </div>
-        <div>
-          <strong>Father's Name:</strong> ______________________
-        </div>
-        <div>
-          <strong>Roll No:</strong> ______________________
-        </div>
-        <div>
-          <strong>Date:</strong> ______________________
-        </div>
-      </div>
-      <div>
-        <strong>Instructions:</strong>
-        <ul className="list-disc pl-6">
-          <li>Attempt all questions.</li>
-          <li>Write clearly and neatly.</li>
-          <li>Use of unfair means is prohibited.</li>
-        </ul>
-      </div>
-    </div>
+        <div id="pdf-content" className="mt-10 bg-white p-6">
+          {/* School Template */}
+          <div className="mb-6 text-gray-800 text-lg space-y-2">
+            <h2 className="text-2xl font-bold text-center mb-4 capitalize">
+              {user ? user.school : "The Quest High School"}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <strong>Student Name:</strong> ______________________
+              </div>
+              <div>
+                <strong>Father's Name:</strong> ______________________
+              </div>
+              <div>
+                <strong>Roll No:</strong> ______________________
+              </div>
+              <div>
+                <strong>Date:</strong> ______________________
+              </div>
+            </div>
+            <div>
+              <strong>Instructions:</strong>
+              <ul className="list-disc pl-6">
+                <li>Attempt all questions.</li>
+                <li>Write clearly and neatly.</li>
+                <li>Use of unfair means is prohibited.</li>
+              </ul>
+            </div>
+          </div>
 
-    {/* Render blocks */}
-    {questionBlocks.map((block, blockIdx) => (
-      <div key={blockIdx} className="mb-6">
-        <h3 className="font-bold text-text mb-2">
-          Answer the following  questions  (Any  {block.count - ignoreQuestions})
-          {/* {block.count > 1 ? "s" : ""} */}
-        </h3>
-        <ol className="list-decimal list-inside space-y-1">
-          {block.questions.map((q, i) => (
-            <li key={i}>{q.question}</li>
+          {/* Render blocks */}
+          {questionBlocks.map((block, blockIdx) => (
+            <div key={blockIdx} className="mb-6">
+              <h3 className="font-bold text-text mb-2">
+                Answer the following questions (Any{" "}
+                {block.count - ignoreQuestions})
+              </h3>
+              <ol className="list-decimal list-inside space-y-1">
+                {block.questions.map((q, i) => (
+                  <li key={i}>{q.question}</li>
+                ))}
+              </ol>
+            </div>
           ))}
-        </ol>
-      </div>
-    ))}
-  </div>
-)}
-
-    
+        </div>
+      )}
+      {questionBlocks.length > 0 && (
+        <button
+          className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+          onClick={downloadAsPDF}
+        >
+          Download as PDF
+        </button>
+      )}
     </div>
   );
 };
