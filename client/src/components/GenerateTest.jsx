@@ -9,6 +9,8 @@ const TestGenerator = () => {
   const [filteredChapters, setFilteredChapters] = useState([]);
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
+  const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
+  // const [ showAddQuestionBtn,setShowAddQuestionBtn ] = useState(false)
 
   // Fetch all questions once
   useEffect(() => {
@@ -86,12 +88,23 @@ const TestGenerator = () => {
 
   // Toggle question selection
   const toggleQuestionSelection = (index) => {
+    const isAlreadySelected = selectedQuestions.includes(index);
+
+    if (
+      !isAlreadySelected &&
+      selectedQuestions.length >= Number(totalQuestionsAllowed)
+    ) {
+      alert(`You can only select ${totalQuestionsAllowed} questions.`);
+      return;
+    } 
     setSelectedQuestions((prev) =>
-      prev.includes(index)
-        ? prev.filter((i) => i !== index)
-        : [...prev, index]
+      isAlreadySelected ? prev.filter((i) => i !== index) : [...prev, index]
     );
   };
+
+const showAddQuestionBtn =
+  selectedQuestions.length !== 0 &&
+  selectedQuestions.length === Number(totalQuestionsAllowed);
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-10">
@@ -129,7 +142,9 @@ const TestGenerator = () => {
         </div>
 
         <div>
-          <label className="block mb-1 font-bold text-gray-700">Question Type</label>
+          <label className="block mb-1 font-bold text-gray-700">
+            Question Type
+          </label>
           <select
             value={selectedType}
             onChange={(e) => setSelectedType(e.target.value)}
@@ -142,29 +157,35 @@ const TestGenerator = () => {
         </div>
       </div>
 
-
-  <div className="grid grid-cols-3 gap-6 mt-[-10px]">
-       <div>
-          <label className="block mb-1 font-bold text-gray-700">Total Questions</label>
-            <input
-               type="number" 
-               className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
-            />
+      <div className="grid grid-cols-3 gap-6 mt-[-1`0px]">
+        <div>
+          <label className="block mb-1 font-bold text-gray-700">
+            Total Questions
+          </label>
+          <input
+            type="number"
+            value={totalQuestionsAllowed}
+            onChange={(e) => setTotalQuestionsAllowed(e.target.value)}
+            min={1}
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-900 disabled:bg-gray-100"
+          />
         </div>
-          <div>
-          <label className="block mb-1 font-bold text-gray-700">Ignore Questions</label>
-            <input
-               type="number" 
-               className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
-            />
+        <div>
+          <label className="block mb-1 font-bold text-gray-700">
+            Ignore Questions
+          </label>
+          <input
+            type="number"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
+          />
         </div>
-      
-
-        </div>
+      </div>
 
       {/* Chapters multi-select checkboxes */}
       <div>
-        <label className="block my-2 font-bold text-gray-700">Select Chapters</label>
+        <label className="block my-2 font-bold text-gray-700">
+          Select Chapters
+        </label>
         <div className="border border-gray-300 rounded max-h-48 overflow-y-auto p-3 space-y-2 w-full">
           {filteredChapters.map((chapter) => (
             <label
@@ -177,7 +198,9 @@ const TestGenerator = () => {
                 onChange={() => toggleChapter(chapter.chapterName)}
                 className="cursor-pointer"
               />
-              <span className="select-none">{chapter.chapterNumber}  {chapter.chapterName }</span>
+              <span className="select-none">
+                {chapter.chapterNumber} {chapter.chapterName}
+              </span>
             </label>
           ))}
         </div>
@@ -193,71 +216,82 @@ const TestGenerator = () => {
         </button>
       </div>
 
-      {/* Display Generated Questions with selection */}
       {generatedQuestions.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-2xl font-bold mb-4 text-text">Select Questions</h2>
+          <h2 className="text-2xl font-bold mb-4 text-text">
+            Select Questions
+          </h2>
           <ol className="list-decimal list-inside space-y-3 max-h-96 overflow-y-auto">
-            {generatedQuestions.map((q, idx) => (
-              <li
-                key={idx}
-                className="bg-gray-50  rounded-lg px-3 py-4 shadow-sm flex items-start gap-3"
-              >
-                <input
-                  type="checkbox"
-                  checked={selectedQuestions.includes(idx)}
-                  onChange={() => toggleQuestionSelection(idx)}
-                  className="mt-1"
-                />
-                <div>
-                  {q.question}
-                
-                </div>
-              </li>
-            ))}
+            {generatedQuestions.map((q, idx) => {
+              const isSelected = selectedQuestions.includes(idx);
+              return (
+                <li
+                  key={idx}
+                  onClick={() => toggleQuestionSelection(idx)}
+                  className={`cursor-pointer rounded-xl px-3 py-4 shadow-sm flex items-start gap-3 transition-colors duration-200 ${
+                    isSelected
+                      ? "bg-blue-100 border border-blue-500"
+                      : "bg-white border border-gray-300"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isSelected}
+                    readOnly
+                    className="mt-1 pointer-events-none"
+                  />
+                  <div>{q.question}</div>
+                </li>
+              );
+            })}
           </ol>
         </div>
       )}
 
+      {
+        showAddQuestionBtn && (
+          <button className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+>Add Questions</button>
+        )
+      }
+
       {/* Final Paper */}
       {selectedQuestions.length > 0 && (
         <div className="mt-10 bg-white p-6">
-               {/* School Template */}
-            <div className="mb-6 text-gray-800 text-lg space-y-2">
-              <h2 className="text-2xl font-bold text-center mb-4 capitalize">The Quest High School</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <strong>Student Name:</strong> ______________________
-                </div>
-                <div>
-                  <strong>Father's Name:</strong> ______________________
-                </div>
-                <div>
-                  <strong>Roll No:</strong> ______________________
-                </div>
-                <div>
-                  <strong>Date:</strong> ______________________
-                </div>
+          {/* School Template */}
+          <div className="mb-6 text-gray-800 text-lg space-y-2">
+            <h2 className="text-2xl font-bold text-center mb-4 capitalize">
+              The Quest High School
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <strong>Student Name:</strong> ______________________
               </div>
               <div>
-                <strong>Instructions:</strong>
-                <ul className="list-disc pl-6">
-                  <li>Attempt all questions.</li>
-                  <li>Write clearly and neatly.</li>
-                  <li>Use of unfair means is prohibited.</li>
-                </ul>
+                <strong>Father's Name:</strong> ______________________
+              </div>
+              <div>
+                <strong>Roll No:</strong> ______________________
+              </div>
+              <div>
+                <strong>Date:</strong> ______________________
               </div>
             </div>
+            <div>
+              <strong>Instructions:</strong>
+              <ul className="list-disc pl-6">
+                <li>Attempt all questions.</li>
+                <li>Write clearly and neatly.</li>
+                <li>Use of unfair means is prohibited.</li>
+              </ul>
+            </div>
+          </div>
           <ol className="list-decimal list-inside space-y-1">
             {selectedQuestions.map((idx) => {
               const q = generatedQuestions[idx];
               return (
-                <li
-                  key={idx}
-                  className="bg-none rounded py-[2px] "
-                >
+                <li key={idx} className="bg-none rounded py-[2px] ">
                   {q.question}
-                 
                 </li>
               );
             })}
