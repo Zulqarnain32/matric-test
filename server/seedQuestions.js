@@ -28,7 +28,8 @@ const questions = [
       "Discuss the characteristics and limitations of a computer.",
     ]
   },
-  {
+
+    {
     class: 9,
     subject: "Computer",
     chapterNumber: 2,
@@ -44,6 +45,23 @@ const questions = [
        "Define RAM and ROM.",
       "What is the function of ALU?",
       "Name any two storage devices.",
+    ],
+    longQuestions: [
+      "Describe the major components of the CPU and their functions.",
+      "Explain different types of computer memory with examples.",
+      "Explain different types of computer memory with examples.",
+      "Explain different types of computer memory with examples.",
+    ]
+  },
+    {
+    class: 9,
+    subject: "Computer",
+    chapterNumber: 3,
+    chapterName: "Computer third chapter",
+    shortQuestions: [
+      "What is CPU?",
+      "Define RAM and ROM.",
+     
     ],
     longQuestions: [
       "Describe the major components of the CPU and their functions.",
