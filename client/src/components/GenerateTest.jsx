@@ -16,6 +16,7 @@ const TestGenerator = () => {
   const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
   const [questionBlocks, setQuestionBlocks] = useState([]);
   const [ignoreQuestions, setIgnoreQuestions] = useState();
+  const [questionMarks,setQuestionMarks] = useState()
 
   // Fetch all questions once
   useEffect(() => {
@@ -123,10 +124,10 @@ const TestGenerator = () => {
         questions: selected,
       },
     ]);
+    toast.success("Question has been added")
 
     // Reset selections for next batch
     setSelectedQuestions([]);
-    setTotalQuestionsAllowed("");
   };
 
   const downloadAsPDF = () => {
@@ -199,7 +200,7 @@ const TestGenerator = () => {
       <div className="grid grid-cols-3 gap-6 mt-[-1`0px]">
         <div>
           <label className="block mb-1 font-bold text-gray-700">
-            Total Questions
+            Required Questions
           </label>
           <input
             type="number"
@@ -228,6 +229,19 @@ const TestGenerator = () => {
               }
             }}
             min={0}
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
+          />
+        </div>
+
+         <div>
+          <label className="block mb-1 font-bold text-gray-700">
+            Questions Marks
+          </label>
+          <input
+            type="number"
+            onChange={(e) => setQuestionMarks(e.target.value)}
+            min={2}
+          
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           />
         </div>
@@ -269,18 +283,18 @@ const TestGenerator = () => {
       </div>
 
       {generatedQuestions.length > 0 && (
-        <div className="mt-10">
+        <div className="my-10 ">
           <h2 className="text-2xl font-bold mb-4 text-text">
             Select Questions
           </h2>
-          <ol className="list-decimal list-inside space-y-3 max-h-96 overflow-y-auto">
+          <ol className="grid grid-cols-2 gap-2  list-decimal list-inside ">
             {generatedQuestions.map((q, idx) => {
               const isSelected = selectedQuestions.includes(idx);
               return (
                 <li
                   key={idx}
                   onClick={() => toggleQuestionSelection(idx)}
-                  className={`cursor-pointer rounded-xl px-3 py-4 shadow-sm flex items-start gap-3 transition-colors duration-200 ${
+                  className={` ursor-pointer rounded-xl px-3 py-4 h-[80px] shadow-sm flex items-start gap-3 transition-colors duration-200 ${
                     isSelected
                       ? "bg-blue-100 border border-blue-500"
                       : "bg-white border border-gray-300"
@@ -303,7 +317,7 @@ const TestGenerator = () => {
       {showAddQuestionBtn && (
         <button
           onClick={() => handleShowPaper()}
-          className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+          className="bg-green-700 mb-5 mx-auto block mt-0 text-white font-semibold px-6 py-2 rounded shadow transition"
         >
           Add Questions
         </button>
@@ -313,7 +327,7 @@ const TestGenerator = () => {
       {questionBlocks.length > 0 && (
         <div id="pdf-content" className="mt-10 bg-white p-6">
           {/* School Template */}
-          <div className="mb-6 text-gray-800 text-lg space-y-2">
+          <div className="mb-6  text-lg space-y-2">
             <h2 className="text-2xl font-bold text-center mb-4 capitalize">
               {user ? user.school : "The Quest High School"}
             </h2>
@@ -344,10 +358,18 @@ const TestGenerator = () => {
           {/* Render blocks */}
           {questionBlocks.map((block, blockIdx) => (
             <div key={blockIdx} className="mb-6">
-              <h3 className="font-bold text-text mb-2">
+              <div className="flex justify-between font-bold ">
+
+              
+              <h3 className="font-bold  mb-2">
                 Answer the following questions (Any{" "}
-                {block.count - ignoreQuestions})
+                  {block.count - Number(ignoreQuestions || 0)})
               </h3>
+              <h2>
+  {block.count - Number(ignoreQuestions)}×{questionMarks}={(block.count - Number(ignoreQuestions)) * questionMarks}
+</h2>
+
+              </div>
               <ol className="list-decimal list-inside space-y-1">
                 {block.questions.map((q, i) => (
                   <li key={i}>{q.question}</li>
@@ -359,7 +381,7 @@ const TestGenerator = () => {
       )}
       {questionBlocks.length > 0 && (
         <button
-          className="bg-green-700 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+          className="bg-green-700 mx-auto block my-4 text-white font-semibold px-6 py-2 rounded shadow transition"
           onClick={downloadAsPDF}
         >
           Download as PDF

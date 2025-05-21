@@ -53,23 +53,7 @@ const questions = [
       "Explain different types of computer memory with examples.",
     ]
   },
-    {
-    class: 9,
-    subject: "Computer",
-    chapterNumber: 3,
-    chapterName: "Computer third chapter",
-    shortQuestions: [
-      "What is CPU?",
-      "Define RAM and ROM.",
-     
-    ],
-    longQuestions: [
-      "Describe the major components of the CPU and their functions.",
-      "Explain different types of computer memory with examples.",
-      "Explain different types of computer memory with examples.",
-      "Explain different types of computer memory with examples.",
-    ]
-  },
+    
 ];
 
 const seedQuestions = async () => {
