@@ -145,12 +145,12 @@ const TestGenerator = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-6 mt-10">
+    <div className="max-w-3xl mx-auto px-6 mt-10">
       <h1 className="text-3xl font-bold mb-6 text-center text-text">
         Test Generator
       </h1>
 
-      {/* Dropdowns for Class, Subject, Question Type */}
+      {/* Dropdowns for Class*/}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <div>
           <label className="block mb-1 font-bold text-gray-700">Class</label>
@@ -164,13 +164,13 @@ const TestGenerator = () => {
             <option value="10">10th Class</option>
           </select>
         </div>
-
+        {/* dropdown for subject */}
         <div>
           <label className="block mb-1 font-bold text-gray-700">Subject</label>
           <select
             value={selectedSubject}
             onChange={(e) => setSelectedSubject(e.target.value)}
-            disabled={!selectedClass}
+            // disabled={!selectedClass}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           >
             <option value="">Choose Subject</option>
@@ -179,6 +179,7 @@ const TestGenerator = () => {
           </select>
         </div>
 
+        {/* dropdown for question type */}
         <div>
           <label className="block mb-1 font-bold text-gray-700">
             Question Type
@@ -203,7 +204,12 @@ const TestGenerator = () => {
           <input
             type="number"
             value={totalQuestionsAllowed}
-            onChange={(e) => setTotalQuestionsAllowed(e.target.value)}
+            onChange={(e) => {
+              const val = parseInt(e.target.value, 10);
+              if (val >= 1 || e.target.value === "") {
+                setTotalQuestionsAllowed(e.target.value);
+              }
+            }}
             min={1}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-900 disabled:bg-gray-100"
           />
@@ -214,7 +220,14 @@ const TestGenerator = () => {
           </label>
           <input
             type="number"
-            onChange={(e) => setIgnoreQuestions(e.target.value)}
+            value={ignoreQuestions}
+            onChange={(e) => {
+              const val = parseInt(e.target.value, 10);
+              if (val >= 0 || e.target.value === "") {
+                setIgnoreQuestions(e.target.value);
+              }
+            }}
+            min={0}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           />
         </div>
@@ -251,7 +264,7 @@ const TestGenerator = () => {
           onClick={generateTest}
           className="bg-text text-white font-semibold px-6 py-2 rounded shadow transition"
         >
-          Generate Test
+          Search Questions
         </button>
       </div>
 
