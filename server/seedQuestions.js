@@ -53,6 +53,24 @@ const questions = [
       "Explain different types of computer memory with examples.",
     ]
   },
+
+    {
+    class: 9,
+    subject: "Computer",
+    chapterNumber: 3,
+    chapterName: "Third Chapter",
+    shortQuestions: [
+      "What is CPU?",
+      "Define RAM and ROM.",
+    
+    ],
+    longQuestions: [
+      "Describe the major components of the CPU and their functions.",
+
+    ]
+  },
+
+  
     
 ];
 

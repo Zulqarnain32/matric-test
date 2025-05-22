@@ -287,7 +287,7 @@ const TestGenerator = () => {
           <h2 className="text-2xl font-bold mb-4 text-text">
             Select Questions
           </h2>
-          <ol className="grid grid-cols-2 gap-2  list-decimal list-inside ">
+          <ol className="grid grid-cols-2 xs:grid-cols-1 gap-2  list-decimal list-inside ">
             {generatedQuestions.map((q, idx) => {
               const isSelected = selectedQuestions.includes(idx);
               return (
