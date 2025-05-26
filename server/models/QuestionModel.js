@@ -27,7 +27,11 @@ const chapterSchema = new mongoose.Schema({
   longQuestions: {
     type: [String],
     required: true
-  }
+  },
+  mcqs:{
+    type: Array,
+    required: true
+  },
 }, { timestamps: true });
 
 const Question = mongoose.model('Question', chapterSchema);

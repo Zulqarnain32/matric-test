@@ -16,7 +16,7 @@ const TestGenerator = () => {
   const [totalQuestionsAllowed, setTotalQuestionsAllowed] = useState("");
   const [questionBlocks, setQuestionBlocks] = useState([]);
   const [ignoreQuestions, setIgnoreQuestions] = useState();
-  const [questionMarks,setQuestionMarks] = useState()
+  const [questionMarks, setQuestionMarks] = useState();
 
   // Fetch all questions once
   useEffect(() => {
@@ -122,12 +122,14 @@ const TestGenerator = () => {
       {
         count: selected.length,
         questions: selected,
+        marks: questionMarks, // Store marks with the block
       },
     ]);
-    toast.success("Question has been added")
+    toast.success("Question has been added");
 
     // Reset selections for next batch
     setSelectedQuestions([]);
+    setQuestionMarks(""); // Clear the marks input for the next block
   };
 
   const downloadAsPDF = () => {
@@ -233,15 +235,14 @@ const TestGenerator = () => {
           />
         </div>
 
-         <div>
+        <div>
           <label className="block mb-1 font-bold text-gray-700">
             Questions Marks
           </label>
           <input
             type="number"
             onChange={(e) => setQuestionMarks(e.target.value)}
-            min={2}
-          
+            min={1}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           />
         </div>
@@ -285,7 +286,8 @@ const TestGenerator = () => {
       {generatedQuestions.length > 0 && (
         <div className="my-10 ">
           <h2 className="text-2xl font-bold mb-4 text-text">
-            Select Questions
+            Select Questions ({selectedQuestions.length}/{totalQuestionsAllowed}
+            )
           </h2>
           <ol className="grid grid-cols-2 xs:grid-cols-1 gap-2  list-decimal list-inside ">
             {generatedQuestions.map((q, idx) => {
@@ -315,12 +317,14 @@ const TestGenerator = () => {
       )}
 
       {showAddQuestionBtn && (
-        <button
-          onClick={() => handleShowPaper()}
-          className="bg-green-700 mb-5 mx-auto block mt-0 text-white font-semibold px-6 py-2 rounded shadow transition"
-        >
-          Add Questions
-        </button>
+        <>
+          <button
+            onClick={() => handleShowPaper()}
+            className="bg-green-700 mb-5 mx-auto block mt-4 text-white font-semibold px-6 py-2 rounded shadow transition"
+          >
+            Add Questions
+          </button>
+        </>
       )}
 
       {/* Final Paper */}
@@ -358,17 +362,15 @@ const TestGenerator = () => {
           {/* Render blocks */}
           {questionBlocks.map((block, blockIdx) => (
             <div key={blockIdx} className="mb-6">
-              <div className="flex justify-between font-bold ">
-
-              
-              <h3 className="font-bold  mb-2">
-                Answer the following questions (Any{" "}
+              <div className="flex justify-between font-bold">
+                <h3 className="font-bold mb-2">
+                  Answer the following questions (Any{" "}
                   {block.count - Number(ignoreQuestions || 0)})
-              </h3>
-              <h2>
-  {block.count - Number(ignoreQuestions)}×{questionMarks}={(block.count - Number(ignoreQuestions)) * questionMarks}
-</h2>
-
+                </h3>
+                <h2>
+                  {block.count - Number(ignoreQuestions)}×{block.marks}=
+                  {(block.count - Number(ignoreQuestions)) * block.marks}
+                </h2>
               </div>
               <ol className="list-decimal list-inside space-y-1">
                 {block.questions.map((q, i) => (

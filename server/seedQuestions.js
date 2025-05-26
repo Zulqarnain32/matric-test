@@ -23,10 +23,20 @@ const questions = [
     ],
     longQuestions: [
       "Explain the main components of a computer with examples.",
-      "Discuss the characteristics and limitations of a computer.",
-      "Discuss the characteristics and limitations of a computer.",
-      "Discuss the characteristics and limitations of a computer.",
-    ]
+    
+    ],
+      mcqs: [
+      {
+        question: "Which one is an input device?",
+        options: ["Monitor", "Keyboard", "Printer", "Speaker"],
+        answer: "Keyboard",
+      },
+      {
+        question: "What does CPU stand for?",
+        options: ["Central Processing Unit", "Control Panel Unit", "Central Power Unit", "Central Processing Utility"],
+        answer: "Central Processing Unit",
+      },
+    ],
   },
 
     {
@@ -48,10 +58,20 @@ const questions = [
     ],
     longQuestions: [
       "Describe the major components of the CPU and their functions.",
-      "Explain different types of computer memory with examples.",
-      "Explain different types of computer memory with examples.",
-      "Explain different types of computer memory with examples.",
-    ]
+    
+    ],
+      mcqs: [
+      {
+        question: "Which one is an input device?",
+        options: ["Monitor", "Keyboard", "Printer", "Speaker"],
+        answer: "Keyboard",
+      },
+      {
+        question: "What does CPU stand for?",
+        options: ["Central Processing Unit", "Control Panel Unit", "Central Power Unit", "Central Processing Utility"],
+        answer: "Central Processing Unit",
+      },
+    ],
   },
 
     {
@@ -60,14 +80,23 @@ const questions = [
     chapterNumber: 3,
     chapterName: "Third Chapter",
     shortQuestions: [
-      "What is CPU?",
-      "Define RAM and ROM.",
-    
+      "What is keyboard",
     ],
     longQuestions: [
-      "Describe the major components of the CPU and their functions.",
-
-    ]
+      "Describe the major components of the Moniter and their functions.",
+    ],
+      mcqs: [
+      {
+        question: "Which one is an input device?",
+        options: ["Monitor", "Keyboard", "Printer", "Speaker"],
+        answer: "Keyboard",
+      },
+      {
+        question: "What does CPU stand for?",
+        options: ["Central Processing Unit", "Control Panel Unit", "Central Power Unit", "Central Processing Utility"],
+        answer: "Central Processing Unit",
+      },
+    ],
   },
 
   
