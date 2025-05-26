@@ -9,7 +9,7 @@ const TestGenerator = () => {
   const [selectedClass, setSelectedClass] = useState("");
   const [selectedSubject, setSelectedSubject] = useState("");
   const [selectedChapters, setSelectedChapters] = useState([]);
-  const [selectedType, setSelectedType] = useState("all"); // short, long, all
+  const [selectedType, setSelectedType] = useState("all"); // short, long, mcq, all
   const [filteredChapters, setFilteredChapters] = useState([]);
   const [generatedQuestions, setGeneratedQuestions] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
@@ -85,10 +85,19 @@ const TestGenerator = () => {
             }))
           );
         }
+        if (selectedType === "mcq" || selectedType === "all") {
+          questions.push(
+            ...chapter.mcqs.map((q) => ({
+              question: q.question,
+              options: q.options,
+              type: "MCQ",
+              chapter: chapter.chapterName,
+            }))
+          );
+        }
       }
     });
     setGeneratedQuestions(questions);
-    // IMPORTANT: start with NO questions selected
     setSelectedQuestions([]);
   };
 
@@ -122,14 +131,13 @@ const TestGenerator = () => {
       {
         count: selected.length,
         questions: selected,
-        marks: questionMarks, // Store marks with the block
+        marks: questionMarks,
       },
     ]);
     toast.success("Question has been added");
 
-    // Reset selections for next batch
     setSelectedQuestions([]);
-    setQuestionMarks(""); // Clear the marks input for the next block
+    setQuestionMarks("");
   };
 
   const downloadAsPDF = () => {
@@ -173,7 +181,6 @@ const TestGenerator = () => {
           <select
             value={selectedSubject}
             onChange={(e) => setSelectedSubject(e.target.value)}
-            // disabled={!selectedClass}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
           >
             <option value="">Choose Subject</option>
@@ -195,11 +202,12 @@ const TestGenerator = () => {
             <option value="all">All Questions</option>
             <option value="short">Short Questions</option>
             <option value="long">Long Questions</option>
+            <option value="mcq">MCQs</option>
           </select>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 mt-[-1`0px]">
+      <div className="grid grid-cols-3 gap-6 mt-[-10px]">
         <div>
           <label className="block mb-1 font-bold text-gray-700">
             Required Questions
@@ -241,6 +249,7 @@ const TestGenerator = () => {
           </label>
           <input
             type="number"
+            value={questionMarks}
             onChange={(e) => setQuestionMarks(e.target.value)}
             min={1}
             className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
@@ -284,19 +293,18 @@ const TestGenerator = () => {
       </div>
 
       {generatedQuestions.length > 0 && (
-        <div className="my-10 ">
+        <div className="my-10">
           <h2 className="text-2xl font-bold mb-4 text-text">
-            Select Questions ({selectedQuestions.length}/{totalQuestionsAllowed}
-            )
+            Select Questions ({selectedQuestions.length}/{totalQuestionsAllowed})
           </h2>
-          <ol className="grid grid-cols-2 xs:grid-cols-1 gap-2  list-decimal list-inside ">
+          <ol className="grid grid-cols-2 xs:grid-cols-1 gap-2 list-decimal list-inside">
             {generatedQuestions.map((q, idx) => {
               const isSelected = selectedQuestions.includes(idx);
               return (
                 <li
                   key={idx}
                   onClick={() => toggleQuestionSelection(idx)}
-                  className={` ursor-pointer rounded-xl px-3 py-4 h-[80px] shadow-sm flex items-start gap-3 transition-colors duration-200 ${
+                  className={`cursor-pointer rounded-xl px-3 py-4 min-h-[80px] shadow-sm flex items-start gap-3 transition-colors duration-200 ${
                     isSelected
                       ? "bg-blue-100 border border-blue-500"
                       : "bg-white border border-gray-300"
@@ -308,7 +316,19 @@ const TestGenerator = () => {
                     readOnly
                     className="mt-1 pointer-events-none"
                   />
-                  <div>{q.question}</div>
+                  <div>
+                    {q.question}
+                    {q.type === "MCQ" && (
+                      <div className="mt-2 ml-4 ">
+                        {q.options.map((option, i) => (
+                          <div key={i} className="flex items-center">
+                            <span className="mr-2">{String.fromCharCode(97 + i)}.</span>
+                            {option}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </li>
               );
             })}
@@ -331,7 +351,7 @@ const TestGenerator = () => {
       {questionBlocks.length > 0 && (
         <div id="pdf-content" className="mt-10 bg-white p-6">
           {/* School Template */}
-          <div className="mb-6  text-lg space-y-2">
+          <div className="mb-6 text-lg space-y-2">
             <h2 className="text-2xl font-bold text-center mb-4 capitalize">
               {user ? user.school : "The Quest High School"}
             </h2>
@@ -355,6 +375,11 @@ const TestGenerator = () => {
                 <li>Attempt all questions.</li>
                 <li>Write clearly and neatly.</li>
                 <li>Use of unfair means is prohibited.</li>
+                {questionBlocks.some(block => 
+                  block.questions.some(q => q.type === "MCQ")
+                ) && (
+                  <li>For MCQs, circle the correct answer.</li>
+                )}
               </ul>
             </div>
           </div>
@@ -364,17 +389,29 @@ const TestGenerator = () => {
             <div key={blockIdx} className="mb-6">
               <div className="flex justify-between font-bold">
                 <h3 className="font-bold mb-2">
-                  Answer the following questions (Any{" "}
-                  {block.count - Number(ignoreQuestions || 0)})
+                  {block.questions[0].type === "MCQ" ? "Choose the correct option" : 
+                   `Answer the following questions (Any ${block.count - Number(ignoreQuestions || 0)})`}
                 </h3>
                 <h2>
                   {block.count - Number(ignoreQuestions)}×{block.marks}=
                   {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
               </div>
-              <ol className="list-decimal list-inside space-y-1">
+              <ol className="list-decimal list-inside space-y-4">
                 {block.questions.map((q, i) => (
-                  <li key={i}>{q.question}</li>
+                  <li key={i} className="mb-4">
+                    {q.question}
+                    {q.type === "MCQ" && (
+                      <div className="mt-2 ml-4 grid grid-cols-2  ">
+                        {q.options.map((option, i) => (
+                          <div key={i} className="flex item-center ">
+                            <span className="mr-2">{String.fromCharCode(97 + i)}.</span>
+                            {option}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </li>
                 ))}
               </ol>
             </div>
