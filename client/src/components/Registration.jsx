@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Registration = () => {
   const [email, setEmail] = useState("");
-  const [school, setSchool] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -17,9 +17,9 @@ const Registration = () => {
     e.preventDefault();
     setLoading(true)
   
-    axios.post('http://localhost:5000/api/auth/register', { school,email,password })
+    axios.post('http://localhost:5000/api/auth/register', { username,email,password })
     .then((response) => {
-      console.log("registara rw ",response )
+      console.log("register ",response )
       const msg = response?.data?.message;
   
       if (msg === "Please fill all the fields") {
@@ -49,18 +49,20 @@ const Registration = () => {
       <div className="bg-white p-6 w-80 rounded-lg shadow-lg">
         <p className="text-center text-2xl font-extrabold text-text mb-4">TESTSOLUTION</p>
         <form className="flex flex-col" onSubmit={handleSubmit}>
+
+           <input
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+            className="p-2 mb-3 border rounded focus:outline-none focus:ring-2 focus:ring-navbar"
+          />
           <input
             type="email"
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
             className="p-2 mb-3 border rounded focus:outline-none focus:ring-2 focus:ring-navbar"
           />
-          <input
-            type="text"
-            placeholder="School"
-            onChange={(e) => setSchool(e.target.value)}
-            className="p-2 mb-3 border rounded focus:outline-none focus:ring-2 focus:ring-navbar"
-          />
+         
           <input
             type="password"
             placeholder="Password"

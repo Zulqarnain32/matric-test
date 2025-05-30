@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import axios from "axios"
 import { AuthContext } from "../global/AuthContext";
 import html2pdf from "html2pdf.js";
 import { toast } from "react-toastify";
@@ -140,20 +141,60 @@ const TestGenerator = () => {
     setQuestionMarks("");
   };
 
-  const downloadAsPDF = () => {
-    const element = document.getElementById("pdf-content");
-    toast.success("PDF has been downloaded");
-
-    const opt = {
+ const downloadAsPDF = async () => {
+  const element = document.getElementById("pdf-content");
+  
+  try {
+    // Generate PDF and get as base64
+    const pdfBlob = await html2pdf().from(element).set({
       margin: 0.5,
       filename: "test.pdf",
       image: { type: "jpeg", quality: 0.98 },
       html2canvas: { scale: 2 },
       jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-    };
+    }).outputPdf('blob');
 
-    html2pdf().set(opt).from(element).save();
-  };
+    // Convert blob to base64
+    const reader = new FileReader();
+    reader.readAsDataURL(pdfBlob);
+    
+    reader.onloadend = async () => {
+      const base64data = reader.result.split(',')[1]; // Remove data URL prefix
+      
+      try {
+        await axios.post("http://localhost:5000/api/pdfs/createPDF", {
+          title: `${selectedSubject} Test - Class ${selectedClass}`,
+          pdfData: base64data,
+          class: selectedClass,
+          subject: selectedSubject,
+          chapters: selectedChapters,
+          user:user._id
+        }, {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`
+          }
+        });
+
+        // Download the PDF to user's device
+        const url = URL.createObjectURL(pdfBlob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Test_${selectedClass}_${selectedSubject}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        
+        toast.success("PDF has been saved and downloaded");
+      } catch (error) {
+        console.error("Error saving PDF:", error);
+        toast.error("Error saving PDF to database");
+      }
+    };
+  } catch (error) {
+    console.error("Error generating PDF:", error);
+    toast.error("Error generating PDF");
+  }
+};
 
   return (
     <div className="max-w-3xl mx-auto px-6 mt-10">
@@ -397,9 +438,9 @@ const TestGenerator = () => {
                   {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
               </div>
-              <ol className="list-decimal list-inside space-y-4">
+              <ol className="list-decimal list-inside  space-y-2">
                 {block.questions.map((q, i) => (
-                  <li key={i} className="mb-4">
+                  <li key={i} className="mb-0">
                     {q.question}
                     {q.type === "MCQ" && (
                       <div className="mt-2 ml-4 grid grid-cols-2  ">

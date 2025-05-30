@@ -31,7 +31,7 @@ const Login = () => {
           window.localStorage.setItem("user", JSON.stringify(result.data));
           setUser({ email: result.data.email });
           toast.success("Login successful!", { autoClose: 2000 });
-          navigate("/test-generator");
+          navigate("/generate-test");
         } else if (message === "please fill all the fields") {
           toast.warning("Please fill all the fields", { autoClose: 2500 });
         } else if (message === "incorrect password") {
@@ -50,6 +50,10 @@ const Login = () => {
         setLoading(false);
       });
   };
+
+    const openWithGoogle = () => {
+    window.open("http://localhost:5000/auth/google/callback", "_self")
+  }
 
   return (
     <div className="flex justify-center items-center h-[calc(100vh-70px)] bg-body ">
@@ -81,6 +85,13 @@ const Login = () => {
               "Log in"
             )}
           </button>
+            <div onClick={openWithGoogle} className='border-2 mt-6 flex items-center py-1 justify-center space-x-3 cursor-pointer rounded-md'>
+            <img
+              src="/assets/google.png"
+              className='w-[20px]'
+            />
+            <p>Sign in with Google</p>
+          </div>
 
           <Link
             to="/forgot-password"

@@ -7,9 +7,9 @@ const nodemailer = require("nodemailer");
 
 const register = async (req, res) => {
   try {
-    const { school, email, password } = req.body;
+    const { username, email, password } = req.body;
 
-    if (!school || !email || !password) {
+    if (!username || !email || !password) {
       return res.status(400).json({ message: "Please fill all the fields" });
     }
 
@@ -19,7 +19,7 @@ const register = async (req, res) => {
     }
 
     const hashPassword = await bcrypt.hash(password, 10);
-    const newUser = new Usermodel({ school, email, password: hashPassword });
+    const newUser = new Usermodel({ username, email, password: hashPassword });
     await newUser.save();
 
     // Nodemailer
@@ -71,8 +71,8 @@ const login = async (req, res) => {
   if(!isMatch){
     return res.json({message:"incorrect password"})
   }
-  const token = jwt.sign({id:user._id,role:user.role,school:user.school,email:user.email},"My-Secret-Key")
-  return res.json({message:"sucessfully login",token,role:user.role,school:user.school,email:user.email,id:user._id})
+  const token = jwt.sign({id:user._id,role:user.role,username:user.username,email:user.email},"My-Secret-Key")
+  return res.json({message:"sucessfully login",token,role:user.role,username:user.username,email:user.email,id:user._id})
 };
 
 

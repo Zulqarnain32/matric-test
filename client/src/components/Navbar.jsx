@@ -1,15 +1,15 @@
-import { useState, useEffect, useContext, useRef } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import React from "react";
 import { AuthContext } from "../global/AuthContext";
 import { toast } from "react-toastify";
-
+import axios from "axios"
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const { user, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
+  const isAdmin = user?.role === "admin";
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar); // Toggle based on the previous state
@@ -24,13 +24,19 @@ const Navbar = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("id");
     toast.success("Logged out successfully", { autoClose: 2000 });
+     axios
+      .get("http://localhost:5000/logout", { withCredentials: true }) // Clear Google session
+      .then(() => {
+        setUser(null);
+        window.location.reload();
+      })
+      .catch((err) => console.log("Logout error:", err));
 
     setTimeout(() => {
       navigate("/");
     }, 100);
+
   };
-
-
 
   // Disable scroll when navbar is open
   useEffect(() => {
@@ -53,7 +59,10 @@ const Navbar = () => {
           <h4 className="font-extrabold">TESTSOLUTION</h4>
         </div>
 
-        <div className="block md:hidden cursor-pointer" onClick={handleShowNavbar}>
+        <div
+          className="block md:hidden cursor-pointer"
+          onClick={handleShowNavbar}
+        >
           <GiHamburgerMenu className="text-3xl text-white" />
         </div>
 
@@ -76,15 +85,31 @@ const Navbar = () => {
           >
             Home
           </Link>
+          {isAdmin && (
+            <Link
+              to="/pdflist"
+              className="text-white md: block py-4 px-4 border-b md:border-0"
+              onClick={closeNav}
+            >
+              Dashboard
+            </Link>
+          )}
 
           {user?.email && (
             <Link
-              to="dcn"
-              className="xs:hidden md:text-white block py-4 px-4 border-b md:border-0"
+              className=" md:text-white block py-4 px-4 border-b md:border-0"
               onClick={closeNav}
             >
-              {user?.email}
+              {(user?.username || user?.displayName)?.split(" ")[0]}
+
             </Link>
+          )}
+          {user?.displayName && (
+            <img
+              src={user?.image}
+              alt="User profile"
+              className="w-10 h-10 rounded-full"
+            />
           )}
 
           {user?.email ? (
@@ -110,4 +135,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
