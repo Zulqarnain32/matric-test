@@ -18,6 +18,7 @@ const TestGenerator = () => {
   const [questionBlocks, setQuestionBlocks] = useState([]);
   const [ignoreQuestions, setIgnoreQuestions] = useState();
   const [questionMarks, setQuestionMarks] = useState();
+  const [schoolName,setSchoolName] = useState("");
 
   // Fetch all questions once
   useEffect(() => {
@@ -201,6 +202,15 @@ const TestGenerator = () => {
       <h1 className="text-3xl font-bold mb-6 text-center text-text">
         Test Generator
       </h1>
+
+          <label className="block mb-1 font-bold text-gray-700">School Name</label>
+
+       <input
+            type="text"
+            value={schoolName}
+            onChange={(e) => setSchoolName(e.target.value)}
+            className="w-full border border-gray-300 mb-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
+          />
 
       {/* Dropdowns for Class*/}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
@@ -394,7 +404,7 @@ const TestGenerator = () => {
           {/* School Template */}
           <div className="mb-6 text-lg space-y-2">
             <h2 className="text-2xl font-bold text-center mb-4 capitalize">
-              {user ? user.school : "The Quest High School"}
+              {schoolName || "The Quest High School"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>

@@ -104,13 +104,7 @@ const Navbar = () => {
 
             </Link>
           )}
-          {user?.displayName && (
-            <img
-              src={user?.image}
-              alt="User profile"
-              className="w-10 h-10 rounded-full"
-            />
-          )}
+        
 
           {user?.email ? (
             <button
