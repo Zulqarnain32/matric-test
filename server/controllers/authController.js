@@ -152,8 +152,18 @@ console.log("Extracted Token:", token);
   }
 };
 
+const dashboardPage = async(req,res) => {
+  console.log("dashboard page")
+  Usermodel.find({})
+  .then(user => {
+    res.json(user)
+  }).catch(err => {
+    res.json("error fetching s ", err)
+  })
+}
 
 
 
 
-module.exports = { register, login,forgotPassword, resetPassword };
+
+module.exports = { register, login,forgotPassword, resetPassword,dashboardPage };

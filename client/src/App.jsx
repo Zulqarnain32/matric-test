@@ -11,6 +11,8 @@ import { AuthContext } from './global/AuthContext'
 import { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PDFList from './components/PDFList';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
    const { user } = useContext(AuthContext);
@@ -32,6 +34,7 @@ function App() {
         <Route path="/generate-test" element={ user ? <GenerateTest/>:<Login/>} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
+        <Route path="/dashboard" element={isAdmin && <Dashboard />} />
         <Route path="/pdflist" element={ isAdmin ? <PDFList /> : <Login/>} />
 
       </Routes>

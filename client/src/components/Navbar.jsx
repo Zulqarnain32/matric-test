@@ -85,9 +85,10 @@ const Navbar = () => {
           >
             Home
           </Link>
+          
           {isAdmin && (
             <Link
-              to="/pdflist"
+              to="/dashboard"
               className="text-white md: block py-4 px-4 border-b md:border-0"
               onClick={closeNav}
             >
