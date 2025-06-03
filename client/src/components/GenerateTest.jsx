@@ -142,11 +142,10 @@ const TestGenerator = () => {
     setQuestionMarks("");
   };
 
- const downloadAsPDF = async () => {
+const downloadAsPDF = async () => {
   const element = document.getElementById("pdf-content");
-  
+
   try {
-    // Generate PDF and get as base64
     const pdfBlob = await html2pdf().from(element).set({
       margin: 0.5,
       filename: "test.pdf",
@@ -155,47 +154,22 @@ const TestGenerator = () => {
       jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
     }).outputPdf('blob');
 
-    // Convert blob to base64
-    const reader = new FileReader();
-    reader.readAsDataURL(pdfBlob);
-    
-    reader.onloadend = async () => {
-      const base64data = reader.result.split(',')[1]; // Remove data URL prefix
-      
-      try {
-        await axios.post("http://localhost:5000/api/pdfs/createPDF", {
-          title: `${selectedSubject} Test - Class ${selectedClass}`,
-          pdfData: base64data,
-          class: selectedClass,
-          subject: selectedSubject,
-          chapters: selectedChapters,
-          user:user._id
-        }, {
-          headers: {
-            Authorization: `Bearer ${localStorage.getItem("token")}`
-          }
-        });
+    // Download the PDF to user's device
+    const url = URL.createObjectURL(pdfBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `Test_${selectedClass}_${selectedSubject}.pdf`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 
-        // Download the PDF to user's device
-        const url = URL.createObjectURL(pdfBlob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `Test_${selectedClass}_${selectedSubject}.pdf`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        
-        toast.success("PDF has been saved and downloaded");
-      } catch (error) {
-        console.error("Error saving PDF:", error);
-        toast.error("Error saving PDF to database");
-      }
-    };
+    toast.success("PDF downloaded successfully");
   } catch (error) {
     console.error("Error generating PDF:", error);
     toast.error("Error generating PDF");
   }
 };
+
 
   return (
     <div className="max-w-3xl mx-auto px-6 mt-10">
