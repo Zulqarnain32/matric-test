@@ -11,6 +11,7 @@ const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth20").Strategy;
 const Usermodel = require("./models/UserModel")
 
+
 const clientId =
   "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
 const clientSecret = "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";
@@ -29,6 +30,8 @@ app.use(
 // app.use(express.json({ limit: '10mb' })); // Increase payload limit for PDFs
 app.use(express.json()); 
 dbConnect();
+
+
 
 app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);

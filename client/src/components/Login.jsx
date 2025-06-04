@@ -26,7 +26,7 @@ const Login = () => {
         console.log(result);
         const message = result?.data?.message;
 
-        if (message === "sucessfully login") {
+        if (message === "Successfully logged in") {
           window.localStorage.setItem("id", result.data.id);
           window.localStorage.setItem("user", JSON.stringify(result.data));
           setUser({ email: result.data.email });
@@ -40,8 +40,9 @@ const Login = () => {
         } else if (message === "invalid email") {
           toast.error("Email not found", { autoClose: 2500 });
         } else {
-          toast.error("Something went wrong", { autoClose: 2500 });
+          toast.error(message || "Something went wrong", { autoClose: 2500 });
         }
+
       })
       .catch((err) => {
         toast.error("Server error. Try again later.", { autoClose: 2500 });

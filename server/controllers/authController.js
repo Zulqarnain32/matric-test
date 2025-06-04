@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 const Usermodel = require("../models/UserModel");
 const nodemailer = require("nodemailer");
 
-
+const crypto = require("crypto"); // Add at top
 
 const register = async (req, res) => {
   try {
@@ -19,36 +19,48 @@ const register = async (req, res) => {
     }
 
     const hashPassword = await bcrypt.hash(password, 10);
-    const newUser = new Usermodel({ username, email, password: hashPassword });
+
+    const verifyToken = crypto.randomBytes(32).toString("hex");
+    const verifyTokenExpiry = Date.now() + 1000 * 60 * 60; // 1 hour
+
+    const newUser = new Usermodel({
+      username,
+      email,
+      password: hashPassword,
+      isVerified: false,
+      verifyToken,
+      verifyTokenExpiry,
+    });
+
     await newUser.save();
 
-    // Nodemailer
+    // Send verification email
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "zulqarnainc67@gmail.com",
-        pass: "pniq fonb hius uazc", // use .env in production
+        pass: "pniq fonb hius uazc",
       },
     });
+
+    const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
 
     const mailOptions = {
       from: "zulqarnainc67@gmail.com",
       to: email,
-      subject: "Welcome to Our Platform!",
-      text: `Click the link to reset your password: http://localhost:5173/test-generator`,
-
-     
+      subject: "Verify Your Email",
+      text: `Click this link to verify your email: ${verificationUrl}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error("Error sending email:", error);
       } else {
-        console.log("Registration email sent:", info.response);
+        console.log("Verification email sent:", info.response);
       }
     });
 
-    return res.status(201).json({ message: "Registered Successfully" });
+    return res.status(201).json({ message: "We have sent an email to you. Please verify your email." });
 
   } catch (error) {
     console.error("Register error:", error);
@@ -57,28 +69,45 @@ const register = async (req, res) => {
 };
 
 
+
 const login = async (req, res) => {
-  console.log("req body ", req.body);
   const { email, password } = req.body;
-  if(!email || !password ){
-    return res.json({message:"please fill all the fields"})
-  }
-  const user = await Usermodel.findOne({ email });
-  if(!user){
-    return res.json({message:"invalid email"})
-  }
-  const isMatch = await bcrypt.compare(password,user.password);
-  if(!isMatch){
-    return res.json({message:"incorrect password"})
+
+  if (!email || !password) {
+    return res.json({ message: "Please fill all the fields" });
   }
 
-  // Update login count and last login date
-  user.loginCount = (user.loginCount || 0) + 1;  // fallback if undefined
+  const user = await Usermodel.findOne({ email });
+
+  if (!user) {
+    return res.json({ message: "Invalid email" });
+  }
+
+  if (!user.isVerified) {
+    return res.status(403).json({ message: "Please verify your email before logging in" });
+  }
+
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch) {
+    return res.json({ message: "Incorrect password" });
+  }
+
+  user.loginCount = (user.loginCount || 0) + 1;
   user.lastLoginDate = new Date();
   await user.save();
 
-  const token = jwt.sign({id:user._id,role:user.role,username:user.username,email:user.email},"My-Secret-Key")
-  return res.json({message:"sucessfully login",token,role:user.role,username:user.username,email:user.email,id:user._id,loginCount:user.loginCount,lastLoginDate:user.lastLoginDate})
+  const token = jwt.sign({ id: user._id, role: user.role, username: user.username, email: user.email }, "My-Secret-Key");
+
+  return res.json({
+    message: "Successfully logged in",
+    token,
+    role: user.role,
+    username: user.username,
+    email: user.email,
+    id: user._id,
+    loginCount: user.loginCount,
+    lastLoginDate: user.lastLoginDate,
+  });
 };
 
 

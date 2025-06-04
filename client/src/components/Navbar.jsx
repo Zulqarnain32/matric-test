@@ -29,6 +29,8 @@ const Navbar = () => {
       .then(() => {
         setUser(null);
         window.location.reload();
+         navigate("/");
+        
       })
       .catch((err) => console.log("Logout error:", err));
 

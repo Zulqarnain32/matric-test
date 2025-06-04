@@ -12,7 +12,7 @@ import { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PDFList from './components/PDFList';
 import Dashboard from './components/Dashboard';
-
+import EmailVerification from './components/EmailVerification';
 
 function App() {
    const { user } = useContext(AuthContext);
@@ -34,6 +34,7 @@ function App() {
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
         <Route path="/dashboard" element={isAdmin && <Dashboard />} />
         <Route path="/pdflist" element={ isAdmin ? <PDFList /> : <Login/>} />
+        <Route path="/verify-email/:token" element={<EmailVerification />} />
 
       </Routes>
     </Router>
