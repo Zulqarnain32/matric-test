@@ -3,6 +3,7 @@ import axios from 'axios'
 
 const Dashboard = () => {
   const [users, setUsers] = useState([])
+ 
 
   useEffect(() => {
     axios.get("http://localhost:5000/api/auth/dashboard")
@@ -29,6 +30,8 @@ const Dashboard = () => {
                   <div key={index} className="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
                     <h3 className="text-lg font-medium text-text">{user.displayName || user.username}</h3>
                     <p className="text-sm text-gray-600">{user.email}</p>
+                    <p className="text-sm text-gray-600">{user?.loginCount}</p>
+                    <p className="text-sm text-gray-600"> {user?.lastLoginDate ? new Date(user.lastLoginDate).toLocaleString() : "N/A"}</p>
                   </div>
                 ))
             }

@@ -71,8 +71,14 @@ const login = async (req, res) => {
   if(!isMatch){
     return res.json({message:"incorrect password"})
   }
+
+  // Update login count and last login date
+  user.loginCount = (user.loginCount || 0) + 1;  // fallback if undefined
+  user.lastLoginDate = new Date();
+  await user.save();
+
   const token = jwt.sign({id:user._id,role:user.role,username:user.username,email:user.email},"My-Secret-Key")
-  return res.json({message:"sucessfully login",token,role:user.role,username:user.username,email:user.email,id:user._id})
+  return res.json({message:"sucessfully login",token,role:user.role,username:user.username,email:user.email,id:user._id,loginCount:user.loginCount,lastLoginDate:user.lastLoginDate})
 };
 
 

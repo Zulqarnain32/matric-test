@@ -7,6 +7,8 @@ const userSchema = new mongoose.Schema({
   googleId: { type: String },
   displayName: { type: String },
   image: { type: String },
+   loginCount: { type: Number,default: 0 },
+  lastLoginDate: { type: Date },
   role: { type: String, default: "user", enum: ["admin", "manager", "user"] },
 });
 

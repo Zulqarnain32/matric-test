@@ -16,9 +16,7 @@ import Dashboard from './components/Dashboard';
 
 function App() {
    const { user } = useContext(AuthContext);
-   console.log("user is ", user)
    const isAdmin = user?.role === "admin"
-   console.log(isAdmin)
   
   return (
     <Router>

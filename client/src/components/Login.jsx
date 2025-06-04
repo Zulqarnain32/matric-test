@@ -32,6 +32,7 @@ const Login = () => {
           setUser({ email: result.data.email });
           toast.success("Login successful!", { autoClose: 2000 });
           navigate("/generate-test");
+          window.location.reload()
         } else if (message === "please fill all the fields") {
           toast.warning("Please fill all the fields", { autoClose: 2500 });
         } else if (message === "incorrect password") {
