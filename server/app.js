@@ -4,7 +4,6 @@ const cors = require('cors');
 const dbConnect = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const questionRoutes = require('./routes/questionRoutes');
-const pdfRoutes = require('./routes/pdfRoutes'); // Add this line
 const userRoutes = require("./routes/userRoutes")
 const session = require("express-session");
 const passport = require("passport");
@@ -35,7 +34,6 @@ dbConnect();
 
 app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);
-app.use('/api/pdfs', pdfRoutes); 
 app.use('/api/users', userRoutes); 
 
  // Setup Session
