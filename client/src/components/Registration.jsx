@@ -32,7 +32,7 @@ const Registration = () => {
         // toast.success("please check your email we have sent a link to login");
         navigate("/login");
       } else {
-        toast.info("msg" || "Unexpected response");
+        toast.info(msg || "Unexpected response");
       }
     })
     .catch((error) => {
