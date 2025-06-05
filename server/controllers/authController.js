@@ -44,7 +44,7 @@ const register = async (req, res) => {
     });
 
     // const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
-    const verificationUrl = `"https://test-generator-theta.vercel.app/verify-email/${verifyToken}`;
+    const verificationUrl = `https://test-generator-theta.vercel.app/verify-email/${verifyToken}`;
 
     const mailOptions = {
       from: "zulqarnainc67@gmail.com",
