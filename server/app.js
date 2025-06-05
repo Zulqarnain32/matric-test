@@ -9,8 +9,7 @@ const userRoutes = require("./routes/userRoutes")
 const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth20").Strategy;
-const Usermodel = require("./models/UserModel")
-
+const Usermodel = require("./models/Usermodel")
 
 const clientId =
   "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
