@@ -378,26 +378,26 @@ const downloadAsPDF = async () => {
         <div id="pdf-content" className="mt-10 bg-white p-6">
           {/* School Template */}
           <div className="mb-6 text-lg space-y-2">
-            <h2 className="text-2xl font-bold text-center mb-4 capitalize">
+            <h2 className="text-2xl xs:text-[17px] font-bold text-center mb-4 capitalize">
               {schoolName || "The Quest High School"}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 xs:text-[12px] md:grid-cols-2 xs:gap-1 gap-4">
               <div>
-                <strong>Student Name:</strong> ______________________
+                <strong>Student Name:</strong> ________________
               </div>
               <div>
-                <strong>Father's Name:</strong> ______________________
+                <strong>Father's Name:</strong> ________________
               </div>
               <div>
-                <strong>Roll No:</strong> ______________________
+                <strong>Roll No:</strong> _________________
               </div>
               <div>
-                <strong>Date:</strong> ______________________
+                <strong>Date:</strong> _________________
               </div>
             </div>
             <div>
-              <strong>Instructions:</strong>
-              <ul className="list-disc pl-6">
+              <strong className="xs:text-[13px]">Instructions:</strong>
+              <ul className="list-disc pl-6 xs:text-[12px]">
                 <li>Attempt all questions.</li>
                 <li>Write clearly and neatly.</li>
                 <li>Use of unfair means is prohibited.</li>
@@ -414,16 +414,16 @@ const downloadAsPDF = async () => {
           {questionBlocks.map((block, blockIdx) => (
             <div key={blockIdx} className="mb-6">
               <div className="flex justify-between font-bold">
-                <h3 className="font-bold mb-2">
+                <h3 className="font-bold mb-2 xs:text-[13px]">
                   {block.questions[0].type === "MCQ" ? "Choose the correct option" : 
                    `Answer the following questions (Any ${block.count - Number(ignoreQuestions || 0)})`}
                 </h3>
-                <h2>
+                <h2 className="xs:text-[12px]">
                   {block.count - Number(ignoreQuestions)}×{block.marks}=
                   {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
               </div>
-              <ol className="list-decimal list-inside  space-y-2">
+              <ol className="list-decimal list-inside  space-y-2 xs:text-[12px]">
                 {block.questions.map((q, i) => (
                   <li key={i} className="mb-0">
                     {q.question}
