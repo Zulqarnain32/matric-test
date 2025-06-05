@@ -17,8 +17,8 @@ const Registration = () => {
     e.preventDefault();
     setLoading(true)
   
-    // axios.post('http://localhost:5000/api/auth/register', { username,email,password })
-    axios.post('https://test-generator-backend-alpha.vercel.app/api/auth/register', { username,email,password })
+    axios.post('http://localhost:5000/api/auth/register', { username,email,password })
+    // axios.post('https://test-generator-backend-alpha.vercel.app/api/auth/register', { username,email,password })
     .then((response) => {
       console.log("register ",response )
       const msg = response?.data?.message;
@@ -32,7 +32,7 @@ const Registration = () => {
         // toast.success("please check your email we have sent a link to login");
         navigate("/login");
       } else {
-        toast.info(msg || "Unexpected response");
+        toast.info("msg" || "Unexpected response");
       }
     })
     .catch((error) => {
