@@ -21,8 +21,8 @@ const app = express();
 
 app.use(
     cors({
-      origin: ["http://localhost:5173"],
-      // origin: ["https://test-generator-theta.vercel.app"],
+      // origin: ["http://localhost:5173"],
+      origin: ["https://test-generator-theta.vercel.app"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
@@ -57,8 +57,8 @@ app.use('/api/users', userRoutes);
       {
         clientID: clientId,
         clientSecret: clientSecret,
-        callbackURL: "http://localhost:5000/auth/google/callback",
-        // callbackURL: "https://test-generator-backend-alpha.vercel.app/auth/google/callback",
+        // callbackURL: "http://localhost:5000/auth/google/callback",
+        callbackURL: "https://test-generator-backend-alpha.vercel.app/auth/google/callback",
         scope: ["profile", "email"],
       },
       async (accessToken, refreshToken, profile, done) => {
@@ -99,10 +99,10 @@ app.use('/api/users', userRoutes);
   app.get(
     "/auth/google/callback",
     passport.authenticate("google", {
-      successRedirect: "http://localhost:5173/generate-test",
-      // successRedirect: "https://test-generator-theta.vercel.app/generate-test",
-      failureRedirect: "http://localhost:5173/login",
-      // failureRedirect: "https://test-generator-theta.vercel.app/login",
+      // successRedirect: "http://localhost:5173/generate-test",
+      successRedirect: "https://test-generator-theta.vercel.app/generate-test",
+      // failureRedirect: "http://localhost:5173/login",
+      failureRedirect: "https://test-generator-theta.vercel.app/login",
     })
   );
   
