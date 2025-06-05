@@ -1,27 +1,30 @@
-const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const Usermodel = require("../models/UserModel");
+const crypto = require("crypto");
 const nodemailer = require("nodemailer");
-
-const crypto = require("crypto"); // Add at top
+const Usermodel = require("../models/Usermodel"); // Adjust path as needed
 
 const register = async (req, res) => {
   try {
     const { username, email, password } = req.body;
+    console.log("Incoming registration:", { username, email });
 
     if (!username || !email || !password) {
+      console.log("Missing fields");
       return res.status(400).json({ message: "Please fill all the fields" });
     }
 
     const userExists = await Usermodel.findOne({ email });
     if (userExists) {
+      console.log("Email already exists:", email);
       return res.status(409).json({ message: "Email already exists" });
     }
 
     const hashPassword = await bcrypt.hash(password, 10);
+    console.log("Password hashed");
 
     const verifyToken = crypto.randomBytes(32).toString("hex");
     const verifyTokenExpiry = Date.now() + 1000 * 60 * 60; // 1 hour
+    console.log("Verification token generated");
 
     const newUser = new Usermodel({
       username,
@@ -33,18 +36,19 @@ const register = async (req, res) => {
     });
 
     await newUser.save();
+    console.log("User saved to DB:", email);
 
-    // Send verification email
+    // Setup email transporter
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "zulqarnainc67@gmail.com",
-        pass: "pniq fonb hius uazc",
+        pass: "pniq fonb hius uazc", // Use app password
       },
     });
 
-    // const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
     const verificationUrl = `https://test-generator-theta.vercel.app/verify-email/${verifyToken}`;
+    console.log("Verification URL:", verificationUrl);
 
     const mailOptions = {
       from: "zulqarnainc67@gmail.com",
@@ -53,22 +57,24 @@ const register = async (req, res) => {
       text: `Click this link to verify your email: ${verificationUrl}`,
     };
 
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error("Error sending email:", error);
-      } else {
-        console.log("Verification email sent:", info.response);
-      }
-    });
+    // Send email
+    try {
+      const info = await transporter.sendMail(mailOptions);
+      console.log("Verification email sent:", info.response);
+    } catch (emailError) {
+      console.error("Error sending email:", emailError);
+      return res.status(500).json({ message: "Failed to send verification email." });
+    }
 
-    return res.status(201).json({ message: "We have sent an email to you. Please verify your email." });
+    return res.status(201).json({
+      message: "We have sent an email to you. Please verify your email.",
+    });
 
   } catch (error) {
     console.error("Register error:", error);
     return res.status(500).json({ message: "Server error. Please try again later." });
   }
 };
-
 
 
 const login = async (req, res) => {

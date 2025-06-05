@@ -37,8 +37,7 @@ const Registration = () => {
     })
     .catch((error) => {
       const message = error?.response?.data?.message || "Something went wrong";
-      // toast.error(message);
-      toast.error("not server mistake");
+      toast.error(message);
       console.log("errorarrrah")
     })
     .finally(() =>{
