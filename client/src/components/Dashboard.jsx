@@ -6,8 +6,8 @@ const Dashboard = () => {
  
 
   useEffect(() => {
-    // axios.get("http://localhost:5000/api/auth/dashboard")
-    axios.get("https://test-generator-backend-alpha.vercel.app/api/auth/dashboard")
+    axios.get("http://localhost:5000/api/auth/dashboard")
+    // axios.get("https://test-generator-backend-alpha.vercel.app/api/auth/dashboard")
       .then(res => {
         console.log("dashboard page", res)
         setUsers(res.data)
@@ -26,7 +26,7 @@ const Dashboard = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {
               users
-                .filter(user => user.role === "user")
+                // .filter(user => user.role === "user")
                 .map((user, index) => (
                   <div key={index} className="bg-gray-50 rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
                     <h3 className="text-lg font-medium text-text">{user.displayName || user.username}</h3>

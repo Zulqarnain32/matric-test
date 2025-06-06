@@ -21,8 +21,8 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     axios
-      // .post("http://localhost:5000/api/auth/login", { email, password })
-      .post("https://test-generator-backend-alpha.vercel.app/api/auth/login", { email, password })
+      .post("http://localhost:5000/api/auth/login", { email, password })
+      // .post("https://test-generator-backend-alpha.vercel.app/api/auth/login", { email, password })
       .then((result) => {
         console.log(result);
         const message = result?.data?.message;
@@ -55,8 +55,8 @@ const Login = () => {
   };
 
     const openWithGoogle = () => {
-    // window.open("http://localhost:5000/auth/google/callback", "_self")
-    window.open("https://test-generator-backend-alpha.vercel.app/auth/google/callback", "_self")
+    window.open("http://localhost:5000/auth/google/callback", "_self")
+    // window.open("https://test-generator-backend-alpha.vercel.app/auth/google/callback", "_self")
   }
 
   return (

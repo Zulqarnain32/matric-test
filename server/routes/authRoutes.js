@@ -1,7 +1,7 @@
 const express = require("express")
 const router = express.Router();
 const {register,login,forgotPassword, resetPassword,dashboardPage} = require("../controllers/authController")
-const Usermodel = require("../models/UserModel")
+const Usermodel = require("../models/Usermodel")
 
 router.post("/register",register)
 router.post("/login",login);
