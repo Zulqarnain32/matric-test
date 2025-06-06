@@ -38,6 +38,35 @@ const register = async (req, res) => {
     await newUser.save();
     console.log("User saved to DB:", email);
 
+    // Setup email transporter
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "zulqarnainc67@gmail.com",
+        pass: "pniq fonb hius uazc", // Use app password
+      },
+    });
+
+    const verificationUrl = `https://test-generator-theta.vercel.app/verify-email/${verifyToken}`;
+    // const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
+    console.log("Verification URL:", verificationUrl);
+
+    const mailOptions = {
+      from: "zulqarnainc67@gmail.com",
+      to: email,
+      subject: "Verify Your Email",
+      text: `Click this link to verify your email: ${verificationUrl}`,
+    };
+
+    // Send email
+    try {
+      const info = await transporter.sendMail(mailOptions);
+      console.log("Verification email sent:", info.response);
+    } catch (emailError) {
+      console.error("Error sending email:", emailError);
+      return res.status(500).json({ message: "Failed to send verification email." });
+    }
+
     return res.status(201).json({
       message: "We have sent an email to you. Please verify your email.",
     });

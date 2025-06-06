@@ -23,17 +23,19 @@ const Navbar = () => {
     setUser(null);
     localStorage.removeItem("user");
     localStorage.removeItem("id");
+    window.location.reload();
+    navigate("/")
     toast.success("Logged out successfully", { autoClose: 2000 });
-     axios
-      // .get("http://localhost:5000/logout", { withCredentials: true }) // Clear Google session
-      .get("https://test-generator-backend-alpha.vercel.app/logout", { withCredentials: true }) // Clear Google session
-      .then(() => {
-        setUser(null);
-        window.location.reload();
-        navigate("/");
+    //  axios
+    //   .get("http://localhost:5000/logout", { withCredentials: true }) // Clear Google session
+    //   .get("https://test-generator-backend-alpha.vercel.app/logout", { withCredentials: true }) // Clear Google session
+    //   .then(() => {
+    //     setUser(null);
+    //     window.location.reload();
+    //     navigate("/");
         
-      })
-      .catch((err) => console.log("Logout error:", err));
+    //   })
+      // .catch((err) => console.log("Logout error:", err));
 
     setTimeout(() => {
       navigate("/");
