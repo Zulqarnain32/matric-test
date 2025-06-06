@@ -38,7 +38,7 @@ const Registration = () => {
     .catch((error) => {
       const message = error?.response?.data?.message || "Something went wrong";
       toast.error(message);
-      console.log("errorarrrah")
+      console.log("registration error is ",error)
     })
     .finally(() =>{
       setLoading(false)
