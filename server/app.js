@@ -13,7 +13,8 @@ const app = express();
 
 app.use(
     cors({
-      origin: ["https://test-generator-theta.vercel.app"],
+      // origin: ["https://test-generator-theta.vercel.app"],
+      origin: ["http://localhost:5173"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
@@ -25,16 +26,6 @@ dbConnect();
 const clientId =
   "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
 const clientSecret = "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";
-
-
-app.options('*', cors()); // Enable preflight for all routes
-
-
-
-// app.use(express.json({ limit: '10mb' })); // Increase payload limit for PDFs
-
-
-
 
 app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);
@@ -58,8 +49,8 @@ app.use('/api/users', userRoutes);
       {
         clientID: clientId,
         clientSecret: clientSecret,
-        // callbackURL: "http://localhost:5000/auth/google/callback",
-        callbackURL: "https://test-generator-backend-alpha.vercel.app/auth/google/callback",
+        callbackURL: "http://localhost:5000/auth/google/callback",
+        // callbackURL: "https://test-generator-backend-alpha.vercel.app/auth/google/callback",
         scope: ["profile", "email"],
       },
       async (accessToken, refreshToken, profile, done) => {
@@ -106,25 +97,25 @@ app.use('/api/users', userRoutes);
   app.get(
     "/auth/google/callback",
     passport.authenticate("google", {
-      // successRedirect: "http://localhost:5173/generate-test",
-      successRedirect: "https://test-generator-theta.vercel.app/generate-test",
-      // failureRedirect: "http://localhost:5173/login",
-      failureRedirect: "https://test-generator-theta.vercel.app/login",
+      successRedirect: "http://localhost:5173/generate-test",
+      // successRedirect: "https://test-generator-theta.vercel.app/generate-test",
+      failureRedirect: "http://localhost:5173/login",
+      // failureRedirect: "https://test-generator-theta.vercel.app/login",
     })
   );
 
   
   
-//  app.get("/login/success", (req, res) => {
-//   if (req.user) {
-//     return res.status(200).json({
-//       message: "Login successful",
-//       user: req.user,
-//     });
-//   } else {
-//     return res.status(401).json({ message: "Not authorized" });
-//   }
-// });
+ app.get("/login/success", (req, res) => {
+  if (req.user) {
+    return res.status(200).json({
+      message: "Login successful",
+      user: req.user,
+    });
+  } else {
+    return res.status(401).json({ message: "Not authorized" });
+  }
+});
 
 
     // logout the user 
