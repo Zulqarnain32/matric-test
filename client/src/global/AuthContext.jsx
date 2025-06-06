@@ -11,17 +11,25 @@ export const AuthProvider = ({ children }) => {
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     } else {
-      // axios.get("http://localhost:5000/login/success", { withCredentials: true })
-      axios.get("https://test-generator-backend-alpha.vercel.app/login/success", { withCredentials: true })
+      axios
+        .get("https://test-generator-backend-alpha.vercel.app/login/success", {
+          withCredentials: true,
+        })
         .then((res) => {
-          if (res.data.message) {
-            setUser(res.data.message);
-            localStorage.setItem("user", JSON.stringify(res.data.message)); // Save user info
+          if (res.data && res.data.user) {
+            setUser(res.data.user);
+            localStorage.setItem("user", JSON.stringify(res.data.user));
           }
         })
-        .catch((err) => console.log("Google Auth Fetch Error:", err));
+        .catch((err) => {
+          console.error("Google Auth Fetch Error:", err);
+        });
     }
   }, []);
 
-  return <AuthContext.Provider value={{ user, setUser }}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{ user, setUser }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };

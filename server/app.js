@@ -115,10 +115,17 @@ app.use('/api/users', userRoutes);
 
   
   
-  app.get("/login/success", async (req, res) => {
-    console.log("request" + req.user);
-    return res.json({ message: req.user });
-  });
+ app.get("/login/success", (req, res) => {
+  if (req.user) {
+    return res.status(200).json({
+      message: "Login successful",
+      user: req.user,
+    });
+  } else {
+    return res.status(401).json({ message: "Not authorized" });
+  }
+});
+
 
     // logout the user 
   app.get("/logout", (req, res) => {
