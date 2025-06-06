@@ -54,10 +54,10 @@ const Login = () => {
       });
   };
 
-  //   const openWithGoogle = () => {
-  //   window.open("http://localhost:5000/auth/google/callback", "_self")
-  //   window.open("https://test-generator-backend-alpha.vercel.app/auth/google/callback", "_self")
-  // }
+    const openWithGoogle = () => {
+    window.open("http://localhost:5000/auth/google/callback", "_self")
+    window.open("https://test-generator-backend-alpha.vercel.app/auth/google/callback", "_self")
+  }
 
   return (
     <div className="flex justify-center items-center h-[calc(100vh-70px)] bg-body ">
@@ -89,13 +89,13 @@ const Login = () => {
               "Log in"
             )}
           </button>
-            {/* <div onClick={openWithGoogle} className='border-2 mt-6 flex items-center py-1 justify-center space-x-3 cursor-pointer rounded-md'>
+            <div onClick={openWithGoogle} className='border-2 mt-6 flex items-center py-1 justify-center space-x-3 cursor-pointer rounded-md'>
             <img
               src="/assets/google.png"
               className='w-[20px]'
             />
             <p>Sign in with Google</p>
-          </div> */}
+          </div>
 
           <Link
             to="/forgot-password"
