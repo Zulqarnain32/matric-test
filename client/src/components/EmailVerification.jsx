@@ -10,8 +10,8 @@ const EmailVerification = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/auth/verify-email/${token}`)
-      // .get(`https://test-generator-backend-alpha.vercel.app/api/auth/verify-email/${token}`)
+      // .get(`http://localhost:5000/api/auth/verify-email/${token}`)
+      .get(`https://test-generator-backend-alpha.vercel.app/api/auth/verify-email/${token}`)
       .then((res) => {
         toast.success(res.data.message);
         navigate("/login");
