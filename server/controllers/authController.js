@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
-const Usermodel = require("../models/UserModel"); // Adjust path as needed
+const Usermodel = require("../models/UserModel"); 
 const jwt = require("jsonwebtoken")
 const register = async (req, res) => {
   try {
