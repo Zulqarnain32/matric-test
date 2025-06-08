@@ -7,7 +7,6 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios.get("http://localhost:5000/api/auth/dashboard")
-    // axios.get("https://test-generator-backend-alpha.vercel.app/api/auth/dashboard")
       .then(res => {
         console.log("dashboard page", res)
         setUsers(res.data)

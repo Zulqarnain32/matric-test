@@ -27,7 +27,6 @@ const Navbar = () => {
     navigate("/")
     toast.success("Logged out successfully", { autoClose: 2000 });
      axios
-     // .get("https://test-generator-backend-alpha.vercel.app/logout", { withCredentials: true }) // Clear Google session
       .get("http://localhost:5000/logout", { withCredentials: true }) // Clear Google session
       .then(() => {
         setUser(null);

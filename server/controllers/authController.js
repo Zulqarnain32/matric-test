@@ -47,7 +47,6 @@ const register = async (req, res) => {
       },
     });
 
-    // const verificationUrl = `https://test-generator-theta.vercel.app/verify-email/${verifyToken}`;
     const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
     console.log("Verification URL:", verificationUrl);
 
@@ -152,7 +151,6 @@ const forgotPassword = async (req, res) => {
       to: "iamzulqarnainchohan@gmail.com", // Send email to the user's provided email
       subject: "Reset Your Password",
       text: `Click the link to reset your password: http://localhost:5173/resetPassword/${emailToken}`,
-      // text: `Click the link to reset your password: "https://test-generator-theta.vercel.app/resetPassword/${emailToken}`,
 
     };
 
