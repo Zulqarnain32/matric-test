@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
     cors({
-      origin: ["http://localhost:5173"],
+      origin: ["https://generate-test-frontend.vercel.app"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
@@ -96,8 +96,9 @@ app.use('/api/users', userRoutes);
   app.get(
     "/auth/google/callback",
     passport.authenticate("google", {
-      successRedirect: "http://localhost:5173/generate-test",
-      failureRedirect: "http://localhost:5173/login",
+      // successRedirect: "http://localhost:5173/generate-test",
+      successRedirect: "https://generate-test-frontend.vercel.app/generate-test",
+      failureRedirect: "https://generate-test-frontend.vercel.app/login",
     })
   );
 
