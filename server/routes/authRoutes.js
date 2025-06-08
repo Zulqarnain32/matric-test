@@ -1,14 +1,14 @@
 const express = require("express")
 const router = express.Router();
 // const {register,login,forgotPassword, resetPassword,dashboardPage} = require("../controllers/authController")
-const {register,dashboardPage} = require("../controllers/authController")
+const {register} = require("../controllers/authController")
 // const Usermodel = require("../models/Usermodel")
 
 router.post("/register",register)
 // router.post("/login",login);
 // router.post("/forgot-password",forgotPassword);
 // router.post("/reset-password/:token",resetPassword);
-router.get("/dashboard",dashboardPage)
+// router.get("/dashboard",dashboardPage)
 
 // router.get('/verify-email/:token', async (req, res) => {
 //   const { token } = req.params;
