@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const dbConnect = require('./config/db');
-
+const authRoutes = require("./routes/authRoutes")
 const app = express();
 
 app.use(
@@ -16,12 +16,13 @@ app.use(
 app.use(express.json()); 
 dbConnect();
 
+app.use('/api/auth', authRoutes);
+
 
 
 
 app.get("/" ,(req,res) => {
-  res.send("backend is working")
-  res.send("added auth routes")
+  res.send("backend is working added auth routes")
 })
 
 
