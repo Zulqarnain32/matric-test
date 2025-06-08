@@ -10,7 +10,8 @@ const ForgotPassword = () => {
   axios.defaults.withCredentials = true
   const handleSubmit = (e) => {
       e.preventDefault()    
-      axios.post('http://localhost:5000/api/auth/forgot-password',{email})
+      // axios.post('http://localhost:5000/api/auth/forgot-password',{email})
+      axios.post('https://generate-test-backend.vercel.app/api/auth/forgot-password',{email})
 
       .then(result => {
         if(result.data.message == "Error sending email"){
