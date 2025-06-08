@@ -24,7 +24,7 @@ const Login = () => {
       // .post("http://localhost:5000/api/auth/login", { email, password })
       .post("https://generate-test-backend.vercel.app/api/auth/login", { email, password })
       .then((result) => {
-        console.log(result);
+        console.log("login result is ", result);
         const message = result?.data?.message;
 
         if (message === "Successfully logged in") {
@@ -33,7 +33,7 @@ const Login = () => {
           setUser({ email: result.data.email });
           toast.success("Login successful!", { autoClose: 2000 });
           // navigate("/generate-test");
-          window.location.reload()
+          // window.location.reload()
         } else if (message === "please fill all the fields") {
           toast.warning("Please fill all the fields", { autoClose: 2500 });
         } else if (message === "incorrect password") {
