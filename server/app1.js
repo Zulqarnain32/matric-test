@@ -8,7 +8,7 @@ const userRoutes = require("./routes/userRoutes")
 const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth20").Strategy;
-const Usermodel = require("./models/Usermodel")
+const Usermodel = require("./models/UserModel")
 const app = express();
 
 app.use(
