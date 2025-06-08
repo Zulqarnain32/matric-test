@@ -9,29 +9,29 @@ router.post("/forgot-password",forgotPassword);
 router.post("/reset-password/:token",resetPassword);
 router.get("/dashboard",dashboardPage)
 
-// router.get('/verify-email/:token', async (req, res) => {
-//   const { token } = req.params;
+router.get('/verify-email/:token', async (req, res) => {
+  const { token } = req.params;
 
-//   try {
-//     const user = await Usermodel.findOne({
-//       verifyToken: token,
-//       verifyTokenExpiry: { $gt: Date.now() },
-//     });
+  try {
+    const user = await Usermodel.findOne({
+      verifyToken: token,
+      verifyTokenExpiry: { $gt: Date.now() },
+    });
 
-//     if (!user) {
-//       return res.status(400).json({ message: "Invalid or expired verification token" });
-//     }
+    if (!user) {
+      return res.status(400).json({ message: "Invalid or expired verification token" });
+    }
 
-//     user.isVerified = true;
-//     user.verifyToken = undefined;
-//     user.verifyTokenExpiry = undefined;
-//     await user.save();
+    user.isVerified = true;
+    user.verifyToken = undefined;
+    user.verifyTokenExpiry = undefined;
+    await user.save();
 
-//     res.json({ message: "Email verified successfully. You can now login." });
-//   } catch (error) {
-//     res.status(500).json({ message: "Internal server error" });
-//   }
-// });
+    res.json({ message: "Email verified successfully. You can now login." });
+  } catch (error) {
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
 
 
 module.exports = router
