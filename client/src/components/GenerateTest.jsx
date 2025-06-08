@@ -23,8 +23,7 @@ const TestGenerator = () => {
 
   // Fetch all questions once
   useEffect(() => {
-    // fetch("http://localhost:5000/api/questions")
-    fetch("https://generate-test-backend.vercel.app/api/questions")
+    fetch("http://localhost:5000/api/questions")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched questions:", data);

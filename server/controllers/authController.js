@@ -47,7 +47,7 @@ const register = async (req, res) => {
       },
     });
 
-    const verificationUrl = `https://matric-test-frontend.vercel.app/verify-email/${verifyToken}`;
+    const verificationUrl = `http://localhost:5173/verify-email/${verifyToken}`;
     console.log("Verification URL:", verificationUrl);
 
     const mailOptions = {
@@ -150,7 +150,7 @@ const forgotPassword = async (req, res) => {
       from: "zulqarnainc67@gmail.com",
       to: "iamzulqarnainchohan@gmail.com", // Send email to the user's provided email
       subject: "Reset Your Password",
-      text: `Click the link to reset your password: https://matric-test-frontend.vercel.app/resetPassword/${emailToken}`,
+      text: `Click the link to reset your password: https://http://localhost:5173/resetPassword/${emailToken}`,
 
     };
 
