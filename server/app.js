@@ -13,7 +13,8 @@ const app = express();
 
 app.use(
     cors({
-      origin: ["http://localhost:5173"],
+      // origin: ["http://localhost:5173"],
+      origin: ["https://matric-test-frontend.vercel.app"],
       methods: ["GET", "POST", "PUT", "DELETE"],
       credentials: true,
     })
@@ -48,7 +49,7 @@ app.use('/api/users', userRoutes);
       {
         clientID: clientId,
         clientSecret: clientSecret,
-        callbackURL: "http://localhost:5000/auth/google/callback",
+        callbackURL: "https://generate-test-backend.vercel.app/auth/google/callback",
         scope: ["profile", "email"],
       },
       async (accessToken, refreshToken, profile, done) => {
@@ -95,8 +96,8 @@ app.use('/api/users', userRoutes);
   app.get(
     "/auth/google/callback",
     passport.authenticate("google", {
-      successRedirect: "http://localhost:5173/generate-test",
-      failureRedirect: "http://localhost:5173/login",
+      successRedirect: "https://matric-test-frontend.vercel.app/generate-test",
+      failureRedirect: "https://matric-test-frontend.vercel.app/login",
     })
   );
 
