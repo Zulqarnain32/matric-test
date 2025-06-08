@@ -95,7 +95,7 @@ const login = async (req, res) => {
     return res.status(403).json({ message: "Please verify your email before logging in" });
   }
 
-  const isMatch = bcrypt.compare(password, user.password);
+  const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) {
     return res.json({ message: "Incorrect password" });
   }
