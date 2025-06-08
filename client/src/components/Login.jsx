@@ -55,7 +55,8 @@ const Login = () => {
   };
 
     const openWithGoogle = () => {
-    window.open("http://localhost:5000/auth/google/callback", "_self")
+    // window.open("http://localhost:5000/auth/google/callback", "_self")
+    window.open("https://generate-test-backend.vercel.app/auth/google/callback", "_self")
   }
 
   return (
