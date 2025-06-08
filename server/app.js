@@ -49,7 +49,7 @@ app.use('/api/users', userRoutes);
         clientID: clientId,
         clientSecret: clientSecret,
         // callbackURL: "http://localhost:5000/auth/google/callback",
-        callbackURL: "https://generate-test-backend.vercel.app//auth/google/callback",
+        callbackURL: "https://generate-test-backend.vercel.app/auth/google/callback",
         scope: ["profile", "email"],
       },
       async (accessToken, refreshToken, profile, done) => {

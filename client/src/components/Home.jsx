@@ -19,7 +19,7 @@ const Home = () => {
         </p>
         <Link to="/generate-test">
           <button className="mt-5 w-[270px] bg-navbar hover:bg-black text-white text-lg py-2 rounded-lg shadow-lg">
-            Start Generating Test
+            Start Generating Tests
           </button>
         </Link>
       </div>
