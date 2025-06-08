@@ -32,7 +32,7 @@ const Login = () => {
           window.localStorage.setItem("user", JSON.stringify(result.data));
           setUser({ email: result.data.email });
           toast.success("Login successful!", { autoClose: 2000 });
-          navigate("/generate-test");
+          // navigate("/generate-test");
           window.location.reload()
         } else if (message === "please fill all the fields") {
           toast.warning("Please fill all the fields", { autoClose: 2500 });
