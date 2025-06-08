@@ -12,7 +12,8 @@ export const AuthProvider = ({ children }) => {
       setUser(JSON.parse(savedUser));
     } else {
       axios
-        .get("http://localhost:5000/login/success", {
+        // .get("http://localhost:5000/login/success", {
+        .get("https://generate-test-backend.vercel.app/login/success", {
           withCredentials: true,
         })
         .then((res) => {
