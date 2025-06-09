@@ -8,6 +8,7 @@ const session = require("express-session");
 const passport = require("passport");
 const OAuth2Strategy = require("passport-google-oauth20").Strategy;
 const Usermodel = require("./models/UserModel")
+const MongoStore = require("connect-mongo");
 const app = express();
 
 // ✅ Required for secure cookies on Vercel
@@ -29,15 +30,21 @@ const clientId = "254722299201-tsq484ideued86b45paommrvcui2lgad.apps.googleuserc
 const clientSecret = "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";
 
 // 🥠 Session config
+
 app.use(
   session({
     secret: "123456789",
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGO_URI || "your-mongodb-connection-uri",
+      collectionName: "sessions",
+    }),
     cookie: {
-      secure: true,        // Required for HTTPS
-      sameSite: "none",    // Required for cross-origin
+      secure: true,
+      sameSite: "none",
       httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000, // 1 day
     },
   })
 );
