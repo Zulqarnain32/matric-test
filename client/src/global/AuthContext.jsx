@@ -25,7 +25,7 @@ axios.defaults.withCredentials = true;
           }
         })
         .catch((err) => {
-          console.error("Google Auth Fetch Error:", err);
+          console.error("Googles Auth Fetch Error:", err);
         });
     }
   }, []);
