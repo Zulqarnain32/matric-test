@@ -22,9 +22,13 @@ app.use(
 app.use(express.json()); 
 dbConnect();
 
-const clientId =
-  "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
-const clientSecret = "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";
+// const clientId =
+//   "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
+
+  const clientId = "254722299201-tsq484ideued86b45paommrvcui2lgad.apps.googleusercontent.com"
+
+// const clientSecret = "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";
+const clientSecret = "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";
 
 app.use('/api/auth', authRoutes);
 app.use('/api/questions', questionRoutes);
