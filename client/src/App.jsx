@@ -28,7 +28,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/generate-test" element={ user ? <GenerateTest/>:<Login/>} />
+        {/* <Route path="/generate-test" element={ user ? <GenerateTest/>:<Login/>} /> */}
+        <Route path="/generate-test" element={<GenerateTest/>} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/resetPassword/:token" element={<ResetPassword />} />
         <Route path="/dashboard" element={isAdmin && <Dashboard />} />
