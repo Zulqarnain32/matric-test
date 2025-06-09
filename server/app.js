@@ -36,11 +36,13 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: true, // only over HTTPS
-      sameSite: "none", // must be 'none' for cross-site cookies
+      secure: true,           // ✅ Required for HTTPS
+      sameSite: "none",       // ✅ Required for cross-origin (Vercel)
+      httpOnly: true,
     },
   })
 );
+
 
 
 
