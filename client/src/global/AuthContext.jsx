@@ -5,6 +5,8 @@ export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+axios.defaults.withCredentials = true;
+
 
   useEffect(() => {
     const savedUser = localStorage.getItem("user");

@@ -36,12 +36,12 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: true,          // only true if using HTTPS (which Vercel does)
-      httpOnly: true,
-      sameSite: "none",      // allow cookie across different domains
+      secure: true, // only over HTTPS
+      sameSite: "none", // must be 'none' for cross-site cookies
     },
   })
 );
+
 
 
   //Setup Passport
