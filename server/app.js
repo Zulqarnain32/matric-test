@@ -37,7 +37,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: process.env.MONGO_URI || "your-mongodb-connection-uri",
+      mongoUrl: "mongodb+srv://zulqarnainc67:zsIO8lAaSjXJlIdS@cluster0.z0diyyc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
       collectionName: "sessions",
     }),
     cookie: {

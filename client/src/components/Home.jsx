@@ -12,7 +12,7 @@ const Home = () => {
     <div className="overflow-hidden h-[calc(100vh-70px)] top-[70px] bg-body flex flex-col justify-center items-center text-text">
       <div className="text-center space-y-6 max-w-2xl px-4">
         <h1 className="xs:text-3xl md:text-5xl font-extrabold md:leading-[55px]">
-          Welcomes <span className="text-blue-500">{username}</span> to the Test Generator
+          Welcomess <span className="text-blue-500">{username}</span> to the Test Generator
         </h1>
         <p className="text-xl">
           Generate custom tests for your Computer Science study material in just a few clicks.
