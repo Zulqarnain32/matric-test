@@ -90,13 +90,29 @@ app.use('/api/users', userRoutes);
   );
   
 
-    passport.serializeUser((user, done) => {
+   passport.serializeUser((user, done) => {
+  done(null, user._id);
+});
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await Usermodel.findById(id);
     done(null, user);
-  });
-  
-  passport.deserializeUser((user, done) => {
-    done(null, user);
-  });
+  } catch (err) {
+    done(err, null);
+  }
+});
+app.get("/me", (req, res) => {
+  console.log("Session:", req.session);
+  console.log("User:", req.user);
+
+  if (req.isAuthenticated()) {
+    res.json({ user: req.user });
+  } else {
+    res.status(401).json({ message: "Not authenticated" });
+  }
+});
+
   
   app.get(
     "/auth/google",

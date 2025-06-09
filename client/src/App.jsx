@@ -11,11 +11,22 @@ import EmailVerification from './components/EmailVerification';
 import { ToastContainer } from 'react-toastify';
 import { AuthContext } from './global/AuthContext'
 import { useContext } from 'react';
+import axios from "axios"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
    const { user } = useContext(AuthContext);
    const isAdmin = user?.role === "admin"
+
+
+   axios.get("https://generate-test-backend.vercel.app/me", {
+  withCredentials: true
+}).then((res) => {
+  console.log("app res ",res)
+}).catch(err => {
+  console.log(" app error is ", err)
+})
+
   
   return (
     <Router>
