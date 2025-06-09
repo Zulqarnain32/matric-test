@@ -1,31 +1,35 @@
-import  { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-axios.defaults.withCredentials = true;
-
+  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     const savedUser = localStorage.getItem("user");
+
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     } else {
       axios
-        // .get("http://localhost:5000/login/success", {
         .get("https://generate-test-backend.vercel.app/login/success", {
           withCredentials: true,
         })
         .then((res) => {
-          if (res.data && res.data.user) {
+          if (res.data?.user) {
             setUser(res.data.user);
             localStorage.setItem("user", JSON.stringify(res.data.user));
           }
         })
         .catch((err) => {
-          console.error("Googles Auth Fetch Error:", err);
+          // If unauthorized (401), just stay logged out without throwing
+          if (err.response?.status === 401) {
+            console.log("User not authenticated yet.");
+          } else {
+            console.error("Google Auth Fetch Error:", err);
+          }
         });
     }
   }, []);
@@ -36,13 +40,3 @@ axios.defaults.withCredentials = true;
     </AuthContext.Provider>
   );
 };
-
-
-
-// app.get("/me", (req, res) => {
-//   if (req.isAuthenticated()) {
-//     res.json(req.user);
-//   } else {
-//     res.status(401).json({ message: "Not authenticated" });
-//   }
-// });
