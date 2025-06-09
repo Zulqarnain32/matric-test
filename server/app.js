@@ -1,4 +1,3 @@
-// server/app.js
 const express = require('express');
 const cors = require('cors');
 const dbConnect = require('./config/db');
@@ -11,88 +10,78 @@ const OAuth2Strategy = require("passport-google-oauth20").Strategy;
 const Usermodel = require("./models/UserModel")
 const app = express();
 
+// ✅ Required for secure cookies on Vercel
+app.set("trust proxy", 1);
+
 app.use(
-    cors({
-      origin: ["https://generate-test-frontend.vercel.app"],
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      credentials: true,
-    })
+  cors({
+    origin: ["https://generate-test-frontend.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
 );
 
 app.use(express.json()); 
 dbConnect();
 
-
-
-  const clientId = "254722299201-tsq484ideued86b45paommrvcui2lgad.apps.googleusercontent.com"
-
+// 🔐 Google credentials
+const clientId = "254722299201-tsq484ideued86b45paommrvcui2lgad.apps.googleusercontent.com";
 const clientSecret = "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";
 
-
-//  Setup Session
+// 🥠 Session config
 app.use(
   session({
     secret: "123456789",
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: true,           // ✅ Required for HTTPS
-      sameSite: "none",       // ✅ Required for cross-origin (Vercel)
+      secure: true,        // Required for HTTPS
+      sameSite: "none",    // Required for cross-origin
       httpOnly: true,
     },
   })
 );
 
+// 🛂 Passport setup
+app.use(passport.initialize());
+app.use(passport.session());
 
-
-
-  //Setup Passport
-  app.use(passport.initialize());
-  app.use(passport.session());
-
-  // Now mount routes
-app.use('/api/auth', authRoutes);
-app.use('/api/questions', questionRoutes);
-app.use('/api/users', userRoutes);
-
-   passport.use(
-    new OAuth2Strategy(
-      {
-        clientID: clientId,
-        clientSecret: clientSecret,
-        // callbackURL: "http://localhost:5000/auth/google/callback",
-        callbackURL: "https://generate-test-backend.vercel.app/auth/google/callback",
-        scope: ["profile", "email"],
-      },
-      async (accessToken, refreshToken, profile, done) => {
-        console.log(profile);
-        try {
-          let user = await Usermodel.findOne({ googleId: profile.id });
-          if (!user) {
-            user = new Usermodel({
-              googleId: profile.id,
-              displayName: profile.displayName,
-              image: profile.photos[0].value,
-              email: profile.emails[0].value,
-              loginCount:1,
-              lastLoginDate: new Date(),
-              isVerified: true
-            });
-          } else {
-            user.loginCount = (user.loginCount || 0) + 1;
-            user.lastLoginDate = new Date()
-          }
-          await user.save();
-          return done(null, user);
-        } catch (error) {
-          return done(error, null);
+// 🧠 Strategy
+passport.use(
+  new OAuth2Strategy(
+    {
+      clientID: clientId,
+      clientSecret: clientSecret,
+      callbackURL: "https://generate-test-backend.vercel.app/auth/google/callback",
+      scope: ["profile", "email"],
+    },
+    async (accessToken, refreshToken, profile, done) => {
+      try {
+        let user = await Usermodel.findOne({ googleId: profile.id });
+        if (!user) {
+          user = new Usermodel({
+            googleId: profile.id,
+            displayName: profile.displayName,
+            image: profile.photos[0].value,
+            email: profile.emails[0].value,
+            loginCount: 1,
+            lastLoginDate: new Date(),
+            isVerified: true,
+          });
+        } else {
+          user.loginCount = (user.loginCount || 0) + 1;
+          user.lastLoginDate = new Date();
         }
+        await user.save();
+        return done(null, user);
+      } catch (error) {
+        return done(error, null);
       }
-    )
-  );
-  
+    }
+  )
+);
 
-   passport.serializeUser((user, done) => {
+passport.serializeUser((user, done) => {
   done(null, user._id);
 });
 
@@ -104,10 +93,15 @@ passport.deserializeUser(async (id, done) => {
     done(err, null);
   }
 });
+
+// ✅ Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/questions', questionRoutes);
+app.use('/api/users', userRoutes);
+
 app.get("/me", (req, res) => {
   console.log("Session:", req.session);
   console.log("User:", req.user);
-
   if (req.isAuthenticated()) {
     res.json({ user: req.user });
   } else {
@@ -115,24 +109,22 @@ app.get("/me", (req, res) => {
   }
 });
 
-  
-  app.get(
-    "/auth/google",
-    passport.authenticate("google", { scope: ["profile", "email"] })
-  );
-  
-  app.get(
-    "/auth/google/callback",
-    passport.authenticate("google", {
-      // successRedirect: "http://localhost:5173/generate-test",
-      successRedirect: "https://generate-test-frontend.vercel.app/generate-test",
-      failureRedirect: "https://generate-test-frontend.vercel.app/login",
-    })
-  );
+// 🧭 Google OAuth entry point
+app.get("/auth/google", passport.authenticate("google", { scope: ["profile", "email"] }));
 
-  
-  
- app.get("/login/success", (req, res) => {
+// 🛑 Manual redirect to preserve Set-Cookie
+app.get(
+  "/auth/google/callback",
+  passport.authenticate("google", {
+    failureRedirect: "https://generate-test-frontend.vercel.app/login",
+  }),
+  (req, res) => {
+    res.redirect("https://generate-test-frontend.vercel.app/generate-test");
+  }
+);
+
+// 🧪 Login success check
+app.get("/login/success", (req, res) => {
   if (req.user) {
     return res.status(200).json({
       message: "Login successful",
@@ -143,26 +135,23 @@ app.get("/me", (req, res) => {
   }
 });
 
-
-    // logout the user 
-  app.get("/logout", (req, res) => {
-    req.logout((err) => {
-        if (err) {
-            return res.status(500).json({ message: "Logout failed", error: err });
-        }
-        req.session.destroy(() => {
-            res.clearCookie("connect.sid"); // Clear session cookie
-            res.status(200).json({ message: "Logged out successfully" });
-        });
+// 🔓 Logout
+app.get("/logout", (req, res) => {
+  req.logout((err) => {
+    if (err) {
+      return res.status(500).json({ message: "Logout failed", error: err });
+    }
+    req.session.destroy(() => {
+      res.clearCookie("connect.sid");
+      res.status(200).json({ message: "Logged out successfully" });
     });
+  });
 });
 
-
-app.get("/" ,(req,res) => {
-  res.send("backend is working")
-})
-
-
+// 🔧 Health check
+app.get("/", (req, res) => {
+  res.send("backend is working");
+});
 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
