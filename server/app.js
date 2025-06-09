@@ -22,30 +22,36 @@ app.use(
 app.use(express.json()); 
 dbConnect();
 
-// const clientId =
-//   "889302706488-e4t4u2vfa7rh48s7hokbk2admd38r53l.apps.googleusercontent.com";
+
 
   const clientId = "254722299201-tsq484ideued86b45paommrvcui2lgad.apps.googleusercontent.com"
 
-// const clientSecret = "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";
 const clientSecret = "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";
 
-app.use('/api/auth', authRoutes);
-app.use('/api/questions', questionRoutes);
-app.use('/api/users', userRoutes); 
 
 //  Setup Session
-  app.use(
-    session({
-      secret: "123456789",
-      resave: false,
-      saveUninitialized: true,
-    })
-  );
+app.use(
+  session({
+    secret: "123456789",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      secure: true,          // only true if using HTTPS (which Vercel does)
+      httpOnly: true,
+      sameSite: "none",      // allow cookie across different domains
+    },
+  })
+);
+
 
   //Setup Passport
   app.use(passport.initialize());
   app.use(passport.session());
+
+  // Now mount routes
+app.use('/api/auth', authRoutes);
+app.use('/api/questions', questionRoutes);
+app.use('/api/users', userRoutes);
 
    passport.use(
     new OAuth2Strategy(

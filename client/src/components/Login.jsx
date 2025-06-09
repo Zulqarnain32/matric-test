@@ -54,10 +54,16 @@ const Login = () => {
       });
   };
 
-    const openWithGoogle = () => {
+
+
+
+
     // window.open("http://localhost:5000/auth/google/callback", "_self")
-    window.open("https://generate-test-backend.vercel.app/auth/google/callback", "_self")
-  }
+    const openWithGoogle = () => {
+      window.open("https://generate-test-backend.vercel.app/auth/google", "_self");
+    };
+
+
 
   return (
     <div className="flex justify-center items-center h-[calc(100vh-70px)] bg-body ">

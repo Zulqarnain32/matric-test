@@ -21,6 +21,9 @@ const TestGenerator = () => {
   const [questionMarks, setQuestionMarks] = useState();
   const [schoolName,setSchoolName] = useState("");
 
+
+
+
   // Fetch all questions once
   useEffect(() => {
     // fetch("http://localhost:5000/api/questions")
