@@ -385,18 +385,18 @@ const downloadAsPDF = async () => {
             <h2 className="text-2xl xs:text-[17px] font-bold text-center mb-4 capitalize">
               {schoolName || "The Quest High School"}
             </h2>
-            <div className="grid grid-cols-2 xs:text-[12px] md:grid-cols-2 xs:gap-1 gap-4">
+            <div className="grid grid-cols-2 xs:text-[11px] md:grid-cols-2 xs:gap-1 gap-4">
               <div>
-                <strong>Student Name:</strong> ________________
+                <strong>Student Name:</strong> _____________
               </div>
               <div>
-                <strong>Father's Name:</strong> ________________
+                <strong>Father's Name:</strong> _____________
               </div>
               <div>
-                <strong>Roll No:</strong> _________________
+                <strong>Roll No:</strong> _______________
               </div>
               <div>
-                <strong>Date:</strong> _________________
+                <strong>Date:</strong> _______________
               </div>
             </div>
             <div>
