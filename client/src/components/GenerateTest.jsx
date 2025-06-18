@@ -292,7 +292,7 @@ const downloadAsPDF = async () => {
         <label className="block my-2 font-bold text-gray-700">
           Select Chapters
         </label>
-        <div className="border border-gray-300 rounded max-h-48 overflow-y-auto p-3 space-y-2 w-full">
+        <div className="border grid grid-cols-2 xs:grid-cols-1 border-gray-300 rounded max-h-48 overflow-y-auto p-2 xs:text-[14px] space-y-2 w-full">
           {filteredChapters.map((chapter) => (
             <label
               key={chapter.chapterName}
@@ -309,6 +309,7 @@ const downloadAsPDF = async () => {
               </span>
             </label>
           ))}
+         
         </div>
       </div>
 
