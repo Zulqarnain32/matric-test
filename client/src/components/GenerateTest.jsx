@@ -403,10 +403,13 @@ const downloadAsPDF = async () => {
             <div>
               <strong className="xs:text-[13px]">Instructions:</strong>
               {/* <ul className="list-disc pl-6 xs:text-[12px]"> */}
-              <ul className=" pl-6 xs:text-[12px]">
-                <p>• Attempt all questions.</p>
+              <ul className=" pl-2 xs:text-[12px]">
+               <div className="font-normal">
+                 <p>• Attempt all questions.</p>
                 <p>• Write clearly and neatly.</p>
-                <p>• Usess of unfair means is prohibited.</p>
+                <p>• Use of unfair means is prohibited.</p>
+               </div>
+                
                 {questionBlocks.some(block => 
                   block.questions.some(q => q.type === "MCQ")
                 ) && (
@@ -429,10 +432,11 @@ const downloadAsPDF = async () => {
                   {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
               </div>
-              <ol className="list-decimal list-inside  space-y-2 xs:text-[12px]">
+              {/* <ol className="list-decimal list-inside  space-y-2 xs:text-[12px]"> */}
+              <ol className=" list-inside  space-y-2 xs:text-[12px]">
                 {block.questions.map((q, i) => (
                   <li key={i} className="mb-0">
-                    {q.question}
+                    {i+1}.&nbsp; {q.question}
                     {q.type === "MCQ" && (
                       <div className="mt-2 ml-4 grid grid-cols-2  ">
                         {q.options.map((option, i) => (

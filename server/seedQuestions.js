@@ -604,7 +604,7 @@ const questions = [
       "Explain the box model in CSS.",
     ],
     longQuestions: [
-       " Discuss the fullhe undamental difference between HTML, CSS and JavaScript in the context of web development.",
+       " Discuss the fuundamental difference between HTML, CSS and JavaScript in the context of web development.",
     " Explain the process of setting up a development environment for web development. By discussing the necessary software and tools.",
     " Create a basic HTML page that includes a header, a paragraph, an image, and a hyperlink.",
     " How do you style a table using CSS? Create a sample table and apply styles to it.",
@@ -725,9 +725,6 @@ const questions = [
     },
     ],
   },
-
-
-
 
 
 
