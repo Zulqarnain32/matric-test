@@ -1971,6 +1971,670 @@ const questions = [
   },
 
 
+//?   physics 10
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 10,
+    chapterName: "Simple Harmonic Motion and Waves",
+    shortQuestions: [
+  "If the length of a simple pendulum is doubled, what will be the change in its time period?",
+        "A student performed two experiments with a simple pendulum. He/she used two bobs of different masses by keeping others parameters constant. To his/her astonishment the time period of the pendulum did not change? Why?",
+        "A ball is dropped from a certain height onto the floor and keeps bouncing. Is the motion of the ball simple harmonic? Explain.",
+        "Plane waves in the ripple tank undergo refraction when they move from deep to shallow water. What changes occurs in the speed of the waves?"
+   
+    ],
+    longQuestions: [
+          "What is simple harmonic motion? What are the necessary conditions for a body to execute simple harmonic motion?",
+        "Think of several examples of motion in everyday life that are simple harmonic.",
+        "The time period of a simple pendulum is 2s. What will be its length on the Earth? What will be its length on the Moon if g_E = 9.8ms⁻² and g_M = 1.6ms⁻²?",
+        "A pendulum of length 0.99m is taken to the Moon by an astronaut. The period of the pendulum is 4.9s. What is the value of g on the surface of the Moon?",
+        "Find the time periods of a simple pendulum of 1 meter length, placed on Earth and on Moon. The value of g on the surface of the Moon is $$\\frac{1}{6}$$ of its value on Earth, where g=10ms⁻².",
+        "A simple pendulum completes one vibration in two seconds. Calculate its length when g = 10ms⁻².",
+        "What are damped oscillations? How damping progressively reduces the amplitude of oscillations?",
+        "How can you define the term wave? Elaborate the difference between mechanical and electromagnetic waves. Give examples of each.",
+        "Distinguish between longitudinal and transverse waves with suitable examples.",
+        "Draw a transverse wave having amplitude of 2cm and wavelength of 4cm. Label a crest and trough on the wave.",
+        "Derive a relation between speed, frequency and wavelength of a wave. Write a formula, relating speed of a wave to its time period and wavelength.",
+        "Waves are the means of energy transfer without transfer of matter. Justify this statement with the help of a simple experiment.",
+        "What types of waves do not require any material medium for their propagation?",
+        "If 100 waves pass through a point of medium in 20 seconds. What is the frequency and the time period of the wave? If its wavelength is 6cm, calculate the wave speed."
+   
+    ],
+
+    mcqs: [
+        {
+            question: "Which one of the following is an example of simple harmonic motion?",
+            options: ["(A) The motion of simple pendulum", "(B) The motion of ceiling fan", "(C) The spinning of the earth on its axis", "(D) A bouncing ball on a floor"],
+        },
+        {
+            question: "If the mass of the bob of a pendulum is increased by a factor of 3, the period of the pendulum's motion will:",
+            options: ["(A) Be increased by a factor of 2", "(B) Remains the same", "(C) Be decreased by a factor of 2", "(D) Be decreased by a factor of 4"],
+        },
+        {
+            question: "Waves transfer:",
+            options: ["(A) Energy", "(B) Frequency", "(C) Wavelength", "(D) Velocity"],
+        },
+        {
+            question: "Which of the following methods is used to transfer energy?",
+            options: ["(A) Conduction", "(B) Radiation", "(C) Wave motion", "(D) All of these"],
+        },
+        {
+            question: "Which of the following devices can be used to produce both transverse and longitudinal waves?",
+            options: ["(A) A string", "(B) A ripple tank", "(C) A helical spring (slinky)", "(D) A tuning fork"],
+        },
+        {
+            question: "In vacuum, all electromagnetic waves have the same:",
+            options: ["(A) Speed", "(B) Frequency", "(C) Amplitude", "(D) Wavelength"],
+        },
+        {
+            question: "The relation among velocity, frequency and wavelength of a wave is:",
+            options: ["(A) $v = \\lambda f$", "(B) $f = v \\lambda$", "(C) $v \\lambda = f$", "(D) $v = f / \\lambda$"],
+        },
+        {
+            question: "Which of the following characteristic of a wave is independent of the others?",
+            options: ["(A) Wavelength", "(B) Frequency", "(C) Velocity", "(D) Amplitude"],
+        },
+        {
+            question: "A large ripple tank with a vibrating at a frequency of 30Hz produces 25 complete waves in a distance of 50cm. the velocity of the wave is",
+            options: ["(A) 30cms⁻¹", "(B) 60cms⁻¹", "(C) 75cms⁻¹", "(D) 1500cms⁻¹"],
+        },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber:11,
+    chapterName: "Sound",
+    shortQuestions: [
+ "Sound is a form of wave. List at least three reasons to support the idea that sound is a wave.",
+        "You can listen to your friend rounds a corner, but you cannot watch him/her. Why?",
+        "What is the difference between the loudness and intensity of sound? Derive the relationship between the two.",
+        "On what factors does the loudness of sound depend? Write the names.",
+        "What do you mean by the intensity level of the sound? Name and define the unit of intensity level of sound.",
+        "What are the units of loudnels? Why do we use logarithmic scales to describe the range of the sound intensities we hear?",
+        "How can we recognize persons speaking with same loudness from their voice. How is it possible?",
+        "We know that waves manifest phenomenon of reflection, refraction and diffraction. Does sound also manifest these characteristics?",
+        "If we clap or speak in front of building while standing at a particular distance, we rehear our sound after sometime. Can you explain how does this happen?",
+        "How can you find the speed of sound by the method of echo?",
+        "Why two tins can with a string stretched between them could be better way to communicate than merely shouting through the air?",
+        "A student says that the two terms speed and frequency of the wave refer to the same thing. What is your response?",
+        "Describe the importance of acoustic protection.",
+        "Why must the volume of a stereo in a room with wall to carpet be tune higher than in a room with a wooden floor?",
+        "What is the audible frequency range for human ear? does this range vary with the age of people? Explain",
+        "What is the role of ultrasound in medicine?"
+  
+    ],
+    longQuestions: [
+         "What is necessary condition for the production of sound?",
+        "How can you prove the mechanical nature of sound by a simple experiment?",
+        "What do you mean by the intensity level of sound? Describe the longitudinal nature of sound waves.",
+        "What is difference between frequency and pitch? Describe their relationship graphically.",
+        "Describe the effect of change in amplitude on loudness and the effect of change frequency on pitch of sound.",
+        "If the pitch of sound is increased, what are the changes in the following? a) The frequency b) The wavelength c) The wave velocity d) The amplitude of the wave",
+        "Two people are listening to the same music at the same distance. They disagree on its loudness. Explain how this could happen.",
+        "Can two individuals 50dB sounds combine to produce 100dB sound? Explain.",
+        "A normal conversation involves sound intensities of about $3.0 \\times 10^{-6} \\text{Wm}^{-2}$. What is the intensity of the sound for 100dB?",
+        "At Anarkali bazaar Lahore, intensity level of sound is 80dB. What will be the intensity of sound there?",
+        "Is there any difference between echo and reflection of sound? Explain.",
+        "What is the effect of the medium on the speed of sound? In which medium sound travels faster, air, solid or liquid? Justify your answer.",
+        "At a particular temperature, the speed of sound in air is 330ms⁻¹. If the wavelength of a note is 5cm. calculate the frequency of the sound wave. Is this frequency in the audible range of the human ear?",
+        "A doctor counts 72 heartbeats in 1min. calculate the frequency and period of the note is 600.",
+        "A marine survey ship sends a sound wave straight to the seabed. It receives an echo 1.5s later. The speed of sound in seawater is 1500ms⁻¹. Find the depth of the sea at this position.",
+        "A student clapped his hands near a cliff and heard the echo after 5s. What is the distance of the cliff is 340m from the speed of the sound is taken as 340ms⁻¹?"
+   
+    ],
+
+    mcqs: [
+       {
+            question: "Which is an example of longitudinal wave?",
+            options: ["(A) Sound wave", "(B) Light wave", "(C) Radio wave", "(D) Water wave"],
+        },
+        {
+            question: "How does sound travel from its source to your ear?",
+            options: ["(A) By changes in air pressure", "(B) By vibrations in wires or strings", "(C) By electromagnetic wave", "(D) By infrared waves"],
+        },
+        {
+            question: "Sound is a type of ......... energy",
+            options: ["(A) Thermal", "(B) Mechanical", "(C) Chemical", "(D) Amplitude"],
+        },
+        {
+            question: "The loudness of sound mostly depends upon",
+            options: ["(A) Frequency", "(B) Period", "(C) Wavelength", "(D) Amplitude"],
+        },
+        {
+            question: "When the frequency of sound wave is increased, which of the following will decrease?",
+            options: ["(A) Wavelength", "(B) Amplitude", "(C) Wavelength and period", "(D) Wavelength and amplitude"],
+        },
+        {
+            question: "For a normal person, audible frequency range for sound wave is:",
+            options: ["(A) 10Hz - 10kHz", "(B) 20Hz - 20kHz", "(C) 25Hz - 20kHz", "(D) 30Hz - 30kHz"],
+        },
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber:12,
+    chapterName: "Geometrical Optics",
+    shortQuestions: [
+ "Why or why not concave mirrors are suitable for makeup?",
+        "Why drivers' side mirror in many cars is convex rather than plane or concave?",
+        "When an optician's testing room is small, he uses a mirror to help him test the eyesight of his parents. Explain why.",
+        "Define the following terms used in refraction: a) Angle of incidence b) Angle of refraction",
+        "Explain why fish under water appears to be at a different depth below the surface than it actually is. Does it appear deeper or shallower?",
+        "What is meant by the term total internal reflection?",
+        "State the conditions for total internal reflection?",
+        "Define the following terms applied to a lens: a) Principal axis b) Optical center c) Focal length",
+        "Define power of a lens and its units.",
+        "A coin is placed at the focal point of a converging lens. Will an image form? What will be its nature?",
+        "What are the difference between real and virtual images?",
+        "How does a converging lens form a real image of a real object? How does diverging lens can form a real image of a real objects?",
+        "Under what conditions will a converging lens form a virtual image?",
+        "Under what conditions will a converging lens form a real image and same size as the objects?",
+        "Define the terms of resolving power and magnifying power.",
+        "Mention the magnifying powers of the following optical instruments: a) Simple microscope b) Compound microscope c) Reflecting microscope",
+        "Why do we use refracting telescope with large objective lens of large focal length?",
+        "How does the thickness of a lens affect its focal length?"
+   
+    ],
+    longQuestions: [
+         "What do you understand by reflection of light? Draw a diagram to illustrate reflection at a plane surface.",
+        "Describe the following terms used in reflection: a) Normal ray b) Angle of incidence c) Angle of reflection",
+        "State laws of reflection. Describe how they can be verified graphically.",
+        "An object 3.0cm from a convex mirror forms an image 5.0cm behind mirror. What is the focal length of the mirror?",
+        "An object 30cm tall is located 10.5cm from a concave mirror with focal length 16cm. Where is the image located? And how high is it?",
+        "An object and its image in a concave mirror are of the same height. If the object is 20cm form the mirror. What is the focal length of the mirror?",
+        "Find the image of a mirror that forms an image 5.66cm behind the mirror of an object placed at 34.44cm in front of the mirror. Is the mirror concave or convex?",
+        "An image of statue appears to be 11.5cm behind a convex mirror with focal length 13.5cm. Find the distance from the statue to the mirror.",
+        "An image is produced by a concave mirror of focal length 8.7cm. the object is 13.2cm tall and at a distance of 19.3cm from the mirror. Find the location and height of the image. (b) Find the height of the image produced by the object is twice as far from the mirror.",
+        "Nabeela uses a concave mirror when applying makeup. The mirror has a radius of curvature of 30cm. (a) what is the focal length of the mirror? (b) Nabeela is located 50cm from the mirror. Where will her image appear? (c) Will the image upright or inverted?",
+        "A ray of light from air is incident on a liquid surface at an angle of incidence 36°. Calculate the angle of refraction if the refractive index of the liquid is 1.25. Also calculate the critical angle between the liquid air interface.",
+        "Define refractive of light? Describe the passage of light through parallel-sided transparent material.",
+        "What is meant by refractive index of a material? How would you determine the refractive index of a rectangular glass slab?",
+        "State laws re reflection of light and show how they may be verified using rectangular glass slab and pins.",
+   "Describe in your words why does the wave of light refract at the contact point of two materials?",
+        "What is critical angle? Derive a relationship between the critical angel and the refractive index of a substance.",
+        "What are optical fibers? Describe how total internal reflection is used in light propagating through optical fibers.",
+        "Describe the passage of light through a glass prism and measure the angle of deviation.",
+        "What is meant by the principal focus of a convex lens and concave lens? Illustrate your answer with ray diagram.",
+        "The power of a convex lens is 5D. At what distance the object should be placed from the lens so that its real and 2 times larger image is formed?",
+        "Describe how light is refracted through convex lens.",
+        "With the help of a ray diagram, how you can show the use of the converging lens as a magnifying glass.",
+        "Draw the ray diagrams of a) Simple microscope b) Compound microscope c) Refracting microscope",
+        "A man raises his left hand in a plane mirror, the image facing him is raising his right hand. Explain why.",
+        "An object 4.0cm high is placed at a distance of 12cm from a convex lens of focal length 8cm. Calculate the position and size of the image. Also state the nature of the image.",
+        "An object 4.0cm high is placed at a distance of 7.0cm from a concave lens of focal length 10cm. Calculate the position and size of the image. Also state the nature of the image.",
+        "A convex lens of focal length is 8cm is used to form a virtual image three times the size of the object. Where must the lens be placed?",
+        "A person 1.7m tall is standing 2.5m in front of a camera. The camera uses a convex lens whose focal length is 0.05 m. Find the image distance. Determine whether the image is real or virtual.",
+        "A concave lens has focal length of 15cm. At what distance should the object from the lens be placed so that it form an image at 0cm from the lens? Also find the magnification of."
+ 
+    ],
+
+    mcqs: [
+        {
+            question: "A converging mirror with a radius of 20cm creates a real image 30cm from the mirror. What is the object distance?",
+            options: ["(A) -5.0cm", "(B) -7.5cm", "(C) -1.5cm", "(D) -20cm"],
+        },
+        {
+            question: "The image of a car is 14cm in front of a convex mirror. The image 5.8cm behind the mirror what is the focal length of the mirror?",
+            options: ["(A) -4.1cm", "(B) -3.2cm", "(C) -9.9cm", "(D) -20cm"],
+        },
+        {
+            question: "Which of the following quantity does not change during refraction of light?",
+            options: ["(A) Its direction", "(B) Its speed", "(C) Its frequency", "(D) Its wavelength"],
+        },
+        {
+            question: "The index of refraction depends upon",
+            options: ["(A) The focal length", "(B) The speed of light", "(C) The image distance", "(D) The object distance"],
+        },
+        {
+            question: "If a ray of light in glass is incident on air surface at an angle greater than the critical angle, the ray will:",
+            options: ["(A) Refract only", "(B) Reflect only", "(C) Partially refracted", "(D) Partially reflected"],
+        },
+        {
+            question: "Which type of image is formed by convex lens on a screen?",
+            options: ["(A) Inverted and real", "(B) Inverted and virtual", "(C) Upright and real", "(D) Upright and virtual"],
+        },
+        {
+            question: "Image formed by a camera is:",
+            options: ["(A) Real, inverted, and diminished", "(B) Virtual, upright and diminished", "(C) Virtual, upright and magnified", "(D) Real, inverted and magnified"],
+        },
+        {
+            question: "Which type of image is formed by the converging lens of human eye if it views distant objects?",
+            options: ["(A) Real, erect, same", "(B) Real, inverted", "(C) Virtual, erect", "(D) Virtual, magnified"],
+        },
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 13,
+    chapterName: "Electrostatics",
+    shortQuestions: [
+         "How can you show by a simple experiment that there are two types of electric charges? ",
+        "An electrified rod attracts tiny pieces of paper. After a while these pieces fly away! Why?",
+        "Describe the method of charging bodies by electrostatic induction.",
+        "How does electrostatic induction differ from charging by friction?",
+        "Suppose you have a glass rod which becomes positively charged when you rub it with wool. Describe how would you charge the electroscope? (a) Negatively (b) Positively",
+        "With the help of electroscope how you can find presence of charge on a body.",
+        "How much real negative charge has been removed from a positively charged electroscope, if it has a charge of $7.5 \\times 10^{-11}$ C?",
+        "Perhaps you have seen a gasoline truck trailing a metal chain beneath it. What purpose does the chain serve?",
+        "What is meant by electric field and electric intensity?",
+        "Is electric intensity vector quantity? What will be its direction?",
+        "In what direction will a positively charged particle move in an electric field?",
+        "How would you define potential difference between two points? Define its unit.",
+        "Show that what do you mean by electric potential difference can be described as energy transfer per unit charge between two points.",
+        "What is meant by capacitance? Define the unit of capacitance?",
+        "Derive the formula for the equivalent capacitance for series combination and for a number of capacitors.",
+        "What is difference between variable and fixed type capacitor?",
+        "Enlist some uses of capacitors.",
+        "Discuss one application of static electricity.",
+        "What are hazards of static electricity?"
+
+    ],
+    longQuestions: [
+           "What is gold leaf electroscope? Discuss its working principle with labelled diagram.",
+        "Describe how you would determine the nature of the charge on a body by using.",
+        "The change of how many negatively charged particles would be equal to 100µC. Assume charge on one negative particle is $1.6 \\times 10^{-19}$C.",
+        "Two point charges $q_1 = 10\\mu C$ and $150\\mu C$ are placed at a distance of 150cm. what will be the coulomb's force between them? Also find the direction of the force.",
+        "The force or repulsion between two identical positive charges is 0.8N. When the charges are 0.1m apart, find the value of each charge.",
+        "Two identical spheres repel each other with a force of 10N. When they are 50cm apart. Find the forces between the same charges when they are 2cm apart.",
+        "Explain Coulomb's law of electrostatics and write its mathematical form.",
+        "A point charge of +2C is transferred from a point at potential 100V to a point at potential 50V. what would be the energy supplied by the charge?",
+        "The electric field potential at a point in an electric field is $10^4$V. If a charge of +100$\\mu$C is brought from infinity to this point. What would be the amount of work done on it?",
+        "Each capacitor in parallel combination has equal potential difference between its two plates. Justify the statement.",
+        "Does each capacitor carry equal charge in series combination? Explain.",
+        "A capacitor holds 0.06 coulombs of charge when fully charged by a 8volt battery. Calculate the capacitance of the capacitor.",
+        "A capacitor bitor is fully charged by a 8 volt battery. How much voltage be required for it to hold 2 coulombs of charge?",
+        "Two capacitors in series with 12V battery. Find the equivalent capacitance of the combination. Find the charge in the combination.",
+        "Discuss different types of capacitors?"
+    
+    ],
+
+    mcqs: [
+        {
+            question: "An object gains excess a negative charge after being rubbed against another object which is:",
+            options: ["(A) Neutral", "(B) Negatively charged", "(C) Positively charged", "(D) All of these"],
+        },
+        {
+            question: "According to Coulomb's law, what happens to the attraction of two oppositely charged objects as their distance of separation increases?",
+            options: ["(A) Increases", "(B) Decreases", "(C) Remains unchanged", "(D) Cannot be determined"],
+        },
+        {
+            question: "The Coulomb's law is valid for the charges which are:",
+            options: ["(A) Moving and point charges", "(B) Stationary and non-point charges", "(C) Stationary and point charges", "(D) Stationary and large size charges"],
+        },
+        {
+            question: "A positive and a negative charge are initially 4cm apart. When they are moved closer together so that they are now only 1cm apart, the force between them is:",
+            options: ["(A) 4 times smaller than before", "(B) 4 times larger than before", "(C) 8 times larger than before", "(D) 16 times larger than before"],
+        },
+        {
+            question: "Two small charged spheres are separated by 2mm. Which of the following would produce the greatest attractive force?",
+            options: ["(A) -1q and +2q", "(B) -1q and +4q", "(C) -2q and +2q", "(D) -2q and +q"],
+        },
+        {
+            question: "Five joule of work is to new potential difference to 10 C of charge from one place to another. The between the places is:",
+            options: ["(A) 0.5V", "(B) 2V", "(C) 5V", "(D) 10V"],
+        },
+        {
+            question: "Capacitance is defined as:",
+            options: ["(A) V/C", "(B) V/Q", "(C) Q/V", "(D) Q/V"],
+        },
+    ],
+  },
+
+
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 14,
+    chapterName: "Current Electricity",
+    shortQuestions: [
+  "What is the difference between a cell and a battery?",
+        "Define and explain the term electric current.",
+        "What is the difference between electronic current and conventional current?",
+        "Can current flow in a circuit without potential difference?",
+        "Two points on an objects are at different electric potentials. Does charge necessarily flow between then?",
+        "In order to measure current in a circuit why ammeter is always connected in series?",
+        "In order to measure voltage in a circuit why voltmeter is always connected in parallel. Discuss.",
+        "Define resistance and its units?",
+        "A certain flashlight can use a 1.0Ω bulb or a 5.0Ω bulb. Which bulb should be used to get the brighter light? Which bulb will discharge the battery fast?",
+        "Why in conductor's charge is transferred by free electrons rather than by positive charges?",
+        "What is the the difference between conductors and insulators?",
+        "Discuss the main features of parallel combination of resistors.",
+        "Determine the equivalent resistance of series combination of resistors.",
+        "What is the advantage of connecting the equipments in parallel instead of series?",
+        "From your experience in watching cars on the roads at night, are automobile headlamps connected in series?",
+        "Is it impracticable to connect an electric bulb and an electric heater in series. Why?",
+        "How many watt-hours there are in 1000 joules?",
+        "Explain the energy dissipation in a resistance. What is Joule's law?",
+        "What is the difference between DC and AC?",
+        "Describe briefly the hazards of household electricity.",
+        "Describe the circuit breaker that should be taken in connection with the household current?",
+        "Does a fuse in a circuit control the potential difference or current?"
+   
+    ],
+    longQuestions: [
+          "A current of 3A is flowing through a wire for 1minute, what is the charge flowing through it?",
+        "What do you mean by the term e.m.f? is it really a force? Explain.",
+        "How can we differentiate between e.m.f and potential difference?",
+        "Explain Ohm's law. Derive its formula. What are its limitations?",
+        "At 100,000Ω, how much current flows through your body if you touch the terminals of a 12V battery? If your skin is wet, so that your resistance is only 1000Ω, how much current would you receive from the same battery?",
+        "The resistance of a conductor wire is $10 \\text{M}\\Omega$. If a potential difference of 100volts is applied across its ends, then find the value of current passing through it in mA.",
+        "Two resistances of 6kΩ and 12kΩ are connected in series. A 6V battery is connected across the ends of this combi. (a) Find the equivalent resistance of the series combination. (b) Current passing through each of the resistances.",
+        "Two resistances of 6kΩ and 12kΩ are connected in parallel. A 6V battery is connected across the ends of this combi. (a) Find the equivalent resistance of the parallel combination (b) Current passing through each of the resistances (c) The potential difference across each resistance.",
+        "Discuss the main features of parallel combination of resistors.",
+        "By applying a potential difference of 10V across a conductor, a current of 1.5A passes through it. How much energy would be obtained from the current in 2minutes?",
+        "A 100 W lamp bulb and a 4kW water heater are connected to a 250V supply. Calculate (a) the current which flows in each appliance (b) the resistance of each appliance when in use.",
+        "An electric bulb is marked with 220V, 100W. find the resistance of the filament of the bulb. If the bulb is used 5hours daily, find the energy in kilowatt-hour consumed by the bulb in one month (30days).",
+        "This bulb designed for use in a 120 V circuit or a 220 V circuit?"
+  
+    ],
+
+    mcqs: [
+        {
+            question: "An electric current in conductors is due to the flow of:",
+            options: ["(A) Positive ions", "(B) Negative ions", "(C) Positive charge", "(D) Free electrons"],
+        },
+        {
+            question: "What is the voltage across a 6 Ohm resistor when 3A of current passes through it?",
+            options: ["(A) 2V", "(B) 6V", "(C) 18V", "(D) 36V"],
+        },
+        {
+            question: "When we double the voltage in a simple electric circuit, we double the:",
+            options: ["(A) Current", "(B) Power", "(C) Resistance", "(D) Both (a) and (b)"],
+        },
+        {
+            question: "Electric potential and e. m. f. are:",
+            options: ["(A) Are the same terms", "(B) Are the different terms", "(C) Have different", "(D) Both (b) and (c)"],
+        },
+        {
+            question: "What happens to the intensity or the brightness of the lamps connected in series as more and more lamps are added?",
+            options: ["(A) Increases", "(B) Decreases", "(C) Remains the same", "(D) Cannot be predicted"],
+        },
+        {
+            question: "The combined resistance of two identical resistors, connected in series is 8Ω. Their combined resistance in a parallel arrangement will be:",
+            options: ["(A) 2Ω", "(B) 4Ω", "(C) 6Ω", "(D) 12Ω"],
+        },
+        {
+            question: "If we double both current and the voltage in a circuit while keeping its resistance constant, the power",
+            options: ["(A) Halves", "(B) Doubles", "(C) Quadruples", "(D) Quadruples"],
+        },
+        {
+            question: "What is the power rating of a lamp connected to 12V source when it carries 2.5A?",
+            options: ["(A) 4.8W", "(B) 14.5W", "(C) 30W", "(D) 60W"],
+        },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 15,
+    chapterName: "Electromagnetism",
+    shortQuestions: [
+ "State and explain by the direction and the line of force of the magnetic field around a current-carrying conductor can be determined?",
+    "Suppose we hang a loop of wire so that it can swing easily. If we now put a magnet into the coil, the coil will swing. Why will the way will a swing relative to the magnetic field, and why?",
+    "What reverses the direction of electric current in the armature coil of D.C motor?",
+    "What is the difference between a generator and a motor?",
+    "What do you understand by the term mutual induction?",
+    "Explain the working of a transformer in connection with mutual induction.",
+    "The voltage chosen for the transmission of electrical power over large distances is many times greater than the voltage of the domestic supply. State two reasons why electrical power is transmitted at high voltage.",
+    "You are given an unmarketed steel magnet bar and bar-magnet, its north and south ends are marked N and S respectively. State how would you determine the polarity at each end of the unmarked bar?",
+    "Which device is used for converting electrical energy into mechanical energy? On what principle it works?",
+    "A conductor wire generates a voltage while its moving through magnetic field, in what direction should the wire be moved, relative to the field to generate the maximum voltage?",
+    "Describe the direction of an induced e.m.f. in a circuit? How does this phenomenon relate to conservation of energy?",
+    "Suppose someone handed to you three similar irons bars. And told you one was not magnet, but the others two were. How would you find the iron bar that was not magnet?",
+    "Can transformer operate on direct current?",
+    "Why is the voltage used for the domestic supply much lower than the voltage at which the power is transmitted?"
+
+    ],
+    longQuestions: [
+         "Demonstrate by an experiment that a magnetic field is produced around a straight current-carrying conductor.",
+    "State that current-carrying coil in a magnetic field experiences a torque.",
+    "Describe a simple experiment to demonstrate that a changing magnetic field can induce e.m.f. in a circuit.",
+    "Draw a well labelled diagram to illustrate the structure and working of A.C generator.",
+    "A transformer is needed to convert mains 240V supply into a 12V supply. If there are 2000 turns on the primary coil, then find the number of turns on the secondary coil.",
+    "A step-down transformer has a turn ratio of 100:1. An A.C voltage of amplitude 170V is applied to the primary. If the current in the primary is 1.0mA, what is the current in the secondary?",
+    "A power station generated 500MW of electrical power which is fed to a transmission line. What current would flow in the transmission line, if the input voltage is 250KV?",
+    "When a straight current-carrying conductor is placed in a magnetic field, it experiences a force. State the rule by which the direction of this force can be found out.",
+    "What is an electric motor? Explain the working principle of D.C motor.",
+    "What are the factors which affect the magnitude of the e.m.f. in a circuit by changing magnetic field?",
+    "Suppose you have coil of wire and bar magnet. Describe how you could use them to generate an electric current.",
+    "A step-up transformer has a turn ratio of 1:100. An alternating supply of 20V is connected to the primary coil. What is the secondary voltage?",
+    "A transformer, designed to convert the voltage from 240V A.C mains to 12V, has 4000 turns in the primary coil. How many turns should be in the secondary coil? If the transformer were 100% efficient, what current would flow through the primary coil when the current in the secondary coil was 0.4A?"
+
+    ],
+
+    mcqs: [
+      {
+        question: "Which statement/statement is true about the magnetic poles?",
+        options: ["(A) Unlike poles repel", "(B) Like poles attract", "(C) Magnetic poles do not affect each other", "(D) Single magnetic pole does not exist"],
+    },
+    {
+        question: "What is the direction of the magnetic field lines inside a bar magnet?",
+        options: ["(A) From north pole to south pole", "(B) From south pole to north pole", "(C) Side to side", "(D) There are no magnetic field lines"],
+    },
+    {
+        question: "The presence of a magnetic field can be detected by a",
+        options: ["(A) Small mass", "(B) Stationary positive charge", "(C) Stationary negative charge", "(D) Magnetic compass"],
+    },
+    {
+        question: "If the current financial in a wire which is placed perpendicular to magnetic field increases, the force on the wire",
+        options: ["(A) Increases", "(B) Decreases", "(C) Will be zero", "(D) Remains the same"],
+    },
+    {
+        question: "A D.C. motor converts",
+        options: ["(A) Mechanical energy into electrical energy", "(B) Mechanical energy into chemical energy", "(C) Electrical energy into mechanical energy", "(D) Electrical energy into chemical energy"],
+    },
+    {
+        question: "Which part of the D.C. motor reverses the direction of current through the coil every half-cycle?",
+        options: ["(A) The armature", "(B) The commutator", "(C) The brushes", "(D) The split rings"],
+    },
+    {
+        question: "The direction of induced e.m.f. in a circuit is in accordance with conservation of",
+        options: ["(A) Mass", "(B) Charge", "(C) Momentum", "(D) Energy"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 16,
+    chapterName: "Basic Electronics",
+    shortQuestions: [
+ "Name two factors which can enhance thermionic emission.",
+    "When electrons pass through two parallel plates having opposite charges, they are deflected towards the positively charged plate. What important characteristic of the electron can be inferred from this?",
+    "Name some uses of oscilloscope.",
+    "Differentiate between analogue electronics and digital electronics. Write down names of five analogue and five digital devices that are commonly used in everyday life.",
+    "How can you compare the logic operation X=A.B with usual operation of multiplication?",
+    "Give three reasons to support the evidence that cathode rays are negatively charged electrons.",
+    "When a moving electron enters the magnetic field, it is deflected from its straight path. Name two factors which can enhance electron deflection.",
+    "What do you understand by digital and analogue quantities?",
+    "Write down some benefits of using digital electronics over analogue electronics.",
+    "NAND gate is the reciprocal of AND gate. Discuss."
+    ],
+    longQuestions: [
+         "What is electron gun? Describe the process of thermionic emission.",
+    "Describe, using one simple diagram in each case, what happens when a narrow beam of electrons is passed through a uniform electric field and a uniform magnetic field. What do these results indicate about the charge on electron?",
+    "Explain the working of different parts of oscilloscope.",
+    "What are the three universal logic gates? Give their symbols and truth tables."
+
+    ],
+
+    mcqs: [
+       {
+        question: "The process by which electrons are emitted by a hot metal surface is known as:",
+        options: ["(A) Boiling", "(B) Evaporation", "(C) Conduction", "(D) Thermionic emission"],
+    },
+    {
+        question: "The particles emitted from a hot cathode surface are:",
+        options: ["(A) Positive ions", "(B) Negative ions", "(C) Protons", "(D) Electrons"],
+    },
+    {
+        question: "If X=A.B, then. X is 1 when:",
+        options: ["(A) A and B are 1", "(B) A or B is 0", "(C) A is 0 and B is 1", "(D) A is 1 and B is 0"],
+    },
+    {
+        question: "The output of a NAND gate is 0 when",
+        options: ["(A) Both of its inputs are 1", "(B) Both of its inputs are 0", "(C) Any of its inputs is 0", "(D) Any of its inputs is 1"],
+    },
+    {
+        question: "AND gate can be formed by using two:",
+        options: ["(A) NOT gates", "(B) OR gates", "(C) NOR gates", "(D) NAND gates"],
+    },
+    {
+        question: "The output of a two-input NOR gate is 1 when:",
+        options: ["(A) A is 1 and B is 1", "(B) A is 0 and B is 1", "(C) Both A and B are 0", "(D) Both A and B are 1"],
+    },
+    ],
+  },
+
+
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 17,
+    chapterName: "Information and Comminication Technology",
+    shortQuestions: [
+ "What is the difference between data and information?",
+    "Define Information and Communication Technology (ICT)?",
+    "What is the difference between hardware and software? Name different software.",
+    "Explain briefly the transmission of radio waves through space.",
+    "How light signals are sent through optical fiber?",
+    "What is the role of computer in everyday life?",
+    "Why optical fiber is more useful tool for the communication process?",
+    "Differentiate between the primary and secondary memory.",
+    "Which is more reliable floppy disk or a hard disk?",
+    "What do you understand by the term word processing and data managing?"
+
+    ],
+    longQuestions: [
+          "What are the components of information technology? Clearly indicate the function of each component.",
+    "Name different information storage devices and describe their uses.",
+    "Discuss the role of information technology in school education.",
+    "What is Internet? Internet is useful source of knowledge and information. Discuss."
+
+    ],
+
+    mcqs: [
+       {
+        question: "In computer terminology information means",
+        options: ["(A) Raw data", "(B) Processed data", "(C) Large data", "(D) Any data"],
+    },
+    {
+        question: "Which is the most suitable means of reliable continuous communication between an orbiting satellite and earth?",
+        options: ["(A) Microwaves", "(B) Radio waves", "(C) Sound waves", "(D) Any light wave"],
+    },
+    {
+        question: "The basic operations performed by a computer are",
+        options: ["(A) Arithmetic operations", "(B) Non-arithmetic operations", "(C) Logical operations", "(D) Both (a) and (c)"],
+    },
+    {
+        question: "The brain of any computer system is",
+        options: ["(A) Monitor", "(B) CPU", "(C) Memory", "(D) Control Unit"],
+    },
+    {
+        question: "Which of the following is not processing?",
+        options: ["(A) Arranging", "(B) Manipulating", "(C) Calculating", "(D) Gathering"],
+    },
+    {
+        question: "From which of the following we can get information almost about everything",
+        options: ["(A) Book", "(B) Teacher", "(C) Computer", "(D) Internet mail"],
+    },
+    {
+        question: "What does the term e-mail stand for?",
+        options: ["(A) Emergency mail", "(B) Electronic mail", "(C) Extra mail", "(D) External mail"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Physics",
+    chapterNumber: 18,
+    chapterName: "Atomic and Nuclear Physics",
+    shortQuestions: [
+"What is the difference between atomic number and atomic mass number? Give a symbolical representation of a nuclide.",
+    "Is it possible for an element to have different types of atoms? Explain.",
+    "What do you mean by the term radioactivity? Why some elements are radioactive but some are not?",
+    "How can we make radioactive elements artificially? Describe with a suitable example.",
+    "What are the three basic radioactive decay processes and how do they differ from each other?",
+    "Is radioactivity a spontaneous process? Elaborate your answer with a simple experiment.",
+    "What is the difference between natural and artificial radioactivity?",
+    "What type of natural radioactivity leaves the number of protons and the number of neutrons in the nucleus unchanged?",
+    "How much of pure radioactive substance would be left un-decayed after four half-lives?",
+    "What is meant by background radiations? Enlist some sources of background radiations.",
+    "Explain whether the atomic number can increase during nuclear decay. Support your answer with an example.",
+    "Which has more penetrating power, an alpha particle or a gamma ray photon?",
+    "How long would you likely have to wait to sample any sample of radioactive atoms completely decay?",
+    "Describe two uses of radioisotopes in medicine, industry or research.",
+    "Tritium is the radioactive isotope of hydrogen. It decays by emitting an electron. What is the daughter nucleus?",
+
+    ],
+    longQuestions: [
+         "What do you understand by half-life of a radioactive element?",
+    "The half-life of N is sample of this nuclide of nitrogen is observed for 29.2s, calculate the fraction of the original radioactive isotope remaining after this time.",
+    "Cobalt- is a radioactive element with half-life of 5.25years, what fraction of the original sample will be left after 26years?",
+    "Carbon- has a half-life of 2730 years. How long will it take for the quantity of carbon- to in a sample to drop to one-eighth of the initial quantity?",
+    "Technetium- is a radioactive element and is used to diagnose brain, thyroid, liver, kidney disease, this element has half-life of 6hours. If there is 200mg of this technetium present, how much will be left in 36hours.",
+    "Half-life of a radioactive element is 10 minutes. If the initial count rate is 168 counts per minute, find the time for which count rate reaches 223 counts per minute.",
+    "A sample of certain radioactive element has a half-life of 1500 years. It has an activity of 3200 counts per hour at the present time, then plot a graph of the activity of this sample over the period which will reduce to 1/16 of its present value.",
+    "What type of natural radioactivity leaves the number of protons and the number of neutrons in the nucleus unchanged?",
+    "For 8 successive hours were found to be 270, 283, 300, 310, 285, 290, 305, 312. What does the variation in count rates show? Plot a graph between the count rates and time in hours. Why the graph is a straight line rather than an exponential?",
+    "Ashes from a campfire deep in a cave show carbon-activity of only one-eighth the activity of fresh wood. How long ago was that campfire made?",
+    "Nuclear fusion reaction is more reliable and sustainable source of energy than nuclear fission chain reaction. Justify this statement with plausible arguments.",
+    "Which nuclear reaction would release more energy, the fission reaction or the fusion reaction? Explain."
+
+    ],
+
+    mcqs: [
+        {
+        question: "Isotopes are atoms of same element with different",
+        options: ["(A) Atomic mass", "(B) Atomic number", "(C) Number of protons", "(D) Number of electrons"],
+    },
+    {
+        question: "One of the isotopes of uranium the number of neutrons in this isotope is:",
+        options: ["(A) 92", "(B) 146", "(C) 238", "(D) 330"],
+    },
+    {
+        question: "Which among the following radiations has more penetrating power?",
+        options: ["(A) A beta particle", "(B) A gamma ray", "(C) An alpha particle", "(D) All have the same penetrating ability"],
+    },
+    {
+        question: "What happens to the atomic number of an element which emits one alpha particle?",
+        options: ["(A) Increases by 1", "(B) Stays the same", "(C) Decreases by 2", "(D) Decreases by 1"],
+    },
+    {
+        question: "When uranium (92protons) ejects a beta particle, how many protons will be in the remaining nucleus?",
+        options: ["(A) 89", "(B) 90", "(C) 91", "(D) 93"],
+    },
+    {
+        question: "The half-life of a certain isotope is 1 day. What is the quantity of the isotope after 2days?",
+        options: ["(A) One half", "(B) One-quarter", "(C) One-eighth", "(D) None of these"],
+    },
+    {
+        question: "When a heavy nucleus splits into two lighter nuclei. The process would:",
+        options: ["(A) Release nuclear energy", "(B) Absorb chemical energy", "(C) Release chemical energy", "(D) Absorb nuclear energy"],
+    },
+    {
+        question: "Release of energy by the sun is due to",
+        options: ["(A) Nuclear fission", "(B) Nuclear fusion", "(C) Burning of gases", "(D) Chemical reaction"],
+    },
+    ],
+  },
+
+
 
 
 
@@ -2025,7 +2689,7 @@ const questions = [
   {
     class: 9,
     subject: "Physics",
-    chapterNumber: 000,
+    chapterNumber: 0,
     chapterName: "physics",
     shortQuestions: [
 
