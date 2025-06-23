@@ -353,7 +353,7 @@ const downloadAsPDF = async () => {
                       <div className="mt-2 ml-4 ">
                         {q.options.map((option, i) => (
                           <div key={i} className="flex ">
-                            <span className="mr-2">{String.fromCharCode(97 + i)}.</span>
+                            {/* <span className="mr-2">{String.fromCharCode(97 + i)}.</span> */}
                             {option}
                           </div>
                         ))}
