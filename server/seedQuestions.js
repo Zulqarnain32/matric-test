@@ -727,6 +727,274 @@ const questions = [
   },
 
 
+  
+  {
+    class: 9,
+    subject: "Computer",
+    chapterNumber: 10,
+    chapterName: "Emerging Technologies in Computer Science",
+    shortQuestions: [
+ "Define Artificial Intelligence (AI).",
+    "What is the historical context and evolution AI?",
+    "Provide two examples of AI applications in healthcare.",
+    "Explain the role of AI techniques in advancing machine learning models.",
+    "Define the internet of things (IoT).",
+    "Define the significance of IoT in connecting devices and systems.",
+    "What are the potential risks associated with AI and IoT?",
+    "Discuss the social impact of AI and IoT on daily life.",
+    "Explain the concept of algorithmic bias.",
+    "Outline the importance of ethical considerations in AI and IoT."
+
+    ],
+    longQuestions: [
+      "Discuss the various applications of AI in the field of education. Provide specific examples and explain how AI can enhance the educational experience.",
+    "Differentiate between explainable (whitebox) and unexplainable (blackbox) AI models.",
+    "Describe the the specific of an IoT system. Explain how these components work together to enable IoT applications.",
+    "Explore the applications of IoT in the transportation domain.",
+    "Analyze the potential privacy concerns associated with IoT deployments.",
+    "Evaluate the impact of AI and IoT on the job market and work environments.",
+    "Explain the role of policy and regulatory framework in addressing the challenges of AI and IoT. Provide examples of existing framework and discuss their effectiveness.",
+    "Describe the concept of algorithmic bias and its implications in AI-powered decision-making processes. Suggest strategies to mitigate the risks of algorithmic bias.",
+    "Develop a set of ethical principles and guidelines for the responsible development and deployment of AI and IoT technologies."
+
+    ],
+
+    mcqs: [
+     {
+        question: "Which of the following is not a subfield of AI?",
+        options: ["(A) Machine learning", "(B) Natural language processing", "(C) Computer vision", "(D) Robotics"],
+    },
+    {
+        question: "Which of these AI algorithms is considered an explainable (whitebox) model?",
+        options: ["(A) Neural networks", "(B) Decision trees", "(C) Random forests", "(D) Convolutional neural networks"],
+    },
+    {
+        question: "Which of these is a security concern in IoT deployments?",
+        options: ["(A) Device vulnerability", "(B) Data privacy", "(C) Lack of standardization", "(D) All of the above"],
+    },
+    {
+        question: "Which of the following is an application of AI in healthcare?",
+        options: ["(A) Personalized drug development", "(B) Automated diagnosis", "(C) Remote patient monitoring", "(D) All of the above"],
+    },
+    {
+        question: "What is the primary purpose of using AI techniques in machine learning models?",
+        options: ["(A) To improve accuracy", "(B) To enhance interpretability", "(C) To reduce computational complexity", "(D) To increase training time"],
+    },
+    {
+        question: "What is the key difference between explainable (whitebox) and unexplainable (blackbox) AI models?",
+        options: ["(A) The complexity of the model", "(B) The ability to understand the decision-making process", "(C) The performance of the model", "(D) The training data used"],
+    },
+    {
+        question: "Which of the following is an application of IoT in the transportation domain?",
+        options: ["(A) Smart traffic management", "(B) Vehicle-to-Vehicle (V2V) communication", "(C) Predictive maintenance of communication vehicles", "(D) All of the above"],
+    },
+    {
+        question: "Which of these is a potential impact of AI and IoT on the job market?",
+        options: ["(A) Job displacement due to automation", "(B) Increased demand for specialized skills", "(C) Transformation of job roles and responsibilities", "(D) All of the above"],
+    },
+    {
+        question: "What is the key concern associated with algorithmic bias in AI-powered decision-making processes?",
+        options: ["(A) Lack of transparency", "(B) Perpetuation of reduced accuracy existing societal bases", "(C) Reduced accuracy of the model", "(D) All of the above"],
+    },
+    {
+        question: "Which of the following is an ethical principle that should be considered in the development and deployment of AI and IoT technologies?",
+        options: ["(A) Transparency and accountability", "(B) Respect for privacy and data rights", "(C) Fairness and non-discrimination", "(D) All of the above"],
+    },
+    ],
+  },
+
+  
+  {
+    class: 9,
+    subject: "Computer",
+    chapterNumber: 11,
+    chapterName: "Etical, Social, and Legal Concern",
+    shortQuestions: [
+       "What is the importance of using computers safely and responsibly?",
+    "How does choosing the right hardware and software affect your computer usage?",
+    "Why is important to use antivirus software on your computer?",
+    "What are some examples of good practices when selecting hardware and software?",
+    "How can choosing compatible hardware and software enhance your computer experience?",
+    "Why should you create strong, unique passwords for your accounts?",
+    "What is the purpose of regular software updates?",
+    "How can you protect yourself from harmful links and downloads?",
+    "What is two-factors authentication (2FA), and why is it useful?",
+    "Why is it a good idea to avoid using public Wi-Fi for sensitive transactions?",
+    "How can you verify if an email or message is a scam?",
+    "Why is it important to be careful about what you share on social media?",
+    "Why should you receive an email from an unknown sender asking for personal information?",
+    "What is the purpose of privacy laws regarding your personal information?",
+    "How do privacy law protects your information unauthorized to your data?",
+    "What is the difference between copyright, trademarks, and paten?",
+    "Why is it important to respect intellectual property rights?",
+    "What is software piracy, and why is it harmful?",
+    "How can you identify sources when researching online reliability?",
+    "What is one way to protect your privacy during online research?",
+    "What are some signs that you might developing an internet addiction?"
+
+    ],
+    longQuestions: [
+        "Discuss the importance of responsible computer usage in today's digital world. Explain how selecting the right hardware and software can affect safety, efficiency and compatibility in computer use?",
+    "Describe the steps you should take to ensure the safe operation of digital platform and devices.",
+    "Explain the concept of data ethics and its importance in handling personal and sensitive information. Discuss the principles of transparency, respect for privacy and accountability.",
+    "Analyze the impact of piracy laws on protecting personal information in the digital age. How do laws like the personal data protection bill in Pakistan safeguard user data?",
+    "Discuss the ethical and legal responsibilities related to intellectual property rights. What are the consequences of violating these rights, such as through software or piracy or unauthorized use of copyrighted material?",
+    "Describe the concept of internet addiction and its potential impact on individuals. How can recognizing the signs of addiction, setting time limits, and finding offline activities help promote balance internet usage?",
+    "Outline effective techniques for conducting safe and credible online research. How can users evaluate the reliability of sources and avoid privacy risks during their research?",
+    "Discuss the concept of internet addiction and its potential impact on individuals. How can recognizing the signs of addiction, setting time limits, and finding offline activities help promote balance internet usage?"
+
+    ],
+
+    mcqs: [
+      {
+        question: "1. Why is it important to use computers safely and responsibly?",
+        options: ["(A) To ensure we can use them more frequently", "(B) To protect out personal information and make wise choices about hardware and software", "(C) To make the computer run faster", "(D) To avoid paying for software"],
+    },
+    {
+        question: "2. What does \"responsible computer usage\" include?",
+        options: ["(A) Choosing the most expensive hardware", "(B) Sharing your passwords with friends", "(C) Being cautious about what you share online and protecting yourself", "(D) Ignoring software updates"],
+    },
+    {
+        question: "3. What should you check to ensure hardware and software compatibility?",
+        options: ["(A) The color of the hardware", "(B) The system requirements on software packages and match them with your computer's specifications", "(C) The price of the hardware", "(D) The brand of the hardware"],
+    },
+    {
+        question: "4. Why is it important to use antivirus software on your computer?",
+        options: ["(A) It makes your computer run faster", "(B) It protects against malware and viruses", "(C) It allows you to download more software", "(D) It enhances your graphics quality"],
+    },
+    {
+        question: "5. What are some examples of good practices when selecting hardware and software?",
+        options: ["(A) Choosing the cheapest options available", "(B) Considering your needs and ensuring compatibility", "(C) Relying solely on popular brands", "(D) Purchasing software from unofficial sources"],
+    },
+    {
+        question: "6. How can choosing compatible hardware and software enhance your computer experience?",
+        options: ["(A) It ensures the system runs smoothly and efficiently", "(B) It allows for more customization options", "(C) It makes the computer more portable", "(D) It reduces the need for internet access"],
+    },
+    {
+        question: "7. Why should you create strong, unique passwords for your accounts?",
+        options: ["(A) To make them easier to remember", "(B) To prevent unauthorized access and protect your data", "(C) To speed up login times", "(D) To share them with friends and family"],
+    },
+    {
+        question: "8. What is an important aspect of responsible social media posting?",
+        options: ["(A) Sharing personal information like your home address", "(B) Posting photos without considering privacy setting", "(C) Being respectful and avoiding sharing sensitive information publicly", "(D) Ignoring privacy setting"],
+    },
+    {
+        question: "9. What should you do if you receive an email from an unknown sender asking for personal information?",
+        options: ["(A) Provide the information requested", "(B) Forward the email to your friends", "(C) Ignore or delete the email", "(D) Open the email and click on any links"],
+    },
+    {
+        question: "10. Why is it important to regularly review your account activity?",
+        options: ["(A) To update your contact information", "(B) To look for unusual and ensure your account are secure", "(C) To check the number of friends you have", "(D) To download new applications"],
+    },
+    {
+        question: "11. What is the purpose of privacy setting on digital platforms?",
+        options: ["(A) To make your posts public", "(B) To control who can see your information and interact with you online", "(C) To increase the number of followers", "(D) To automatically share your information"],
+    },
+    {
+        question: "12. What should you do to ensure data security?",
+        options: ["(A) Use the same passwords for all account", "(B) Share your passwords with friends", "(C) Use strong, unique passwords and enable two-factor authentication", "(D) Avoid using any security measures"],
+    },
+    {
+        question: "13. What is a key aspect of data ethics?",
+        options: ["(A) Using data in any way you like", "(B) Transparency, respect for privacy, and accountability in data usage", "(C) Collecting as much data as possible", "(D) Ignoring software regularly"],
+    },
+    {
+        question: "14. What is software privacy?",
+        options: ["(A) Sharing software legally with friends", "(B) The illegal copying, distribution, or use of software", "(C) Buying software from an official source", "(D) Updating software regularly"],
+    },
+    {
+        question: "15. How can you verify the credibility of information found online?",
+        options: ["(A) By checking the number of ads on the website", "(B) By using multiple reputable sources and checking the author's credentials", "(C) By looking at the website's design", "(D) By the website's popularity"],
+    },
+    ],
+  },
+
+
+  
+  {
+    class: 9,
+    subject: "Computer",
+    chapterNumber: 12,
+    chapterName: "Enterpreneurship in Digital Age",
+    shortQuestions: [
+       "What is the meaning of word entrepreneur and why is its origin?",
+    "How do digital technology help entrepreneurs reach a global audience?",
+    "What is an e-commerce platform, and why is it important for business?",
+    "Explain the importance of market analysis in a business plan. Give an example relevant to a local business in Pakistan.",
+    "What is the main purpose of using design thinking in creative problem-solving?",
+    "How can business contribute to environmental sustainability according to the sustainable development goals?",
+    "What are revenue models, and why are they essential components of a business plan?",
+    "How can business contribute to environmental sustainability according to the sustainable development goals?",
+
+    ],
+    longQuestions: [
+
+       "Explain why entrepreneurship important for economic growth and innovation. Provide examples from the text to support your answer.",
+    "Explain how market research tools, online marketing tools, and e-commerce platforms can work together to help a business succeed in the digital world.",
+    "Explain the design thinking process and how it can be applied to create a new product or service. Provide an example of how design thinking could be used to help farmer in rural Pakistan.",
+    "Imagine you want to start a small online bookstore catering to students in your area. Develop a comprehensive business plan for your bookstore, including: (a) a market analysis focusing on student reading habits and competition. (b) A revenue model outlining how you will generate income. (c) Digital marketing strategies you will use to promote your bookstore online.",
+    "Ensure your answer are detailed and include practical examples relevant to starting your bookstore in Pakistan.",
+    "Choose a local business in Pakistan and discuss how it aligns with one or more sustainable development goals. Include its impact on social, environmental, and economic sustainability."
+
+    ],
+
+    mcqs: [
+     {
+        question: "1. What is entrepreneurship?",
+        options: ["(A) The process of starting a new business or organization", "(B) The process of buying and selling computers", "(C) The process of working for a large company", "(D) The process of creating a marketing campaign"],
+    },
+    {
+        question: "2. What is the key characteristic of entrepreneurs?",
+        options: ["(A) Avoiding risks", "(B) Seeking job security", "(C) Innovation", "(D) Following established methods"],
+    },
+    {
+        question: "3. What is an example of a digital technology used by modern entrepreneurs?",
+        options: ["(A) Newspaper advertisements", "(B) Door-to-Door sales", "(C) Mobile apps", "(D) Television commercials"],
+    },
+    {
+        question: "4. Which of the following is an example of a digital tool for creating and editing documents?",
+        options: ["(A) SurveyMonkey", "(B) Google Docs", "(C) SEMrush", "(D) Zendesk"],
+    },
+    {
+        question: "5. Which tool is commonly used for optimizing website content for search engines?",
+        options: ["(A) Hootsuite", "(B) Yoast SEO", "(C) Shopify", "(D) PayPal"],
+    },
+    {
+        question: "6. Which of the following is not a technique for identifying market needs?",
+        options: ["(A) Market research", "(B) Observation", "(C) Surveys and questionnaires", "(D) Brainstorming"],
+    },
+    {
+        question: "7. What is the first step in the design thinking process?",
+        options: ["(A) Prototyping", "(B) Testing", "(C) Empathizing", "(D) Defining"],
+    },
+    {
+        question: "8. What is the primary purpose of creating a business plan?",
+        options: ["(A) To attract investors for growth", "(B) To outline strategies for growth", "(C) To study market trends", "(D) To implement digital marketing campaigns"],
+    },
+    {
+        question: "9. What does market analysis involve?",
+        options: ["(A) Calculating revenue", "(B) Researching competitors and understanding customer need", "(C) Developing pricing strategies", "(D) Implementing digital marketing campaigns"],
+    },
+    {
+        question: "10. Which sustainable development goal (SDG) focuses on affordable and clean energy?",
+        options: ["(A) SDG 5", "(B) SDG 7", "(C) SDG 12", "(D) SDG 17"],
+    },
+    ],
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -788,6 +1056,13 @@ const questions = [
       },
     ],
   },
+
+
+
+
+
+
+
 ];
 
 const seedQuestions = async () => {
