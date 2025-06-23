@@ -1366,7 +1366,7 @@ const questions = [
   {
     class: 9,
     subject: "Physics",
-    chapterNumber: 1,
+    chapterNumber: 2,
     chapterName: "Kinematics",
     shortQuestions: [
   "Define scalar and vector quantities.",
@@ -1907,7 +1907,7 @@ const questions = [
   {
     class: 9,
     subject: "Physics",
-    chapterNumber: 1,
+    chapterNumber: 9,
     chapterName: "Nature of Science",
     shortQuestions: [
        "State in your words, what is science? write its two main groups.",
@@ -2025,7 +2025,7 @@ const questions = [
   {
     class: 9,
     subject: "Physics",
-    chapterNumber: 1,
+    chapterNumber: 000,
     chapterName: "physics",
     shortQuestions: [
 
