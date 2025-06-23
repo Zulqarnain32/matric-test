@@ -413,7 +413,8 @@ const downloadAsPDF = async () => {
                 {questionBlocks.some(block => 
                   block.questions.some(q => q.type === "MCQ")
                 ) && (
-                  <li>For MCQs, circle the correct answer.</li>
+                   <p>• Use of unfair means is prohibited.</p>
+
                 )}
               </ul>
             </div>
