@@ -34,10 +34,10 @@ const questions = [
       {
         question: "What is the primary function of a system?",
         options: [
-          "To work independently",
-          "To achieve a common goal",
-          "To create new entertainment",
-          "To provide information",
+          "(A) To work independently",
+          "(B) To achieve a common goal",
+          "(C) To create new entertainment",
+          "(D) To provide information",
         ],
       },
       {
@@ -47,69 +47,69 @@ const questions = [
       {
         question: "What is an example of a simple system?",
         options: [
-          " A human body",
-          "A computer network",
-          "A thermostat regulating temperature",
-          "The internet",
+          "(A) A human body",
+          "(B) A computer network",
+          "(C) A thermostat regulating temperature",
+          "(D) The internet",
         ],
       },
       {
         question:
           "What type of the environment remains unchanged unless the system provides an output?",
-        options: ["Dynamic", "Static", "Deterministic", "Non-deterministic"],
+        options: ["(A) Dynamic", "(B) Static", "(C) Deterministic", "(D) Non-deterministic"],
       },
       {
         question: "What are the basic components of a system?",
         options: [
-          "Users, hardware, software",
-          "Objectives, components, communication",
-          "Inputs, outputs, processes",
-          "Sensors, actuators, controllers",
+          "(A)  Users, hardware, software",
+          "(B)  Objectives, components, communication",
+          "(C)  Inputs, outputs, processes",
+          "(D)  Sensors, actuators, controllers",
         ],
       },
       {
         question: "What concept does the theory of system aim to understand?",
         options: [
-          "  Hardware design",
-          "  System interactions and development over time",
-          "Software applications",
-          " Network Security",
+          "(A)    Hardware design",
+          "(B)    System interactions and development over time",
+          "(C)  Software applications",
+          "(D)   Network Security",
         ],
       },
       {
         question:
           "What role does the operating system (OS) play in a computer?",
         options: [
-          "It performs calculations and executes",
-          "It temporarily stores data and instructions for the CPU",
-          "It receives inputs from storage components and decides what to do with it",
-          "It provides long-term storage of data and software",
+          "(A) It performs calculations and executes",
+          "(B) It temporarily stores data and instructions for the CPU",
+          "(C) It receives inputs from storage components and decides what to do with it",
+          "(D) It provides long-term storage of data and software",
         ],
       },
       {
         question:
           "Which describe the following are the Von Neumann architecture's main characteristic?",
         options: [
-          "Separate memory of data",
-          "Parallel execution of instructions",
-          "Single memory for both program instructions and data",
-          "Lack of flexibility in executing instructions",
+          "(A)  Separate memory of data",
+          "(B)  Parallel execution of instructions",
+          "(C)  Single memory for both program instructions and data",
+          "(D)  Lack of flexibility in executing instructions",
         ],
       },
 
       {
         question: "What is a disadvantage of the Von Neumann architecture?",
         options: [
-          "Complex design due to separate memory spaces",
-          "Bottleneck due to program stored in memory",
-          "Difficult to modify single memory space for instructions and data",
-          "Lack of flexibility in executing instructions",
+          "(A) Complex design due to separate memory spaces",
+          "(B) Bottleneck due to program stored in memory",
+          "(C) Difficult to modify single memory space for instructions and data",
+          "(D) Lack of flexibility in executing instructions",
         ],
       },
       {
         question:
           "Which of the following transports data inside a computer among different components?",
-        options: ["Control unit", "System Bus", "Memory", "Processor"],
+        options: ["(A) Control unit", "(B) System Bus", "(C) Memory", "(D) Processor"],
       },
     ],
   },
@@ -143,71 +143,71 @@ const questions = [
       {
         question: "What does ASCII stands for?",
         options: [
-          "American Standard Code for Information Interchange",
-          "American Standard Information Communication Interface",
-          "American Standard Communication for Information Interchange",
-          "Advanced Standard Communication for Information Interchange",
+          "(A)  American Standard Code for Information Interchange",
+          "(B)  American Standard Information Communication Interface",
+          "(C)  American Standard Communication for Information Interchange",
+          "(D)  Advanced Standard Communication for Information Interchange",
         ],
       },
       {
         question: "Which if the the following number is a valid binary number?",
-        options: ["1101102", "11011", "110.11", "1101A"],
+        options: ["(A) 1101102", "(B) 11011", "(C) 110.11", "(D) 1101A"],
       },
 
       {
         question: "How many bits are used in the standard ASCII encoding?",
-        options: ["7 bits", "8 bits", "16 bits", "32 bits"],
+        options: ["(A) 7 bits", "(B) 8 bits", "(C) 16 bits", "(D) 32 bits"],
       },
       {
         question:
           "Which of the the following is a key advantage of Unicode over ASCII?",
         options: [
-          "It used fewer bits per character",
-          "It can represents characters for many different languages",
-          "It is backward compatible with binary",
-          "It is specific to the English language",
+          "(A)  It used fewer bits per character",
+          "(B)  It can represents characters for many different languages",
+          "(C)  It is backward compatible with binary",
+          "(D)  It is specific to the English language",
         ],
       },
       {
         question: "How many bytes are use to store a typical integer?",
-        options: ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+        options: ["(A) 1 byte", "(B) 2 bytes", "(C) 4 bytes", "(D) 8 bytes"],
       },
       {
         question:
           "What is the primary difference between signed and unsigned integers?",
         options: [
-          "Unsigned integers cannot be negative",
-          "Signed integers have a large range",
-          "Unsigned integers are stored in floating-point format",
-          "Signed integers are only used for positive numbers",
+          "(A) Unsigned integers cannot be negative",
+          "(B) Signed integers have a large range",
+          "(C) Unsigned integers are stored in floating-point format",
+          "(D) Signed integers are only used for positive numbers",
         ],
       },
       {
         question:
           "In the single precision, how many bits are used for the exponent?",
-        options: ["23 bits", "8 bits", "11 bits", "52 bits"],
+        options: ["(A) 23 bits", "(B) 8 bits", "(C) 11 bits", "(D) 52 bits"],
       },
       {
         question:
           "What is the approximate range of values for single-precision floating-point numbers?",
         options: [
-          "1.4 x 10^-45 to 3.4 x 10^38",
-          "1.4 x 10^-38 to 3.4 x 10^45",
-          "1.0 x 10^-324 to 1.8 x 10^308",
-          "1.0 x 10^308 to 1.8 x 10^324",
+          "(A) 1.4 x 10^-45 to 3.4 x 10^38",
+          "(B) 1.4 x 10^-38 to 3.4 x 10^45",
+          "(C) 1.0 x 10^-324 to 1.8 x 10^308",
+          "(D) 1.0 x 10^308 to 1.8 x 10^324",
         ],
       },
       {
         question: "What are the tiny dots that make up an image called?",
-        options: ["Pixels", "Bits", "Bytes", "Nodes"],
+        options: ["(A) Pixels", "(B) Bits", "(C) Bytes", "(D) Nodes"],
       },
       {
         question: "In an RGB color model, what does RGB stand for?",
         options: [
-          "Red, Green, Blue",
-          "Red, Grey, Black",
-          "Right, Green, Blue",
-          "Red, Green, Brown",
+          "(A)  Red, Green, Blue",
+          "(B)  Red, Grey, Black",
+          "(C)  Right, Green, Blue",
+          "(D)  Red, Green, Brown",
         ],
       },
     ],
@@ -241,27 +241,22 @@ const questions = [
       {
         question: "1. Which of the following Boolean expression represents the OR operation?",
         options: ["(A) A.B", "(B) A+B", "(C) A", "(D) A⊕B"],
-        answer: "A+B",
     },
     {
         question: "2. What is the value of the Boolean expression A+0=?",
         options: ["(A) A+1=1", "(B) A+0=A", "(C) A", "(D) A, 0=0"],
-        answer: "A", // Assuming (C) is referring to (B) as A+0=A
     },
     {
         question: "3. Which logic gate outputs true only if both inputs are true?",
         options: ["(A) OR gate", "(B) AND gate", "(C) XOR gate", "(D) NOT gate"],
-        answer: "AND gate", // Assuming (B) is the correct answer
     },
     {
         question: "4. In a half-adder circuit, the carry is generated by which operation?",
         options: ["(A) XOR operation", "(B) OR operation", "(C) AND operation", "(D) NOT operation"],
-        answer: "AND operation", // Assuming (C) is the correct answer for carry in half-adder
     },
     {
         question: "5. What is the decimal equivalent of the binary number 1101?",
         options: ["(A) 11", "(B) 12", "(C) 13", "(D) 14"],
-        answer: "13", // Assuming (C) is the correct answer (1*8 + 1*4 + 0*2 + 1*1 = 13)
     },
     ],
   },
@@ -297,52 +292,42 @@ const questions = [
        {
         question: "What is the first step in the systematic process of troubleshooting?",
         options: ["(A) Establish a Theory of Probable Cause", "(B) Implement the Solution", "(C) Identify Problem", "(D) Document Findings, Actions, and Outcomes"],
-        answer: "Identify Problem",
     },
     {
         question: "Why is effective troubleshooting important for maintaining systems?",
         options: ["(A) It helps save money on repairs", "(B) It prevents the need for professional help", "(C) It ensures systems operate smoothly and efficiently", "(D) It allow for more infrequent system updates and efficiently"],
-        answer: "It ensures systems operate smoothly and efficiently",
     },
     {
         question: "Which step involves coming up with a theory about what might be causing a problem?",
         options: ["(A) Test the Theory to Determine the Cause", "(B) Establish a Theory of Probable Cause", "(C) Implement the Solution", "(D) Verify Full System Functionality"],
-        answer: "Establish a Theory of Probable Cause",
     },
     {
         question: "After implement a solution, What is the next step in the troubleshooting process?",
         options: ["(A) Document Findings, Action, and Outcomes", "(B) Test the Theory to Determine the Cause", "(C) Verify Full System Functionality", "(D) Establish a Plan of Action to Resolve the Problem"],
-        answer: "Verify Full System Functionality",
     },
     {
         question: "Which of the following is an example of identifying a problem in troubleshooting process?",
         options: ["(A) Document Findings, Action and Outcomes", "(B) Test the Theory to Determine the Cause", "(C) Verify Full System Functionality", "(D) Establish a Plan of Action to Resolve the Problem"],
-        answer: "Identify the problem", // Based on the options, assuming the intent is to identify the problem from the general troubleshooting steps. The specific option for "Identify the problem" is missing but implied by the question. Will use "Identify the problem" as the answer.
     },
     {
         question: "Why is documenting finding, actions and outcomes important in troubleshooting?",
         options: ["(A) It helps solve problems faster", "(B) It provides a record for future reference", "(C) It allows for more efficient testing", "(D) To ensure the solution is implemented correctly"],
-        answer: "It provides a record for future reference",
     },
     {
         question: "What is the purpose of establishing a plan of action in troubleshooting?",
         options: ["(A) To identify the problem", "(B) To verify full system functionality", "(C) To determine the cause", "(D) To decide on the steps needed to resolve the issue"],
-        answer: "To decide on the steps needed to resolve the issue",
     },
     {
         question: "Why is troubleshooting important in computing systems?",
         options: ["(A) It ensures hardware components are always up to date", "(B) It prevents the need for data backups", "(C) It helps keep systems running smoothly and securely", "(D) It eliminates the need for software update"],
-        answer: "It helps keep systems running smoothly and securely",
     },
     {
         question: "What does troubleshooting help to prevent by quickly identifying and resolving issues?",
         options: ["(A) The need for professional help", "(B) The need for software updates", "(C) Downtime and lost productivity", "(D) The need for operating maintenance"],
-        answer: "Downtime and lost productivity",
     },
     {
         question: "Which of the following is an example of ensuring data integrity through troubleshooting?",
         options: ["(A) Identifying a software bug", "(B) Replacing a faulty printer", "(C) Using a cooling pad to prevent laptop", "(D) Updating the operating system"],
-        answer: "Updating the operating system",
     },
     ],
   },
@@ -376,47 +361,38 @@ const questions = [
          {
         question: "What is the primary function of an operating system?",
         options: ["(A) To create documents", "(B) To manage hardware resources and provide a user interface", "(C) To perform calculations", "(D) To design graphics"],
-        answer: "To manage hardware resources and provide a user interface",
     },
     {
         question: "Which software is use of enhance system performance and security?",
         options: ["(A) Operating system", "(B) Utility software", "(C) Application software", "(D) Device drivers"],
-        answer: "Utility software",
     },
     {
         question: "What role do device drivers play in a computer system?",
         options: ["(A) Manage files", "(B) Facilitate communication between hardware devices and the operating system", "(C) Create presentations", "(D) Enhance graphics performance"],
-        answer: "Facilitate communication between hardware devices and the operating system",
     },
     {
         question: "Which of the following is an example of application software?",
         options: ["(A) Microsoft Word", "(B) BIOS", "(C) Disk Cleanup", "(D) Device Manager"],
-        answer: "Microsoft Word",
     },
     {
         question: "What is the main purpose of spreadsheet software?",
         options: ["(A) To edit text documents", "(B) To organize and analyze data", "(C) To create visual content", "(D) To enhance system data"],
-        answer: "To organize and analyze data",
     },
     {
         question: "Which type of software would you use to design a logo?",
         options: ["(A) Operating system", "(B) Spreadsheet software", "(C) Graphic design software", "(D) Utility software"],
-        answer: "Graphic design software",
     },
     {
         question: "What is the function of system software?",
         options: ["(A) To facilitate communication between hardware", "(B) To perform specific tasks for the user", "(C) To create visual content", "(D) To organize and analyze data"],
-        answer: "To facilitate communication between hardware",
     },
     {
         question: "Why are operating system updates important?",
         options: ["(A) They increase screen brightness", "(B) They add more fonts", "(C) They enhance security and fix bugs", "(D) They improve battery life"],
-        answer: "They enhance security and fix bugs",
     },
     {
         question: "What is the common task you perform using word processing software?",
         options: ["(A) Create and edit text documents", "(B) Manage hardware resources", "(C) Manage hardware performance", "(D) Organize and analyze data"],
-        answer: "Create and edit text documents",
     },
     ],
   },
@@ -454,52 +430,42 @@ const questions = [
         {
         question: "What is the primary objective of computer networks?",
         options: ["(A) Increase the computational power", "(B) Enable resource sharing and data communication", "(C) Enhance graphic capabilities", "(D) Improve software development"],
-        answer: "Enable resource sharing and data communication",
     },
     {
         question: "Which device evice evice used to connect multiple networks and direct data packets between them?",
         options: ["(A) Switch", "(B) Hub", "(C) Router", "(D) Modem"],
-        answer: "Router",
     },
     {
         question: "Which layer of the OSI model is responsible for node-to-node data transfer and error detection?",
         options: ["(A) Physical Layer", "(B) Data Link Layer", "(C) Network Layer", "(D) Transport Layer"],
-        answer: "Data Link Layer",
     },
     {
         question: "What is that the function of the Domain Name System (DNS)?",
         options: ["(A) Assign IP addresses dynamically", "(B) Translate domain names to IP addresses", "(C) Secure data communication", "(D) Monitor network traffic"],
-        answer: "Translate domain names to IP addresses",
     },
     {
         question: "Which method/method of data transmission used a dedicated communication path?",
         options: ["(A) Packet Switching", "(B) Circuit Switching", "(C) Half-Duplex", "(D) Half-Duplex"],
-        answer: "Circuit Switching",
     },
     {
         question: "What is encapsulation in the context of network communication?",
         options: ["(A) Converting data into a secure format", "(B) Wrapping data with protocol information", "(C) Monitoring network traffic", "(D) Translating domain names to IP addresses"],
-        answer: "Wrapping data with protocol information",
     },
     {
         question: "Which protocol/protocol is used for reliable data transfer in the TCP/IP model?",
         options: ["(A) HTTP", "(B) FTP", "(C) TCP", "(D) UDP"],
-        answer: "TCP",
     },
     {
         question: "What is the main purpose of a firewall in network security?",
         options: ["(A) Convert data into a secure format", "(B) Monitor and control network traffic", "(C) Assign IP addresses", "(D) Translate domain names"],
-        answer: "Monitor and control network traffic",
     },
     {
         question: "Which network topology connects all devices to a central hub?",
         options: ["(A) Ring", "(B) Mesh", "(C) Bus", "(D) Star"],
-        answer: "Star",
     },
     {
         question: "What is a key benefit of using computer networks in businesses?",
         options: ["(A) Increases computational power", "(B) Enable resources sharing and efficient communication", "(C) Enhance graphic capabilities", "(D) Improve software development"],
-        answer: "Enable resources sharing and efficient communication",
     },
     ],
   },
@@ -541,47 +507,38 @@ const questions = [
      {
         question: "Which of the following best defines computational thinking?",
         options: ["(A) A method of solving problems using mathematical calculations only", "(B) A problem-solving approach that employs systematic, algorithmic and logical thinking", "(C) A technique used exclusively in computer programming", "(D) An approach that ignores real-world applications"],
-        answer: "A problem-solving approach that employs systematic, algorithmic and logical thinking",
     },
     {
         question: "Why is problems decomposition important in computational thinking?",
         options: ["(A) It simplifies problems by breaking them down into smaller, more manageable parts", "(B) It eliminates problems by adding more details", "(C) It eliminates the need for problem solving", "(D) It is only useful for simple problems"],
-        answer: "It simplifies problems by breaking them down into smaller, more manageable parts",
     },
     {
         question: "Pattern recognition involves",
         options: ["(A) Finding and using similarities within problems", "(B) Ignoring repetitive elements", "(C) Breaking problems into sir pieces", "(D) Finding detailed algorithms"],
-        answer: "Finding and using similarities within problems",
     },
     {
         question: "Which term rerm refer to offer to the process of ignoring the details to focus on the main idea?",
         options: ["(A) Decomposition", "(B) Pattern recognition", "(C) Abstraction", "(D) Algorithm design"],
-        answer: "Abstraction",
     },
     {
         question: "Which of the following is a principle of computational thinking?",
         options: ["(A) Finding and using similarities within problems", "(B) Ignoring repetitive elements", "(C) Breaking problems into sir pieces", "(D) Finding detailed algorithms"],
-        answer: "Abstraction", // Re-using an answer from a similar question in a previous set. This question's options are cut off, making it difficult to determine the exact answer. Assuming it relates to the previous questions' themes of computational thinking principles.
     },
     {
         question: "Which of the following is the first step in problem-solving according to computational thinking?",
         options: ["(A) Writing the solution", "(B) Understanding the problem", "(C) Designing a flowchart", "(D) Selecting a solution"],
-        answer: "Understanding the problem",
     },
     {
         question: "Flowcharts are used to:",
         options: ["(A) Code a program", "(B) Represent algorithms graphically", "(C) Solve mathematical equations", "(D) Identify patterns"],
-        answer: "Represent algorithms graphically",
     },
     {
         question: "Pseudocode is:",
         options: ["(A) A type of flowchart", "(B) A high-level description of an algorithm using plain language", "(C) A programming language", "(D) A debugging tool"],
-        answer: "A high-level description of an algorithm using plain language",
     },
     {
         question: "Dry running a flowchart involves",
         options: ["(A) Writing the code in a programming language", "(B) Testing the flowchart with sample data", "(C) A programming language", "(D) A debugging tool"],
-        answer: "Testing the flowchart with sample data",
     },
     ],
   },
