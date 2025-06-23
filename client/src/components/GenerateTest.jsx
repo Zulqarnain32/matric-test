@@ -402,10 +402,11 @@ const downloadAsPDF = async () => {
             </div>
             <div>
               <strong className="xs:text-[13px]">Instructions:</strong>
-              <ul className="list-disc pl-6 xs:text-[12px]">
-                <li>Attempt all questions.</li>
-                <li>Write clearly and neatly.</li>
-                <li>Use of unfair means is prohibited.</li>
+              {/* <ul className="list-disc pl-6 xs:text-[12px]"> */}
+              <ul className=" pl-6 xs:text-[12px]">
+                <p>• Attempt all questions.</p>
+                <p>• Write clearly and neatly.</p>
+                <p>• Usess of unfair means is prohibited.</p>
                 {questionBlocks.some(block => 
                   block.questions.some(q => q.type === "MCQ")
                 ) && (
@@ -436,7 +437,7 @@ const downloadAsPDF = async () => {
                       <div className="mt-2 ml-4 grid grid-cols-2  ">
                         {q.options.map((option, i) => (
                           <div key={i} className="flex item-center ">
-                            <span className="mr-2">{String.fromCharCode(97 + i)}.</span>
+                            {/* <span className="mr-2">{String.fromCharCode(97 + i)}.</span> */}
                             {option}
                           </div>
                         ))}
