@@ -943,6 +943,336 @@ const questions = [
 
 
 
+  
+  
+  {
+    class: 10,
+    subject: "Computer",
+    chapterNumber: 1,
+    chapterName: "Introduction to Programming",
+    shortQuestions: [
+  "Define IDE.",
+    "Define compiler.",
+    "Define reserved words.",
+    "Define main section of a program.",
+    "Define char data type."
+
+    ],
+    longQuestions: [
+       "Why do we need a programming environment?",
+    "Describe the purpose of a compiler in a programming environment.",
+    "Define reserved words.",
+    "Define main section of a program.",
+    "Define char data type.",
+    "Write the steps to create a C program file in the IDE of your lab computer.",
+    "Why do we use comments in programming?",
+    "Write down the rules for naming variables.",
+    "Write a note code char and int data type.",
+    "How can we declare and initialize a variable?"
+
+    ],
+
+    mcqs: [
+ {
+        question: "1. A software that facilitates programmers in writing computer programs is known as",
+        options: ["(A) A compiler", "(B) An editor", "(C) An IDE", "(D) A debugger"],
+    },
+    {
+        question: "2. ___ is a software that is responsible for the conversion of program files ile files in to machine understandable and executable code.",
+        options: ["(A) A compiler", "(B) An editor", "(C) An IDE", "(D) A debugger"],
+    },
+    {
+        question: "3. Every programming language has some primitive building blocks and follows some grammar rules known as its ...... .",
+        options: ["(A) Syntax", "(B) Programming rules", "(C) Building blocks", "(D) Semantic rules"],
+    },
+    {
+        question: "4. A list of words that are predefined and must not be used by the programmer to name his own variables are known as ...... .",
+        options: ["(A) Auto words", "(B) Reserved words", "(C) Restricted words", "(D) Predefined words"],
+    },
+    {
+        question: "5. include statements are written in ...... section.",
+        options: ["(A) header", "(B) main", "(C) Comments", "(D) print"],
+    },
+    {
+        question: "6. ....... are .... added are_ added in the source code to further explain the techniques and algorithms used by the programmer.",
+        options: ["(A) Messages", "(B) Hints", "(C) Comments", "(D) Explanations"],
+    },
+    {
+        question: "7. ....... are the values that do not change during the whole execution of program.",
+        options: ["(A) Variables", "(B) Constants", "(C) Strings", "(D) Comments"],
+    },
+    {
+        question: "8. A float uses ...... bytes of memory.",
+        options: ["(A) 2", "(B) 4", "(C) 6", "(D) 8"],
+    },
+    {
+        question: "9. For intializing a variable we use ...... operator.",
+        options: ["(A) ->", "(B) =", "(C) == ", "(D) !="],
+    },
+    {
+        question: "10. ...... can be thought as a container store constants.",
+        options: ["(A) box", "(B) C", "(C) Variable", "(D) Collection"],
+    },
+    ],
+
+  },
+
+    {
+    class: 10,
+    subject: "Computer",
+    chapterNumber: 2,
+    chapterName: "User Interface",
+    shortQuestions: [
+ "Define statement terminator.",
+    "Define format specifier.",
+    "Define escape sequence.",
+    "Define scanf.",
+    "Define modulus operator."
+
+    ],
+    longQuestions: [
+       "What is the difference between scanf and getch() function?",
+    "Why format specifiers are important to be specified in I/O operations?",
+    "What are escape sequences? Why do we need them?",
+    "Which operators are use for arithmetic operations?",
+    "What are relational operators? Describe with an example.",
+    "What are logical operators? Describe with an example.",
+    "What is the difference between unary operators and binary operators?",
+    "What is the difference between == operator and = operator?",
+    "What is the major and precedence of operators?",
+    "Which operator has the highest precedence in C language?",
+
+    ],
+
+    mcqs: [
+ {
+        question: "1. printf is used to print ...... type of data.",
+        options: ["(A) int", "(B) float", "(C) char", "(D) All of them"],
+    },
+    {
+        question: "2. scanf is a ...... in C programming.",
+        options: ["(A) Keyword", "(B) Library", "(C) Function", "(D) None of them"],
+    },
+    {
+        question: "3. getch() is used to take ...... as input from user.",
+        options: ["(A) int", "(B) float", "(C) char", "(D) All of them"],
+    },
+    {
+        question: "4. Let the following part of code, what will be the value of variable a after execution. int a=4; float b=2.2; a=a+b;",
+        options: ["(A) 8.8", "(B) 8", "(C) 8.0", "(D) 8.2"],
+    },
+    {
+        question: "5. Which of the following is a valid line of code?",
+        options: ["(A) int=20;", "(B) Grade='A';", "(C) int=this is a valid line.", "(D) None of them"],
+    },
+    {
+        question: "6. Which operator has the highest precedence among the following?",
+        options: ["(A) /", "(B) =", "(C) !", "(D) Logical operator"],
+    },
+    {
+        question: "7. Which of the following is not a type of operator?",
+        options: ["(A) Arithmetic operator", "(B) Relational operator", "(C) Factorial", "(D) Logical operator"],
+    },
+    {
+        question: "8. The operator '%' is used to calculate ...... .",
+        options: ["(A) Percentage", "(B) Remainder", "(C) Square", "(D) Cube"],
+    },
+    {
+        question: "9. Which of the following is a valid character?",
+        options: ["(A) 'a'", "(B) 'ab'", "(C) \"a\"", "(D) '12'"],
+    },
+    {
+        question: "10. What is true about C language?",
+        options: ["(A) C is not case sensitive language", "(B) Keywords can be used as variables", "(C) All logical operators are binary operators", "(D) None of them"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Computer",
+    chapterNumber: 3,
+    chapterName: "Conditional Logic",
+    shortQuestions: [
+ "Define control statements.",
+    "Define selection statements.",
+    "Define sequential control.",
+    "Define condition.",
+    "Define nested selection structures."
+
+    ],
+    longQuestions: [
+        "Why do we need selection statements?",
+    "Differentiate between sequential and selection statements.",
+    "Differentiate between if statement and if else statement with an example.",
+    "What is the use of nested selection structures?",
+    "Write the structure of if statement with brief description."
+
+    ],
+
+    mcqs: [
+ {
+        question: "1. Conditional logic helps in .......... .",
+        options: ["(A) Decisions", "(B) Iterations", "(C) Traversing", "(D) All"],
+    },
+    {
+        question: "2. .......... statements describe the sequence in which statements of the program should be executed.",
+        options: ["(A) Loop", "(B) Conditional", "(C) Control", "(D) All"],
+    },
+    {
+        question: "3. If in statement, what happens if condition is false?",
+        options: ["(A) Program crashes", "(B) Index out of bound error", "(C) Further code executes", "(D) Compiler asks to change condition"],
+    },
+    {
+        question: "4. Which if the following statements will execute? int a=5; if (a<10) a++; else if (a=4) a--;",
+        options: ["(A) a++", "(B) a--", "(C) Both A & B", "(D) None"],
+    },
+    {
+        question: "5. Which if the following is the condition to check a is a factor of c?",
+        options: ["(A) a%c==0", "(B) c%a==0", "(C) a%c!=0", "(D) a++c++==0"],
+    },
+    {
+        question: "6. A condition can be any ...... expression.",
+        options: ["(A) Arithmetic", "(B) Relational", "(C) Logical", "(D) Arithmetic, relational or logical"],
+    },
+    {
+        question: "7. An if statement inside another if statement is called .... structure.",
+        options: ["(A) Nested", "(B) boxed", "(C) repeated", "(D) decomposed"],
+    },
+    {
+        question: "8. A set of multiple instructions enclosed in braces is called a .... .",
+        options: ["(A) block", "(B) list", "(C) job", "(D) box"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Computer",
+    chapterNumber: 4,
+    chapterName: "Data and Repitation",
+    shortQuestions: [
+      "Define data structure",
+      "Define array",
+      "Define array initialization",
+      "Define loop structure",
+      "Define nested loops"
+    ],
+    longQuestions: [
+       "What is the advantage of initializing an array at the time of declaration?",
+    "How can you declare an array? Briefly describe the three parts of array declaration.",
+    "Is loop a data structure? Justify your answer.",
+    "What is the use of nested loops?",
+    "Describe the structure of a for loop."
+
+    ],
+
+    mcqs: [
+  {
+        question: "1. An array is a ...... structure.",
+        options: ["(A) Loop", "(B) Control", "(C) Data", "(D) Conditional"],
+    },
+    {
+        question: "2. Array elements are stored at ...... memory locations.",
+        options: ["(A) Divided", "(B) Scattered", "(C) Contiguous", "(D) None"],
+    },
+    {
+        question: "3. If the size of an array is 100, the range of indexes will be ........",
+        options: ["(A) 0-99", "(B) 0-100", "(C) 1-100", "(D) 2-2012"],
+    },
+    {
+        question: "4. ........ structure allows repetitions of a set of instructions.",
+        options: ["(A) Loop", "(B) Data", "(C) Control", "(D) Array"],
+    },
+    {
+        question: "5. ........ is the unique identifier, used to refer to the array.",
+        options: ["(A) Loop", "(B) Array name", "(C) Data type", "(D) Control"],
+    },
+    {
+        question: "6. Array can be initialized ........ declaration.",
+        options: ["(A) At the time of", "(B) After", "(C) Before", "(D) Both A & B"],
+    },
+    {
+        question: "7. Using loops inside loops is called ........ loops.",
+        options: ["(A) For", "(B) While", "(C) On-while", "(D) Nested"],
+    },
+    {
+        question: "8. ........ part of loop is executed first.",
+        options: ["(A) Initialization", "(B) Condition", "(C) Increment / decrement", "(D) Body"],
+    },
+    {
+        question: "9. ........ make it easy to read and write values in array.",
+        options: ["(A) Loops", "(B) Conditions", "(C) Expressions", "(D) Functions"],
+    },
+    {
+        question: "10. To initialize the array in a single statement, initialize it ........ declaration.",
+        options: ["(A) at the time of", "(B) before", "(C) after", "(D) both A & B"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Computer",
+    chapterNumber: 5,
+    chapterName: "Functions",
+    shortQuestions: [
+       "Define functions",
+       "Define built-in functions",
+       "Define functions parameters",
+       "Define resusabiltiy",
+       "Define calling a function"
+
+    ],
+    longQuestions: [
+        "What is the difference between arguments and parameters? Give an example.",
+    "Enlist the parts of a function definition.",
+    "Is it necessary to use compatible data types in function definition and function call? Justify your answer with an example.",
+    "Describe the advantages of using functions.",
+    "What do you know about the return keyword?"
+
+    ],
+
+    mcqs: [
+   {
+        question: "1. Functions could be built-in or ...... .",
+        options: ["(A) Admin defined", "(B) Server defined", "(C) User defined", "(D) Both A & C"],
+    },
+    {
+        question: "2. The functions which are available in C standard library are called ...... .",
+        options: ["(A) User defined", "(B) Built-in", "(C) Recursive", "(D) Repetitive"],
+    },
+    {
+        question: "3. The values passed to a function are called ...... .",
+        options: ["(A) Arguments", "(B) Parameters", "(C) Return values", "(D) Arrays"],
+    },
+    {
+        question: "4. char city[10]; in this function 'char' is ...... .",
+        options: ["(A) Body", "(B) Return type", "(C) Array", "(D) Arguments"],
+    },
+    {
+        question: "5. The advantage of using functions are ...... .",
+        options: ["(A) Readability", "(B) Reusability", "(C) Easy debugging", "(D) All"],
+    },
+    {
+        question: "6. If there three return statements in the function body, ...... of them will be executed.",
+        options: ["(A) All", "(B) One", "(C) First and last", "(D) None"],
+    },
+    {
+        question: "7. Readability helps to ...... the code.",
+        options: ["(A) Understand", "(B) Modify", "(C) Debug", "(D) All"],
+    },
+    {
+        question: "8. ...... means to transfer the control to another function.",
+        options: ["(A) Calling", "(B) Defining", "(C) Re-writing", "(D) Including"],
+    },
+    ],
+  },
+
+
+
+
+
 
 
 
