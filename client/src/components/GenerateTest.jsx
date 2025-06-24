@@ -128,51 +128,26 @@ const TestGenerator = () => {
     selectedQuestions.length !== 0 &&
     selectedQuestions.length === Number(totalQuestionsAllowed);
 
-  // const handleShowPaper = () => {
-  //   if (selectedQuestions.length === 0) return;
-
-  //   const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
-
-  //   setQuestionBlocks((prev) => [
-  //     ...prev,
-  //     {
-  //       count: selected.length,
-  //       questions: selected,
-  //       marks: questionMarks,
-  //     },
-  //   ]);
-  //   toast.success("Question has been added");
-
-  //   setSelectedQuestions([]);
-  //   setQuestionMarks("");
-  // };
-
   const handleShowPaper = () => {
-  if (selectedQuestions.length === 0) return;
+    if (selectedQuestions.length === 0) return;
 
-  // Set defaults if values are not entered
-  const marks = questionMarks !== "" ? Number(questionMarks) : 2;
-  // const ignore = ignoreQuestions !== "" ? Number(ignoreQuestions) : 0;
-const ignore = ignoreQuestions !== "" ? Number(ignoreQuestions) : 0;
+    const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
 
-  const selected = selectedQuestions.map((idx) => generatedQuestions[idx]);
+    setQuestionBlocks((prev) => [
+      ...prev,
+      {
+        count: selected.length,
+        questions: selected,
+        marks: questionMarks,
+      },
+    ]);
+    toast.success("Question has been added");
 
-  setQuestionBlocks((prev) => [
-    ...prev,
-    {
-      count: selected.length,
-      questions: selected,
-      marks: marks,
-    },
-  ]);
+    setSelectedQuestions([]);
+    setQuestionMarks("");
+  };
 
-  toast.success("Question has been added");
-
-  // Reset values
-  setSelectedQuestions([]);
-  setQuestionMarks("");
-  setIgnoreQuestions("");
-};
+ 
 
 
 const downloadAsPDF = async () => {
@@ -459,11 +434,9 @@ const downloadAsPDF = async () => {
                    `Answer the following questions (Any ${block.count - Number(ignoreQuestions || 0)})`}
                 </h3>
                 <h2 className="xs:text-[12px]">
-                  {block.count - Number(ignoreQuestions || 0)}×{block.marks} = 
-  {(block.count - Number(ignoreQuestions || 0)) * block.marks}
 
-                  {/* {block.count - Number(ignoreQuestions)}×{block.marks}= */}
-                  {/* {(block.count - Number(ignoreQuestions)) * block.marks} */}
+                  {block.count - Number(ignoreQuestions)}×{block.marks}=
+                  {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
               </div>
               {/* <ol className="list-decimal list-inside  space-y-2 xs:text-[12px]"> */}
