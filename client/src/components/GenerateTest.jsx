@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
-import axios from "axios"
+import axios from "axios";
 import { AuthContext } from "../global/AuthContext";
 import html2pdf from "html2pdf.js";
 import { toast } from "react-toastify";
 
 const TestGenerator = () => {
-  
   const { user } = useContext(AuthContext);
   const [allQuestions, setAllQuestions] = useState([]);
   const [selectedClass, setSelectedClass] = useState("");
@@ -19,10 +18,15 @@ const TestGenerator = () => {
   const [questionBlocks, setQuestionBlocks] = useState([]);
   const [ignoreQuestions, setIgnoreQuestions] = useState();
   const [questionMarks, setQuestionMarks] = useState();
-  const [schoolName,setSchoolName] = useState("");
+  const [schoolName, setSchoolName] = useState("");
 
-
-
+  const isSearchDisabled =
+    !selectedClass ||
+    !selectedSubject ||
+    !selectedType ||
+    !totalQuestionsAllowed ||
+    !questionMarks ||
+    selectedChapters.length === 0;
 
   // Fetch all questions once
   useEffect(() => {
@@ -147,37 +151,36 @@ const TestGenerator = () => {
     setQuestionMarks("");
   };
 
- 
+  const downloadAsPDF = async () => {
+    const element = document.getElementById("pdf-content");
 
+    try {
+      const pdfBlob = await html2pdf()
+        .from(element)
+        .set({
+          margin: 0.5,
+          filename: "test.pdf",
+          image: { type: "jpeg", quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+        })
+        .outputPdf("blob");
 
-const downloadAsPDF = async () => {
-  const element = document.getElementById("pdf-content");
+      // Download the PDF to user's device
+      const url = URL.createObjectURL(pdfBlob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `Test_${selectedClass}_${selectedSubject}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
 
-  try {
-    const pdfBlob = await html2pdf().from(element).set({
-      margin: 0.5,
-      filename: "test.pdf",
-      image: { type: "jpeg", quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-    }).outputPdf('blob');
-
-    // Download the PDF to user's device
-    const url = URL.createObjectURL(pdfBlob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `Test_${selectedClass}_${selectedSubject}.pdf`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    toast.success("PDF downloaded successfully");
-  } catch (error) {
-    console.error("Error generating PDF:", error);
-    toast.error("Error generating PDF");
-  }
-};
-
+      toast.success("PDF downloaded successfully");
+    } catch (error) {
+      console.error("Error generating PDF:", error);
+      toast.error("Error generating PDF");
+    }
+  };
 
   return (
     <div className="max-w-3xl mx-auto px-6 mt-10">
@@ -185,14 +188,14 @@ const downloadAsPDF = async () => {
         Test Generator
       </h1>
 
-          <label className="block mb-1 font-bold text-gray-700">School Name</label>
+      <label className="block mb-1 font-bold text-gray-700">School Name</label>
 
-       <input
-            type="text"
-            value={schoolName}
-            onChange={(e) => setSchoolName(e.target.value)}
-            className="w-full border border-gray-300 mb-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
-          />
+      <input
+        type="text"
+        value={schoolName}
+        onChange={(e) => setSchoolName(e.target.value)}
+        className="w-full border border-gray-300 mb-2 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400 disabled:bg-gray-100"
+      />
 
       {/* Dropdowns for Class*/}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
@@ -314,15 +317,27 @@ const downloadAsPDF = async () => {
               </span>
             </label>
           ))}
-         
         </div>
       </div>
 
       {/* Generate Button */}
-      <div className="mt-6 text-center">
+      {/* <div className="mt-6 text-center">
         <button
           onClick={generateTest}
           className="bg-text text-white font-semibold px-6 py-2 rounded shadow transition"
+        >
+          Search Questions
+        </button>
+      </div> */}
+      <div className="mt-6 text-center">
+        <button
+          onClick={generateTest}
+          disabled={isSearchDisabled}
+          className={`px-6 py-2 font-semibold rounded shadow transition ${
+            isSearchDisabled
+              ? "bg-gray-400 cursor-not-allowed"
+              : "bg-text text-white"
+          }`}
         >
           Search Questions
         </button>
@@ -331,7 +346,8 @@ const downloadAsPDF = async () => {
       {generatedQuestions.length > 0 && (
         <div className="my-10">
           <h2 className="text-2xl font-bold mb-4 text-text">
-            Select Questions ({selectedQuestions.length}/{totalQuestionsAllowed})
+            Select Questions ({selectedQuestions.length}/{totalQuestionsAllowed}
+            )
           </h2>
           <ol className="grid grid-cols-2 xs:grid-cols-1 gap-2 list-decimal list-inside">
             {generatedQuestions.map((q, idx) => {
@@ -409,18 +425,15 @@ const downloadAsPDF = async () => {
               <strong className="xs:text-[13px]">Instructions:</strong>
               {/* <ul className="list-disc pl-6 xs:text-[12px]"> */}
               <ul className=" pl-2 xs:text-[12px]">
-               <div className="font-normal">
-                 <p>• Attempt all questions.</p>
-                <p>• Write clearly and neatly.</p>
-                <p>• Use of unfair means is prohibited.</p>
-               </div>
-                
-                {questionBlocks.some(block => 
-                  block.questions.some(q => q.type === "MCQ")
-                ) && (
-                   <p>• Use of unfair means is prohibited.</p>
+                <div className="font-normal">
+                  <p>• Attempt all questions.</p>
+                  <p>• Write clearly and neatly.</p>
+                  <p>• Use of unfair means is prohibited.</p>
+                </div>
 
-                )}
+                {questionBlocks.some((block) =>
+                  block.questions.some((q) => q.type === "MCQ")
+                ) && <p>• Use of unfair means is prohibited.</p>}
               </ul>
             </div>
           </div>
@@ -430,11 +443,13 @@ const downloadAsPDF = async () => {
             <div key={blockIdx} className="mb-6">
               <div className="flex justify-between font-bold">
                 <h3 className="font-bold mb-2 xs:text-[13px]">
-                  {block.questions[0].type === "MCQ" ? "Choose the correct option" : 
-                   `Answer the following questions (Any ${block.count - Number(ignoreQuestions || 0)})`}
+                  {block.questions[0].type === "MCQ"
+                    ? "Choose the correct option"
+                    : `Answer the following questions (Any ${
+                        block.count - Number(ignoreQuestions || 0)
+                      })`}
                 </h3>
                 <h2 className="xs:text-[12px]">
-
                   {block.count - Number(ignoreQuestions)}×{block.marks}=
                   {(block.count - Number(ignoreQuestions)) * block.marks}
                 </h2>
@@ -443,7 +458,7 @@ const downloadAsPDF = async () => {
               <ol className=" list-inside  space-y-2 xs:text-[12px]">
                 {block.questions.map((q, i) => (
                   <li key={i} className="mb-0">
-                    {i+1}.&nbsp; {q.question}
+                    {i + 1}.&nbsp; {q.question}
                     {q.type === "MCQ" && (
                       <div className="mt-2 ml-4 grid grid-cols-2  ">
                         {q.options.map((option, i) => (
