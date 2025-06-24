@@ -9,7 +9,7 @@ const chapterSchema = new mongoose.Schema({
   },
   subject: {
     type: String,
-    enum: ['Computer', 'Physics', 'Chemistry'],
+    enum: ['Computer', 'Physics', 'Chemistry','Biology'],
     required: true
   },
   chapterNumber: {

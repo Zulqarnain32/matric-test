@@ -217,6 +217,7 @@ const downloadAsPDF = async () => {
             <option value="Computer">Computer</option>
             <option value="Physics">Physics</option>
             <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
           </select>
         </div>
 

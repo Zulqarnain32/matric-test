@@ -4664,6 +4664,593 @@ const questions = [
   },
 
 
+//?   nine biology
+
+
+  
+  {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 1,
+    chapterName: "The Science of Biology",
+    shortQuestions: [
+ "Define the following branches of Biology: Biology, Genetics, Anatomy, Palaeontology, Marine Biology, Pathology.",
+    "Which branch of biology involves the study of the development of organisms from fertilization to birth or hatching?",
+    "Differentiate between Morphology and Physiology.",
+    "What is Computational Biology?",
+    "How is the profession of medicine and surgery different from animal husbandry?",
+    "What is the role of observation and experimentation in the scientific method?"
+
+    ],
+    longQuestions: [
+         "Why is it important to classify biology into different branches such as botany, zoology, and microbiology? How does specialization benefit scientific research?",
+    "Link the study of Biology with that of Physics, Chemistry, Statistics, Geography, Economics and Computer Science.",
+    "Science is a collaborative field in which scientists work together to share knowledge. Prove this statement by giving examples.",
+    "Explain how the study of Biology can lead to different professional studies.",
+    "How can a soil scientist apply the scientific method to confirm an observation that a certain plant species grow more quickly in places than in direct sunlight?",
+    "What are the basic steps a scientist adopts in order to solve a scientific problem?",
+    "How hypothesis is converted to theory, law and principle?",
+    "Describe the work of different scientists in discovering the cause of malaria.",
+    "Write a descriptive note on the experiments performed by Ross."
+
+    ],
+
+    mcqs: [
+        {
+        question: "Which branch of biology focuses on the study of the structure and function of cells?",
+        options: ["(A) Cytology", "(B) Microbiology", "(C) Ecology", "(D) Embryology"]
+    },
+    {
+        question: "The study of the processes of heredity and variation in living organisms is known as:",
+        options: ["(A) Parasitology", "(B) Biotechnology", "(C) Genetics", "(D) Histology"]
+    },
+    {
+        question: "Insulin made through bacteria is an example of the technique of:",
+        options: ["(A) Physiology", "(B) Anatomy", "(C) Microbiology", "(D) Biotechnology"]
+    },
+    {
+        question: "Heart pump ironps blood, stomach digests food and kidneys excrete wastes. The statement comes from.",
+        options: ["(A) Physiology", "(B) Anatomy", "(C) Morphology", "(D) Histology"]
+    },
+    {
+        question: "Which branch of Biology involves the study of the classification of organisms?",
+        options: ["(A) Taxonomy", "(B) Physiology", "(C) Paleontology", "(D) Biogeography"]
+    },
+    {
+        question: "Which step coep comes between making hypothesis and doing experiments?",
+        options: ["(A) Making deductions", "(B) Making observations", "(C) Summarizing results", "(D) Analysing data"]
+    },
+    {
+        question: "Which dtich the following is not a characteristic of the scientific method?",
+        options: [
+            "(A) It relies on evidence",
+            "(B) It involves formulating hypotheses",
+            "(C) Hypothesis will always be correct",
+            "(D) It requires rigorous testing"
+        ]
+    },
+    {
+        question: "Choose the correct sequence of steps of scientific method.",
+        options: [
+            "(A) Hypothesis - observations - theory - deduction - experiments",
+            "(B) Observations - hypothesis - deduction - theory - experiments",
+            "(C) Observations - hypothesis - theory - deduction - experiments",
+            "(D) law - theory - observations - deduction - experiments"
+        ]
+    },
+    {
+        question: "Experiments are very important in scientific method because a researcher:",
+        options: [
+            "(A) Always gets correct results",
+            "(B) Disproves many hypotheses and gets prove the some hypotheses",
+            "(C) Is sure that he will work in the laboratory",
+            "(D) Gets a chance to work in the laboratory"
+        ]
+    },
+    {
+        question: "People who slept near smoky fire had less chance to suffer from malaria Why?",
+        options: [
+            "(A) Smoke kills Plasmodium in their blood",
+            "(B) Fire increases temperature and Plasmodium are killed in air",
+            "(C) Mosquitoes cannot tolerate smoke and Plasmodium are repelled",
+            "(D) Smoke kills Plasmodium present in mosquitoes"
+        ]
+    }
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 2,
+    chapterName: "Biodiversity",
+    shortQuestions: [
+ "What is the term used to describe the variety of organisms in ecosystems?",
+    "How is the biodiversity crucial for humans and for the planet Earth?",
+    "What are the seven taxonomic ranks used in the Linnaean system?",
+    "Write the taxonomic rank of lion and com?",
+    "What are the basic differences between archea and bacteria?",
+    "What are the shortcomings of the three-kingdom classification system?",
+    "Which kingdom includes organisms that are multicellular and heterotrophic, and lack cell walls?",
+    "Enlist the distinguishing characteristics of fungi.",
+    "List the three domains that encompass all living organisms.",
+    "Why cannot we classify viruses in any kingdom?",
+    "How does binomial nomenclature facilitate clear communication about organisms across different languages?"
+
+    ],
+    longQuestions: [
+         "Discuss biodiversity and its significance in maintaining the health of ecosystems.",
+    "Explain the importance of classification in biology and how it helps us understand the relationships between different organisms.",
+    "Describe the Linnaean system of classification in detail, stating the seven taxonomic ranks and their relationships.",
+    "How might placing an organism in the incorrect taxonomic group affect conservation or scientific studies?",
+    "Compare and contrast the domains Archaea and Bacteria, focusing on their key characteristics.",
+    "Describe the diagnostic characteristics of the four kingdoms within the domain Eukarya.",
+    "Discuss the challenges of classifying viruses within the traditional three domains of life.",
+    "Explain the rules and guidelines for suggesting scientific names to organisms.",
+    "Imagine you discover a new organism. What steps would you take to classify and name it according to the principles of binomial nomenclature?"
+
+    ],
+
+    mcqs: [
+       {
+        question: "Which of the following taxonomic ranks represents the broadest rank?",
+        options: ["(A) Species", "(B) Genus", "(C) Kingdom", "(D) Domain"]
+    },
+    {
+        question: "Which of these statements is NOT related to bacteria?",
+        options: [
+            "(A) Do not have a cell wall",
+            "(B) Cell wall made of peptidoglycan",
+            "(C) Most are heterotrophic",
+            "(D) Have chlorophyll in their cells"
+        ]
+    },
+    {
+        question: "Which these organisms belongs to the domain Eukarya?",
+        options: ["(A) Escherichia coli", "(B) Yeast", "(C) Coronavirus", "(D) None of these"]
+    },
+    {
+        question: "Which of the following is a key characteristic that distinguishes eukaryotic cells from prokaryotic cells?",
+        options: [
+            "(A) Lack of a cell wall",
+            "(B) Presence of a nucleus",
+            "(C) Absence of ribosomes",
+            "(D) Smaller size"
+        ]
+    },
+    {
+        question: "Which kingdom includes organisms that are primarily unicellular, eukaryotic, and often heterotrophic?",
+        options: ["(A) Archaea", "(B) Protista", "(C) Fungi", "(D) Plantae"]
+    },
+    {
+        question: "Why are fungi included in heterotrophic organisms?",
+        options: [
+            "(A) Have chitin in cell wall",
+            "(B) Absorb nutrients",
+            "(C) Reproduce by spores",
+            "(D) Cannot prepare food"
+        ]
+    },
+    {
+        question: "Which characteristic is unique to organisms in the domain Archaea?",
+        options: [
+            "(A) Ability to live in extreme environments",
+            "(B) Cell wall made of peptidoglycan",
+            "(C) Presence of a nucleus",
+            "(D) Lack of ribosomes"
+        ]
+    },
+    {
+        question: "Why is it impossible to classify viruses within traditional biological kingdoms?",
+        options: [
+            "(A) They lack cellular structure and organelles",
+            "(B) They cannot perform photosynthesis",
+            "(C) They are smaller in size than bacteria",
+            "(D) They are parasites"
+        ]
+    },
+    {
+        question: "Which of the following is the correct way for writing the scientific name of humans?",
+        options: ["(A) Homo sapiens", "(B) Homo sapiens", "(C) Homo Sapiens", "(D) Homo sapiens"]
+    },
+    {
+        question: "Which of the following information can you get if you know the scientific name of an organisms?",
+        options: [
+            "(A) Kingdom and phylum",
+            "(B) Phylum and genus",
+            "(C) Genus and species",
+            "(D) Class and species"
+        ]
+    }
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 3,
+    chapterName: "The Cell",
+    shortQuestions: [
+"Which type of cell is responsible for sending nerve signals?",
+    "What are the main functions of cell membrane?",
+    "What key role does Golgi apparatus play in eukaryotic cells?",
+    "How do lysosomes contribute to the cell's functioning?",
+    "How are undesirable harmful substances and breaks down lipids?",
+    "What is the smooth endoplasmic reticulum responsible for?",
+    "How do the vacuoles in plant cells differ from vacuoles in animal cells?",
+    "What would happen if lysosomal enzymes stop working properly?",
+    "Why are the cristae important for cellular respiration?",
+    "How are chromatin and chromosomes related?",
+    "What do mesophyll cells do in plant leaves?",
+    "Name the chemical compounds that make up: (a) Cell membrane (b) Fungal cell wall (c) Plant cell wall (d) Bacterial cell wall (e) Ribosome (f) Chromosome",
+    "Label the parts of these cell: diagrams/image",
+    "How would you define a stem cell?"
+    ],
+    longQuestions: [
+        "Explain the fluid mosaic model of the cell membrane.",
+    "Describe the structure and functions of the cell wall.",
+    "Discuss the components of the nucleus.",
+    "Describe the structure and function of lysosome and endoplasmic reticulum.",
+    "Describe the structure and function of the Golgi complex.",
+    "Describe the structure and function of the chloroplast.",
+    "How does turgor pressure develop in a plant cell?",
+    "Write four differences between a plant cell and an animal cell.",
+    "Describe the concept of division of labour and how it applies in multicellular organisms. Give at least two examples.",
+    "Write a note on cell specialization.",
+    "What impact might mitochondrial dysfunction or absence have on other organelles' ability to operate in a cell and why is it so important?",
+    "What may happen if the coordination ribosomal and the nucleus were to fail?"
+
+    ],
+
+    mcqs: [
+        {
+        question: "The process of cellular respiration occurs in:",
+        options: ["(A) Nucleus", "(B) Mitochondria", "(C) Ribosomes", "(D) Golgi apparatus"]
+    },
+    {
+        question: "The smooth endoplasmic reticulum (SER) is primarily involved in the synthesis of",
+        options: ["(A) Proteins", "(B) Lipids", "(C) Carbohydrates", "(D) Nucleic acids"]
+    },
+    {
+        question: "Ribosomes are composed of",
+        options: ["(A) RNA and protein", "(B) DNA and protein", "(C) Carbohydrates and protein", "(D) RNA and carbohydrates"]
+    },
+    {
+        question: "What is the primary function of ribosomes?",
+        options: ["(A) Energy production", "(B) Protein synthesis", "(C) Lipid synthesis", "(D) DNA synthesis"]
+    },
+    {
+        question: "Which cell organelle is involved in packaging and modifying protein?",
+        options: ["(A) Nucleus", "(B) Mitochondria", "(C) Golgi apparatus", "(D) Endoplasmic reticulum"]
+    },
+    {
+        question: "Which organelle is responsible for breaking down waste materials?",
+        options: ["(A) Golgi apparatus", "(B) Nucleus", "(C) Mitochondria", "(D) Lysosomes"]
+    },
+    {
+        question: "Which of the following cell structures is involved in maintaining cell shape?",
+        options: ["(A) Cytoskeleton", "(B) Centrioles", "(C) Nucleus", "(D) Lysosome"]
+    },
+    {
+        question: "Which specialized region of the nucleus is responsible for ribosome assembly?",
+        options: ["(A) Nucleoplasm", "(B) Nucleolus", "(C) Chromatin", "(D) Nucleoid"]
+    },
+    {
+        question: "What is the main function of the nuclear pores?",
+        options: [
+            "(A) Protein synthesis",
+            "(B) Regulation of cell division",
+            "(C) Control of pH of the cell",
+            "(D) Control of transport of molecules"
+        ]
+    },
+    {
+        question: "Which of the following cellular structure is found in animal cells and helps in cell division?",
+        options: ["(A) Cell membrane", "(B) Centriole", "(C) Plasmodesmata", "(D) Vacuole"]
+    },
+    {
+        question: "Which sub-cellular organelle plays a crucial role in energy production within the cell?",
+        options: ["(A) Endoplasmic reticulum", "(B) Golgi apparatus", "(C) Mitochondria", "(D) Lysosomes"]
+    },
+    {
+        question: "Which of these are present on the surface of rough endoplasmic reticulum?",
+        options: ["(A) Ribosomes", "(B) Lysosomes", "(C) Mitochondria", "(D) Vacuoles"]
+    },
+    {
+        question: "In a multicellular plant, which cell type is responsible for the production of glucose?",
+        options: ["(A) Xylem", "(B) Phloem", "(C) Epidermal", "(D) Mesophyll"]
+    }
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 4,
+    chapterName: "Cell Cycle",
+    shortQuestions: [
+ "Enlist the events that occur during the G1 phase of interphase?",
+    "What is the main purpose of the S phase in the cell cycle?",
+    "What are the key events of anaphase in mitosis?",
+    "What is the function of the centrosome during cell division?",
+    "During which phase of mitosis sister chromatids separate?",
+    "How does crossing over contribute to genetic variation in meiosis?",
+    "What is the role of spindle fibers in mitosis?",
+    "How is cytokinesis in animal cell different from plant cell?",
+    "How is mitosis related to the process of regeneration?",
+    "What are sister chromatids, and when do they separate in meiosis?",
+    "What is the difference between prophase of mitosis and prophase-I meiosis-I?",
+    "How does meiosis differ from mitosis in terms of chromosome number?"
+    ],
+    longQuestions: [
+        "Why do skin cells divide continuously throughout an organism's existence, but never and muscle cells permanently exit the cell cycle?",
+    "What role might mistakes in the cell cycle checkpoints play in the emergence of cancer?",
+    "Describe the events that occur during the phase of mitosis?",
+    "Describe cytokinesis in animal and plant cells.",
+    "Describe the significance of meiosis."
+    ],
+
+    mcqs: [
+       {
+        question: "In which phase of cell cycle, maximum growth occurs in cell?",
+        options: ["(A) M phase", "(B) S phase", "(C) G1 phase", "(D) G2 phase"]
+    },
+    {
+        question: "In which phase of cell cycle, the chromosomes duplicate?",
+        options: ["(A) Mitosis", "(B) G1 phase", "(C) S phase", "(D) G2 phase"]
+    },
+    {
+        question: "Which of the following is NOT a characteristic of mitosis?",
+        options: [
+            "(A) It occurs in somatic cells",
+            "(B) It results in genetically identical daughter cells",
+            "(C) The chromosome number is halved in daughter cells",
+            "(D) Its result is the formation of two daughter cells"
+        ]
+    },
+    {
+        question: "At which stage of mitosis chromosomes line up in the centre?",
+        options: ["(A) Prophase", "(B) Metaphase", "(C) Anaphase", "(D) Telophase"]
+    },
+    {
+        question: "If you observe a cell in which nuclear membrane is reforming around two sets of chromosomes, what stage of cell cycle is this?",
+        options: ["(A) Anaphase", "(B) Telophase", "(C) Prophase", "(D) Metaphase"]
+    },
+    {
+        question: "How does the centrosome contribute to mitosis?",
+        options: [
+            "(A) Initiates DNA replication",
+            "(B) Makes mitotic spindle",
+            "(C) Forms the nuclear envelope",
+            "(D) Duplicates organelles"
+        ]
+    },
+    {
+        question: "Centrosomes make mitotic spindle in:",
+        options: ["(A) Animal cells", "(B) Plant cells", "(C) Prokaryotic cells", "(D) All of these"]
+    },
+    {
+        question: "An organism has four pairs of chromosomes. After meiosis-I, how many chromosomes and chromatids will be present in each daughter cell?",
+        options: [
+            "(A) 4 chromosomes and 8 chromatids",
+            "(B) 8 chromosomes and 8 chromatids",
+            "(C) 4 chromosomes and 4 chromatids",
+            "(D) 8 chromosomes and 16 chromatids"
+        ]
+    },
+    {
+        question: "Which event is unique to meiosis but not mitosis?",
+        options: ["(A) Replication of chromosomes", "(B) Chromosome allignment", "(C) Crossing over", "(D) Nuclear division"]
+    }
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 5,
+    chapterName: "Tissue, Organ and Organ System",
+    shortQuestions: [
+ "Enlist the levels of organization from cells to organ systems.",
+    "What is the function of the palisade mesophyll in the leaf?",
+    "What is the role of the shoot system in plants?",
+    "Differentiate between the following: (a) Tissue and organ (b) Root system and shoot system (c) Epidermal and mesophyll tissue (d) Palisade and spongy mesophyll",
+    "What are the major roles of the epithelial tissue present in the stomach?",
+    "How do the smooth muscles contribute to the stomach's function?",
+    "What is homeostasis, and why is it important for organisms?",
+    "How does the human body maintain a stable internal temperature?"
+    ],
+    longQuestions: [
+        "Explain the levels of organization in multicellular organism. How does each level contribute to the overall functioning of organism?",
+    "What is a tissue level? Explain plant and animal tissues.",
+    "Describe the tissue composition of the leaf. How does each tissue contribute to the functions of the leaf?",
+    "Explain the functions of various plant organs.",
+    "Describe the structure and function of the plant root system.",
+    "How does the structure of epithelial tissue relate to its function in different parts of the body?",
+    "Evaluate if the importance of organ systems working in harmony and predict the consequences of a failure in one system on the others.",
+    "How do the organ systems come together to form the human body?",
+    "Describe the tissue composition of the stomach. How does each tissue contribute to the digestive function of the stomach?",
+    "Describe the roles of the digestive system and the excretory system in homeostasis.",
+    "Define homeostasis and explain its importance. Discuss how different organ systems work together to maintain homeostasis.",
+    "Describe how the respiratory and circulatory systems work together to maintain homeostasis of oxygen and carbon dioxide levels in the body."
+
+    ],
+
+    mcqs: [
+       {
+        question: "A higher level of organization exhibits emergent properties when:",
+        options: [
+            "(A) Its parts function independently",
+            "(B) Its parts function independently",
+            "(C) The individual parts are more important than whole",
+            "(D) The individual parts interact to perform more functions"
+        ]
+    },
+    {
+        question: "Which of the following demonstrates the levels of organization of the body, from simplest to most complex?",
+        options: [
+            "(A) Cell → Organ → Organelle → Tissue → Organ System",
+            "(B) Cell → Organelle → Organ → Tissue → Organ System",
+            "(C) Organelle → Cell → Tissue → Organ → Organ System",
+            "(D) Organ System → Organ → Tissue → Cell → Organelle"
+        ]
+    },
+    {
+        question: "In a leaf, which tissue is responsible for photosynthesis?",
+        options: ["(A) Xylem", "(B) Mesophyll", "(C) Epidermis", "(D) Phloem"]
+    },
+    {
+        question: "What is the primary function of the xylem tissue in a leaf?",
+        options: [
+            "(A) To transport sugars",
+            "(B) To transport water to other parts of leaf",
+            "(C) To synthesize and opening chloroplasts",
+            "(D) To control the opening and closing of stomata"
+        ]
+    },
+    {
+        question: "Which structures are responsible for the transport of food in plant body?",
+        options: ["(A) Xylem tissue", "(B) Phloem tissue", "(C) Palisade mesophyll", "(D) Spongy mesophyll"]
+    },
+    {
+        question: "In a plant, which of the following is the primary function of the flower?",
+        options: [
+            "(A) Transporting water and minerals",
+            "(B) Supporting leaf growth",
+            "(C) Facilitating reproduction through pollination",
+            "(D) Regulating gas exchange"
+        ]
+    },
+    {
+        question: "Which of these is a function of the human skeletal system?",
+        options: [
+            "(A) Storing minerals and producing blood cells",
+            "(B) Removing carbon dioxide from blood",
+            "(C) Filtering blood to remove waste",
+            "(D) Breaking down food for energy"
+        ]
+    },
+    {
+        question: "At which level of organization gas exchange occur between body and environment?",
+        options: [
+            "(A) Organelle level in mitochondria",
+            "(B) Cellular level in alveolar cells",
+            "(C) Tissue level in epithelial tissues",
+            "(D) Organ system level in the respiratory system"
+        ]
+    },
+    {
+        question: "The epithelial tissue in the stomach wall is responsible for producing:",
+        options: ["(A) Mucus", "(B) Pepsinogen", "(C) Hydrochloric acid", "(D) All of these"]
+    },
+    {
+        question: "In the wall of stomach, which tissue also contains blood vessels and nerves?",
+        options: ["(A) Epithelial", "(B) Muscle", "(C) Inner connective", "(D) Outer connective"]
+    }
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 6,
+    chapterName: "Biomolecules",
+    shortQuestions: [
+ "What are the main functions of carbohydrates in the body?",
+    "How do the three group of carbohydrates differ in taste?",
+    "Name two common monosaccharides and two disaccharides.",
+    "Which monosaccharide makes a sucrose molecule?",
+    "Give an example of a storage polysaccharide in plants.",
+    "Define amino acid and draw its structure.",
+    "What are the basic components of lipids? Draw their structures.",
+    "What are the types of RNA? Write their functions.",
+    "Briefly describe the function of DNA."
+    ],
+    longQuestions: [
+         "Evaluate the importance of water in the functioning of biomolecules.",
+    "Find the amount percentage of carbohydrates, Proteins and water in the following food product and compare them with each other. Roti (10gm), Burger, Cucumber, Egg, Rice (100gm), Potato fries (100gm), Carrot.",
+    "Write a comprehensive note on the structures and roles of the three classes of carbohydrates.",
+    "Discuss the functions of proteins.",
+    "What are fatty acids? Explain their types.",
+    "Describe the basic structure of fats and oils. Explain how lipids play role in energy storage.",
+    "Explain the double helix structure of DNA, and discuss the base pairing in this structure.",
+    "Explain how the information in DNA is converted to RNA and then to proteins."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Which of the following is considered the building block of all living organisms?",
+        options: ["(A) Tissues", "(B) Organs", "(C) Cells", "(D) Organelles"]
+    },
+    {
+        question: "The process of maintaining a stable internal environment in an organism is known as:",
+        options: ["(A) Metabolism", "(B) Homeostasis", "(C) Reproduction", "(D) Adaptation"]
+    },
+    {
+        question: "Which of the following describes the study of how organisms interact with their environment?",
+        options: ["(A) Genetics", "(B) Ecology", "(C) Anatomy", "(D) Physiology"]
+    },
+    {
+        question: "Who proposed the two-kingdom classification system?",
+        options: ["(A) Carolus Linnaeus", "(B) Robert Whittaker", "(C) Ernst Haeckel", "(D) Carl Woese"]
+    },
+    {
+        question: "Which of the following groups includes organisms that are prokaryotic, unicellular, and lack a true nucleus?",
+        options: ["(A) Fungi", "(B) Protista", "(C) Bacteria", "(D) Plantae"]
+    },
+    {
+        question: "Which of the following is a characteristic of all living organisms?",
+        options: ["(A) Photosynthesis", "(B) Respiration", "(C) Reproduction", "(D) All of these"]
+    },
+    {
+        question: "What is the primary function of DNA in living organisms?",
+        options: ["(A) Energy storage", "(B) Protein synthesis", "(C) Genetic information storage", "(D) Structural support"]
+    },
+    {
+        question: "Which organelle is responsible for generating most of the cell's supply of ATP?",
+        options: ["(A) Ribosome", "(B) Nucleus", "(C) Mitochondrion", "(D) Endoplasmic reticulum"]
+    },
+    {
+        question: "During which phase of mitosis do chromosomes condense and become visible?",
+        options: ["(A) Prophase", "(B) Metaphase", "(C) Anaphase", "(D) Telophase"]
+    },
+    {
+        question: "Which of the following is an example of an organ?",
+        options: ["(A) Blood", "(B) Muscle fiber", "(C) Stomach", "(D) Epithelial tissue"]
+    },
+    {
+        question: "Which of the following is a monosaccharide?",
+        options: ["(A) Starch", "(B) Sucrose", "(C) Glucose", "(D) Lactose"]
+    },
+    {
+        question: "Which of the following elements is found in proteins but not in carbohydrates or lipids?",
+        options: ["(A) Carbon", "(B) Hydrogen", "(C) Oxygen", "(D) Nitrogen"]
+    },
+    {
+        question: "The atmospheric layer closest to Earth's surface where most weather occurs is the:",
+        options: ["(A) Stratosphere", "(B) Mesosphere", "(C) Troposphere", "(D) Thermosphere"]
+    },
+    {
+        question: "Which of the following is a greenhouse gas?",
+        options: ["(A) Oxygen", "(B) Nitrogen", "(C) Carbon dioxide", "(D) Argon"]
+    },
+    {
+        question: "Which of the following is a method to remove permanent hardness of water?",
+        options: ["(A) Boiling", "(B) Addition of slaked lime", "(C) Distillation", "(D) Use of washing soda"]
+    },
+    {
+        question: "Which of the following is NOT a product obtained from the destructive distillation of coal?",
+        options: ["(A) Coke", "(B) Coal gas", "(C) Petroleum", "(D) Coal tar"]
+    },
+    {
+        question: "The process of extracting metal from its ore is called:",
+        options: ["(A) Roasting", "(B) Smelting", "(C) Metallurgy", "(D) Refining"]
+    }
+    ],
+  },
+
+
 
 
 
