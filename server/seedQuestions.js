@@ -5253,6 +5253,460 @@ const questions = [
 
 
 
+  
+  {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 7,
+    chapterName: "Enzymes",
+    shortQuestions: [
+ "Define metabolism. Differentiate between catabolism and anabolism.",
+    "Which type of metabolism demands input of energy? Give an example.",
+    "Define an enzyme. What is its role in metabolism?",
+    "What is the active site of enzyme? State its importance in enzyme specificity.",
+    "Provide an example of a specific enzyme-substrate pair.",
+    "What is the effect of substrate concentration on enzyme activity?",
+    "Provide two examples of enzymes that operate optimally at specific pH.",
+    "What do you mean by optimum temperature and pH?",
+    "Which type of enzyme inhibitors inhibit the enzyme without attaching to the active site?",
+    "Differentiate between competitive and non-competitive inhibition."
+
+    ],
+    longQuestions: [
+            "Describe the characteristics of enzymes.",
+    "Compare the Lock-and-Key and Induced Fit models of enzyme action.",
+    "Describe how temperature extremes can inhibit enzyme activity and lead to enzyme denaturation.",
+    "How does pH affect enzyme activity?",
+    "Describe the factors that affect the activity of enzymes."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Primarily, all enzymes are:",
+        options: ["(A) Nucleic acids", "(B) Proteins", "(C) Carbohydrates", "(D) Lipids"]
+    },
+    {
+        question: "Which best defines an enzyme?",
+        options: [
+            "(A) A chemical that breaks down food",
+            "(B) A hormone that regulates metabolism",
+            "(C) A protein that speeds up reactions",
+            "(D) A molecule that stores energy"
+        ]
+    },
+    {
+        question: "Prosthetic groups are:",
+        options: ["(A) Required by all enzymes", "(B) Proteins in nature", "(C) Loosely attached", "(D) Tightly bound to enzymes"]
+    },
+    {
+        question: "Enzymes are specific in their action because",
+        options: [
+            "(A) Their active sites fit specific substrates",
+            "(B) They are always in higions",
+            "(C) They are conserved",
+            "(D) They work only at high temperatures"
+        ]
+    },
+    {
+        question: "What is TRUE, according to the induced fit model of enzyme action?",
+        options: [
+            "(A) Enzyme's active site changes shape to bind to the substrate",
+            "(B) Substrate changes shape to bind to active site",
+            "(C) No tape changes occur in active site",
+            "(D) Substrate attaches the enzyme at a site other that active site"
+        ]
+    },
+    {
+        question: "What is TRUE, about the optimum pH values of the following enzymes of digestive system?",
+        options: [
+            "(A) Pepsin works at low pH while trypsin works at high pH",
+            "(B) Pepsin works at both low and high pH",
+            "(C) Both work at high pH",
+            "(D) Pepsin works at low pH while trypsin works at high pH"
+        ]
+    },
+    {
+        question: "An enzyme works best at a pH of 7.4. It is placed in an acidic solution with a pH of 4.0. How will this affect the enzyme?",
+        options: [
+            "(A) The active site will be modified, reducing substrate binding",
+            "(B) The enzyme will catalyse reactions faster due to increased H ions",
+            "(C) The enzyme will become inactive in an acidic environment",
+            "(D) pH wmer, irypsn works at low pH"
+        ]
+    },
+    {
+        question: "How does increasing temperature affect enzyme activity?",
+        options: [
+            "(A) Increases activity to a point",
+            "(B) Always decreases activity",
+            "(C) Makes enzymes non-functional",
+            "(D) No effect on enzyme"
+        ]
+    },
+    {
+        question: "What can happen if an enzyme is exposed to temperature that is higher than its optional temperature?",
+        options: [
+            "(A) Enzyme activity rate will increase",
+            "(B) Enzyme's shape will change, potentially reducing its activity",
+            "(C) Enzyme will speed up the reaction and remain stable",
+            "(D) Enzyme will become denatured"
+        ]
+    },
+    {
+        question: "How does competitive inhibitor affect enzyme action?",
+        options: [
+            "(A) Attaches with the substrate",
+            "(B) Changes enzyme shape",
+            "(C) Attaches and blocks the active site",
+            "(D) Blocks the cofactors"
+        ]
+    }
+    ],
+  },
+
+    {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 8,
+    chapterName: "Bioenergetics",
+    shortQuestions: [
+"Write the importance of oxidation-reduction reactions?",
+    "What do ATP and ADP mean? What are the roles of these molecules for the cellular metabolism?",
+    "Write down the word equation for photosynthesis.",
+    "Why is chlorophyll important for photosynthesis?",
+    "How is oxygen produced during photosynthesis?",
+    "Which organism carry out photosynthesis? Which cell organelle is responsible for the absorption of light for photosynthesis?",
+    "State the main purpose of cellular respiration.",
+    "State the equation (in words or symbols) for aerobic respiration.",
+    "Write a brief note on the role of oxygen in aerobic respiration.",
+    "Define anaerobic and aerobic respiration.",
+    "What are the end products of anaerobic respiration in animal and yeast?",
+    "How do muscles respond to oxygen deficiency during intense exercise?",
+    "List ways in which respiratory energy is used in the body."
+    ],
+    longQuestions: [
+        "Explain ATP as a molecule that is the chief energy currency of all cells.",
+    "How does the structure of ATP enable it to store and release energy efficiently?",
+    "Outline the processes involved in photosynthesis.",
+    "Write a note on the intake of carbon dioxide and water by plants.",
+    "Explain the types and importance of anaerobic respiration.",
+    "Outline the mechanism of aerobic respiration.",
+    "Compare the processes of respiration and photosynthesis."
+    ],
+
+    mcqs: [
+       {
+        question: "When we get energy from ATP, which bonds are broken?",
+        options: ["(A) P-P bonds", "(B) C-H bonds", "(C) C-N bonds", "(D) C-O bonds"]
+    },
+    {
+        question: "Light reactions of photosynthesis occur in:",
+        options: [
+            "(A) Cytoplasm of cell",
+            "(B) Plasma membrane of cell",
+            "(C) Stroma of chloroplasts",
+            "(D) Thylakoids of chloroplasts"
+        ]
+    },
+    {
+        question: "Which type of chlorophyll is most common in plants?",
+        options: ["(A) Chlorophyll a", "(B) Chlorophyll b", "(C) Chlorophyll red", "(D) Chlorophyll d"]
+    },
+    {
+        question: "Which wavelengths of light are absorbed to maximum by chlorophylls?",
+        options: ["(A) Green and blue", "(B) Green and red", "(C) Red and blue", "(D) Only green"]
+    },
+    {
+        question: "Where do the dark reactions of photosynthesis occur?",
+        options: [
+            "(A) Stroma of chloroplasts",
+            "(B) Thylakoids of chloroplasts",
+            "(C) Outer membrane",
+            "(D) Cytoplasm"
+        ]
+    },
+    {
+        question: "Which molecule donates electrons in the light-dependent reactions of photosynthesis?",
+        options: ["(A) NADPH", "(B) NADP", "(C) Water", "(D) Oxygen"]
+    },
+    {
+        question: "Which process in aerobic respiration produces the most ATP?",
+        options: ["(A) Glycolysis", "(B) Krebs cycle", "(C) Electron transport chain", "(D) Fermentation"]
+    },
+    {
+        question: "How many ATP molecules are the net profit from one glucose molecule during anaerobic respiration?",
+        options: ["(A) 2", "(B) 4", "(C) 36", "(D) 38"]
+    },
+    {
+        question: "What is a common end product of anaerobic respiration in animal cells?",
+        options: ["(A) Oxygen", "(B) Water", "(C) Lactic acid", "(D) Carbon dioxide"]
+    }
+    ],
+  },
+
+    {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 9,
+    chapterName: "Plant Physiology",
+    shortQuestions: [
+ "Define mineral nutrition in plants.",
+    "Define macronutrients and micronutrients and give examples.",
+    "State the roles of nitrogen and magnesium in plants.",
+    "Differentiate between: (i) Xylem and phloem (ii) Transpiration and guttation (iii) Hydrophytes and halophytes (iv) Hydrophytes and xerophytes (v) Lenticular transpiration and stomatal transpiration.",
+    "Transpiration is the loss of water from plants. Is it a harmful phenomenon? If no, what is its importance?",
+    "Define transpiration and its types.",
+    "How is the true/the trarspirallional pull important in plants?",
+    "How do the plants of rubber and keekar excrete their wastes?"
+    ],
+    longQuestions: [
+        "Describe temperature, wind, and humidity as the factors affecting the rate of transpiration.",
+    "Describe the events involved in the opening and closing of stomata.",
+    "Why do plants transpire more on a windy day compared to a humid one?",
+    "Explain the internal structure of root and describe the uptake of salt and water by root.",
+    "Describe the mechanism of transport of water and salt in plants.",
+    "Explain the mechanism of food translocation by Pressure Flow Mechanism.",
+    "Describe the processes of gaseous exchange in plants.",
+    "Describe the mechanisms/adaptations in plants for excretion of wastes.",
+    "How do the plants excrete extra water and salts from their bodies?",
+    "Explain osmotic adjustments in hydrophytes, xerophytes, and halophytes."
+    ],
+
+    mcqs: [
+      {
+        question: "Which of the following plant nutrients is required in large amount?",
+        options: ["(A) Iron", "(B) Zinc", "(C) Potassium", "(D) Boron"]
+    },
+    {
+        question: "Which element is required by plants for the formation of chlorophyll?",
+        options: ["(A) Phosphorus", "(B) Calcium", "(C) Magnesium", "(D) Sulphur"]
+    },
+    {
+        question: "The primary function of root hairs is:",
+        options: [
+            "(A) Transport of nutrients",
+            "(B) Storage of food",
+            "(C) Increase surface area for absorption",
+            "(D) Synthesis of proteins"
+        ]
+    },
+    {
+        question: "Root hairs absorb salts from soil by:",
+        options: ["(A) Diffusion", "(B) Osmosis", "(C) Active transport", "(D) Filtration"]
+    },
+    {
+        question: "Water moves from the soil into root cells by:",
+        options: ["(A) Osmosis", "(B) Diffusion", "(C) Bulk flow", "(D) Phloem"]
+    },
+    {
+        question: "The transpiration is regulated by:",
+        options: ["(A) Mesophyll", "(B) Guard cells", "(C) Xylem", "(D) Phloem"]
+    },
+    {
+        question: "Under which climatic condition, will be high rate of transpiration?",
+        options: ["(A) High humidity", "(B) Wind", "(C) Low light intensity", "(D) Waterlogged soil"]
+    },
+    {
+        question: "Which ion plays a role in the opening of stomata?",
+        options: ["(A) Sodium ($Na^+$)", "(B) Potassium ($K^+$)", "(C) Calcium ($Ca^{2+}$)", "(D) Magnesium ($Mg^{2+}$)"]
+    },
+    {
+        question: "In most plants the food is transported in the form of:",
+        options: ["(A) Glucose", "(B) Sucrose", "(C) Starch", "(D) Maltose"]
+    },
+    {
+        question: "What is TRUE, according to the pressure flow mechanism of food transport?",
+        options: [
+            "(A) Water enters the source, creating pressure",
+            "(B) Water is pulled towards the sink due to gravity",
+            "(C) Movement of food in phloem is due to gravity",
+            "(D) Solutes move from low to high concentration"
+        ]
+    }
+    ],
+  },
+
+    {
+    class: 9,
+    subject: "Biology",
+    chapterNumber: 10,
+    chapterName: "Reproduction in Plants",
+    shortQuestions: [
+"Write a short note on budding in yeast.",
+    "Write a short note on spore formation in fungi.",
+    "What are the advantages of spore formation in fungi and bacteria?",
+    "Describe how vegetative propagation occurs through runners.",
+    "State how potatoes reproduce through tubers.",
+    "Describe the advantages and disadvantages of vegetative propagation.",
+    "Name four to five whorls present in a flower and also tell three components of each whorl.",
+    "Briefly describe the formation of egg cell and polar nuclei within embryo sac of a flower.",
+    "Differentiate between: (i) Asexual and sexual reproduction (ii) Binary fission in bacteria and amoeba (iii) Bulb and rhizome (iv) Cutting and grafting (v) Vegetative propagation (vi) Male and female gametophytes (vii) Calyx and corolla (viii) Stamen and carpel.",
+    "Label the given diagram of flower (image:)."
+    ],
+    longQuestions: [
+        "Explain the process of binary fission in bacteria and describe how it leads to the formation of two daughter bacteria.",
+    "Why are spores considered an adaptation for survival in harsh environmental conditions?",
+    "How do asexual and sexual reproduction contribute differently to genetic diversity of plant populations?",
+    "How does the pollen tube facilitate the process of fertilization in flowering plants?",
+    "What do you mean by vegetative propagation? Differentiate among different plant structures modified for vegetative propagation.",
+    "Describe the ways by which humans can grow new plants by using the vegetative parts of the parent plants?",
+    "Define sporophyte and gametophyte. State their roles in the life cycle of plants.",
+    "Explain the lifecycle of flowering plants, focusing on the alternation between the gametophyte and sporophyte generations.",
+    "Describe how the formation of the female gametophyte (embryo sac) develops within the ovule of a flower."
+
+    ],
+
+    mcqs: [
+       {
+        question: "What happens in some bacteria during harsh conditions?",
+        options: [
+            "(A) Creation of a bud that detaches from the cell",
+            "(B) Formation of thick-walled endospores",
+            "(C) Splitting the cell into two daughter cells",
+            "(D) Fusion of two bacteria cells"
+        ]
+    },
+    {
+        question: "Which one of the following is an example of vegetative propagation through runners?",
+        options: ["(A) Potato", "(B) Strawberry", "(C) Onion", "(D) Ginger"]
+    },
+    {
+        question: "Which plant propagates through tubers?",
+        options: ["(A) Potato", "(B) Ginger", "(C) Onion", "(D) Garlic"]
+    },
+    {
+        question: "The horizontal aboveground stem, which produces leaves and roots at its nodes, is a:",
+        options: ["(A) Stolons", "(B) Bulb", "(C) Rhizome", "(D) Corm"]
+    },
+    {
+        question: "Which of these does NOT help a plant for vegetative propagation?",
+        options: ["(A) Rhizome", "(B) Corm", "(C) Tuber", "(D) Flower"]
+    },
+    {
+        question: "Which part of the flower is responsible for producing pollen?",
+        options: ["(A) Stigma", "(B) Anther", "(C) Ovary", "(D) Petal"]
+    },
+    {
+        question: "Which of the following is NOT a part of carpel?",
+        options: ["(A) Stigma", "(B) Style", "(C) Ovary", "(D) Filament"]
+    },
+    {
+        question: "Which structure forms the female gametophyte in flowering plants?",
+        options: ["(A) Pollen grain", "(B) Ovule", "(C) Anther", "(D) Stigma"]
+    },
+    {
+        question: "The male gametophyte in flowering plants is known as:",
+        options: ["(A) Pollen grain", "(B) Embryo sac", "(C) Ovary", "(D) Carpel"]
+    },
+    {
+        question: "In the life cycle of flowering plants, which structure is triploid (3n)?",
+        options: ["(A) Egg", "(B) Fusion nucleus", "(C) Endosperm", "(D) Sperm"]
+    },
+    {
+        question: "Embryo sac is formed inside:",
+        options: ["(A) Filament", "(B) Anther", "(C) Style", "(D) Ovule"]
+    }
+    ],
+  },
+
+    {
+    class: 9,
+    subject: "Biology",
+    chapterNumber:11,
+    chapterName: "Biostatistics",
+    shortQuestions: [
+"Define biostatistics.",
+    "What is the median of a data set?",
+    "How is the mean calculated?",
+    "What is the mode of a data set?",
+    "What does the height of a bar in a bar chart represent?"
+    ],
+    longQuestions: [
+         "Explain the importance of biostatistics in the field of public health. Provide example of how it is used to inform public health decisions.",
+    "Discuss the differences between mean, median, mode. Include examples where each measure is given the appropriate status.",
+    "Provide a detailed example of how to calculate the mean, median, and mode of a data set. Use the following data set for your calculations: 12, 15, 22, 8, 25, 15.",
+    "Given the following data set, create a bar chart to represent the number of different types of fruits sold at a market in one week: (i) Apples 20 (ii) Bananas 45 (iii) Oranges 30 (iv) Grapes 25 (v) Mangoes 15. Ensure to label the axes and provide a title for the chart.",
+    "Describe the steps involved in creating a bar chart using Excel. Include a discussion on how to customize the chart for better visualization and interpretation of data."
+
+    ],
+
+    mcqs: [
+         {
+        question: "What is the primary purpose of biostatistics?",
+        options: [
+            "(A) To analyze financial data",
+            "(B) To apply statistical methods to biological sciences",
+            "(C) To design engineering models",
+            "(D) To study historical events"
+        ]
+    },
+    {
+        question: "In biostatistics, which method is used to predict future outcomes based on current data?",
+        options: ["(A) Designing Experiments", "(B) Drawing charts", "(C) Taking average", "(D) Analysing data"]
+    },
+    {
+        question: "Which of the following best describes the mean of a data set?",
+        options: [
+            "(A) The most frequently occurring value",
+            "(B) The middle value when data is ordered",
+            "(C) The sum of all values divided by the number of values",
+            "(D) The difference between the highest and lowest values"
+        ]
+    },
+    {
+        question: "If the data set is 5, 8, 12, 20, what is the median?",
+        options: ["(A) 8", "(B) 12", "(C) 15", "(D) 20"]
+    },
+    {
+        question: "What is the mean of the data set 7, 8, 9, 10, 11?",
+        options: ["(A) 7", "(B) 8", "(C) 9", "(D) 10"]
+    },
+    {
+        question: "When the number of values in a data set is even, how is the median calculated?",
+        options: [
+            "(A) By choosing the middle value",
+            "(B) By taking the average of the two middle values",
+            "(C) By selecting the most frequent value",
+            "(D) By adding all values and dividing by the total number of values"
+        ]
+    },
+    {
+        question: "In a data set with values 3, 3, 6, 7, 8, 9, 9, what is the mode?",
+        options: ["(A) 3", "(B) 6", "(C) 7", "(D) Both 3 and 9"]
+    },
+    {
+        question: "If a data set has no repeated values, what is the mode?",
+        options: [
+            "(A) The highest value",
+            "(B) The average of the data set",
+            "(C) There is no mode",
+            "(D) The median value"
+        ]
+    },
+    {
+        question: "In a bar chart, what does the height or length of each bar represent?",
+        options: [
+            "(A) The average of all categories",
+            "(B) The total number of categories",
+            "(C) The value of the corresponding category",
+            "(D) The difference between the highest and lowest values"
+        ]
+    },
+    {
+        question: "When constructing a bar chart, which axis usually represents the categories?",
+        options: [
+            "(A) Vertical axis (y-axis)",
+            "(B) Horizontal axis (x-axis)",
+            "(C) Both axes equally represent the categories",
+            "(D) Neither axis represents the categories"
+        ]
+    }
+      
+    ],
+  },
+
+
 
  
 
