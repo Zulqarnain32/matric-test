@@ -5707,6 +5707,675 @@ const questions = [
   },
 
 
+    
+  {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 1,
+    chapterName: "Gaseous Exchange",
+    shortQuestions: [
+ "From where, the organisms get oxygen for cellular respiration?",
+    "Define gaseous exchange.",
+    "What is meant by anaerobic respiration?",
+    "Differentiate between aerobic and anaerobic respiration?",
+    "In what, the which leaf cells face?",
+    "What is the source of transpiration in woody stems?",
+    "In how many parts, the respiratory system of human is divided? Write their names.",
+    "What are nostrils?",
+    "Why bronchioles?",
+    "Why larynx is also called voice box?",
+    "Write down the structure of trachea.",
+    "What are bronchi?",
+    "Where diaphragm is located?",
+    "Write down the composition of chest wall and diaphragm muscles?",
+    "Write down the numbers of teeth in lung.",
+    "How inspiration takes place?",
+    "How expiration takes place?",
+    "How does gaseous exchange in humans take place?",
+    "Write down the composition of oxygen and carbon dioxide in inspired and expired air.",
+    "Describe the role of lungs in human body.",
+    "Define deoxygenated blood."
+    ],
+    longQuestions: [
+         "How gaseous exchange occurs in plants?",
+    "Enlist the different parts of the air passage way of human respiratory system. Give the detail of each part.",
+    "Describe the mechanism of breathing in humans.",
+    "What is bronchitis? State its types, symptoms and causes.",
+    "What do you mean by Emphysema? Write its symptoms.",
+    "Describe the signs and symptoms, causes and treatments of pneumonia.",
+    "Describe the symptoms, causes and preventions of lung cancer.",
+    "Write down the bad effects of smoking."
+    ],
+
+    mcqs: [
+        {
+        question: "Most of the gaseous exchange in a leaf occurs through:",
+        options: ["(A) Stomata", "(B) General surface", "(C) Cuticle", "(D) Lenticels"]
+    },
+    {
+        question: "How many bronchi are there in the air passageway?",
+        options: ["(A) One", "(B) Two", "(C) Many", "(D) None"]
+    },
+    {
+        question: "The primary chemical stimulus for breathing is the concentration of:",
+        options: [
+            "(A) Carbon dioxide in blood",
+            "(B) Oxygen in blood",
+            "(C) Carbon dioxide in muscles",
+            "(D) Oxygen in muscles"
+        ]
+    },
+    {
+        question: "Which type of blood vessels present around the alveoli?",
+        options: ["(A) Artery", "(B) Capillary", "(C) Arterioles", "(D) Veins"]
+    },
+    {
+        question: "Which structure is taking air out of lungs?",
+        options: ["(A) Bronchus", "(B) Bronchiole", "(C) Diaphragm", "(D) Nasal cavity"]
+    },
+    {
+        question: "Where does the gaseous exchange occur in humans?",
+        options: ["(A) Larynx", "(B) Trachea", "(C) Bronchi", "(D) Alveoli"]
+    },
+    {
+        question: "A disease involving the breakdown of air sacs of the lungs is called:",
+        options: ["(A) Pneumonia", "(B) Bronchitis", "(C) Asthma", "(D) Emphysema"]
+    }
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 2,
+    chapterName: "Homeostasis",
+    shortQuestions: [
+ "What is meant by metabolic waste?",
+    "Write about homeostasis of oxygen in plants.",
+    "Write about homeostasis of carbon dioxide in plants.",
+    "How calcium oxalate is deposited from plant body?",
+    "How excretory products are removed in trees?",
+    "Where do the hydrophytes live?",
+    "Where do the halophytes live?",
+    "How skin helps in homeostasis?",
+    "How kidneys help in homeostasis?",
+    "What is epidermis? Write its functions.",
+    "What are Goosebumps?",
+    "Why, the dogs hang their tongues out and pant?",
+    "Define urinary system of humans.",
+    "Write down the structure and positions of kidneys.",
+    "What is hilus?",
+    "What is renal cortex?",
+    "What is renal medulla?",
+    "What is proximal convoluted tubule?",
+    "What is distal convoluted tubule?",
+    "What is Loop of Henle?",
+    "Define urine.",
+    "What are kidney stones?",
+    "In how many ways, kidney failure can be treated?",
+    "Write down the symptoms of kidney failure.",
+    "What is dialyzer?"
+    ],
+    longQuestions: [
+         "Discuss the homeostasis of carbon dioxide and oxygen in plants.",
+    "How do the plants remove extra water from their bodies?",
+    "In how many groups plants are divided on the basis of the available amount of water and salts? Explain each group.",
+    "Write the osmotic adaptations of hydrophytes and xerophytes.",
+    "Which are the major organs involved in homeostasis in human body? Describe the roles of each of these organs.",
+    "Define osmoregulation. Describe the role of kidney in osmoregulation.",
+    "Describe the structure of kidney with the help of diagram. Explain the structure of kidney.",
+    "With the help of labeled diagram explain the structure of nephron.",
+    "Describe the functioning of kidney.",
+    "Examine the longitudinal section of a mammalian kidney.",
+    "Write a note on kidney stones.",
+    "Write down the causes, symptoms and treatment of kidney failure.",
+    "Explain peritoneal dialysis with the help of a diagram.",
+    "Write a note on hemodialysis.",
+    "Write a note on kidney transplant."
+    ],
+
+    mcqs: [
+       {
+        question: "Which is the correct for the path taken by urine after it leaves the kidneys?",
+        options: [
+            "(A) Ureters, bladder, urethra",
+            "(B) Bladder, ureters, urethra",
+            "(C) Urethra, bladder, ureters",
+            "(D) Bladder, urethra, ureters"
+        ]
+    },
+    {
+        question: "The name of tube between kidney and urinary bladder is:",
+        options: ["(A) Ureter", "(B) Renal tubule", "(C) Urethra", "(D) Kidney"]
+    },
+    {
+        question: "Which could not be present in the filtrate entering the Bowman's capsule of nephron?",
+        options: ["(A) Water", "(B) Glucose", "(C) Urea", "(D) Blood cells"]
+    },
+    {
+        question: "Which organ is responsible for filtering the blood?",
+        options: ["(A) Intestine", "(B) Brain", "(C) Stomach", "(D) Kidney"]
+    },
+    {
+        question: "Body balance of water, salts, temperature and glucose is termed as:",
+        options: ["(A) Excretion", "(B) Tubular secretion", "(C) Homeostasis", "(D) Re absorption"]
+    },
+    {
+        question: "What waste products are excreted by kidneys?",
+        options: [
+            "(A) Urea, water and salts",
+            "(B) Salts and water",
+            "(C) Urea and salts",
+            "(D) Carbon dioxide"
+        ]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 3,
+    chapterName: "Coordination and Control",
+    shortQuestions: [
+ "Identify the five types of coordination in living organisms.",
+    "Differentiate between modes of nervous and chemical coordinations.",
+    "What are the main components of coordination?",
+    "Define reflex action and reflex arc.",
+    "Trace the path of a nerve impulse in case of a reflex action.",
+    "Describe the pupil reflex in dim and bright light.",
+    "How would you relate the role of vitamin A with vision and effects of its deficiency on retina?",
+    "Define the terms hormone and endocrine system."
+    ],
+    longQuestions: [
+         "What are coordinations? Describe nervous and chemical coordination.",
+    "What are effectors? Name the effectors of nervous and chemical coordination.",
+    "What is a neuron or a nerve cell? Describe its structure.",
+    "What are neurons? Explain its three types.",
+    "Describe the the structure and function of human brain.",
+    "Write a note on spinal cord.",
+    "Describe the peripheral nervous system of humans.",
+    "Write the names of functions of cerebrum.",
+    "Explain reflex actions and reflex arc with the help of a diagram.",
+    "Describe the structure of human eye.",
+    "Explain the disorders of eye.",
+    "Describe the contribution of Ibn-al-Haytham and Ali Ibne-Isa with knowledge about the structure of eye and treatment of various ophthalmic diseases.",
+    "Describe the structure of human ear.",
+    "Write a note on pituitary gland.",
+    "What do you know about thyroid gland? Name its hormones and describe their functions.",
+    "Describe the structure and functions of thyroid and pancreas.",
+    "Explain negative feedback with reference to insulin and glucagon.",
+    "Explain positive feedback with example.",
+    "Write down the symptoms and causes of paralysis.",
+    "What is epilepsy? Write down the important symptoms, causes and treatment of epilepsy."
+
+    ],
+
+    mcqs: [
+         {
+        question: "Processes that carry nerve impulses away from the cell body are called:",
+        options: ["(A) Axons", "(B) Dendrites", "(C) Synapses", "(D) Myelin Sheath"]
+    },
+    {
+        question: "The portion of the nervous system that is involuntary in action:",
+        options: [
+            "(A) Somatic nervous system",
+            "(B) Motor nervous system",
+            "(C) Autonomic nervous system",
+            "(D) Sensory nervous system"
+        ]
+    },
+    {
+        question: "Which neurons are present inside the central nervous system?",
+        options: [
+            "(A) Sensory neurons only",
+            "(B) Motor neurons only",
+            "(C) Both",
+            "(D) Interneurons only"
+        ]
+    },
+    {
+        question: "The part of the brain responsible for muscle movement, interpretation of the senses and the memory is the:",
+        options: ["(A) Pons", "(B) Medulla oblongata", "(C) Cerebrum", "(D) Cerebellum"]
+    },
+    {
+        question: "Apart from hearing, what other major body function is performed by the ear?",
+        options: [
+            "(A) Hormone secretion",
+            "(B) Body balance",
+            "(C) Reduction in nerve pressure",
+            "(D) All of these"
+        ]
+    },
+    {
+        question: "The Myelin Sheath is formed by..., which wrap around the axons of neurons.",
+        options: ["(A) Nodes of Ranvier", "(B) Axons", "(C) Schwann cells", "(D) Dendrites"]
+    },
+    {
+        question: "This is not a part of the hindbrain:",
+        options: ["(A) Pons", "(B) Medulla oblongata", "(C) Cerebrum", "(D) Cerebellum"]
+    },
+    {
+        question: "If you look at an intact human brain, what you see the most is a large, highly convoluted outer surface. This is the:",
+        options: ["(A) Pons", "(B) Cerebellum", "(C) Cerebrum", "(D) Medulla oblongata"]
+    }
+      
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 4,
+    chapterName: "Support and Movement",
+    shortQuestions: [
+ "What is the role of support and movement?",
+    "What is meant by locomotion?",
+    "Define hyaline cartilage.",
+    "What is lacuna?",
+    "What is fibrous cartilage?",
+    "What is elastic cartilage?",
+    "What is spongy bone?",
+    "What is compact bone?",
+    "Write the number of bones in a new born baby and an adult person.",
+    "Write the number of bones in skull and vertebral column.",
+    "Write the number of bones in axial and appendicular skeleton.",
+    "Define insertion.",
+    "What are flexors?",
+    "What are extensors?",
+    "What is extension?",
+    "Where movable joints are located?",
+    "What are hinge joints?",
+    "What are ball and socket joints?",
+    "What type of joints is present in neck?",
+    "What are immovable joints?",
+    "Differentiate between osteoporosis and arthritis."
+    ],
+    longQuestions: [
+          "What is skeletal system? Write the role of skeletal system.",
+    "What do you know about cartilage? Describe its different types.",
+    "What do you mean by a bone? Describe its structure.",
+    "What are the main components of an axial skeleton and appendicular skeleton of human?",
+    "What do you mean by a joint? Describe different types of joints.",
+    "Describe the roles of tendons and ligaments in human skeletal system.",
+    "Write detailed note on muscles and movements.",
+    "What is meant by antagonism? Explain the phenomena of antagonism with the example of elbow joint.",
+    "What is meant by osteoporosis? Write down the cause and symptoms of osteoporosis.",
+    "What is arthritis? Write down its symptoms and treatment. Also describe its different types."
+
+    ],
+
+    mcqs: [
+      {
+        question: "All these are the parts of axial skeleton of humans except:",
+        options: ["(A) Ribs", "(B) Sternum", "(C) Shoulder girdle", "(D) Vertebral column"]
+    },
+    {
+        question: "How many bones make our skull?",
+        options: ["(A) 14", "(B) 22", "(C) 24", "(D) 26"]
+    },
+    {
+        question: "What do some bones produce?",
+        options: ["(A) Mucus", "(B) Hormones", "(C) Oxygen", "(D) Blood cells"]
+    },
+    {
+        question: "The purpose of its cage is to:",
+        options: [
+            "(A) Protection of stomach",
+            "(B) Protection of heart and lungs",
+            "(C) Protection of spinal pharynx",
+            "(D) Protection of digestive"
+        ]
+    },
+    {
+        question: "The disorders in which there is an accumulation of uric acid in joints:",
+        options: ["(A) Gout", "(B) Rheumatoid arthritis", "(C) Osteoporosis", "(D) Osteo-arthritis"]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 5,
+    chapterName: "Reproduction",
+    shortQuestions: [
+    "How are the natural artificial vegetative propagations different from the methods of asexual reproduction in plants?",
+    "\"Parthenogenesis is a type of asexual reproduction\". Give comments on this statement.",
+    "Why do gardeners use the methods of cutting and grafting?",
+    "What structural adaptations will you find in a wind-pollinated flower?",
+    "Outline the life cycle of a flowering plant.",
+    "Give an introduction of Pakistan's National AIDS Control Program."
+
+    ],
+    longQuestions: [
+         "What is meant by reproduction? Write its importance.",
+    "What is meant by binary fission? How asexual reproduction by binary fission takes place in bacteria, amoeba and planaria.",
+    "How asexual (sexual) reproduction by budding occurs in yeast and hydra?",
+    "Write a note on binary fission and budding with examples.",
+    "Describe different ways of natural vegetative propagation.",
+    "Describe two common methods of artificial vegetative propagation.",
+    "Write down the advantages and disadvantages of vegetative propagation of plants.",
+    "Write a note on tissue culture and cloning.",
+    "Explain asexual reproduction in plants.",
+    "Describe the life cycle of a flowering plant.",
+    "What is meant by pollination? Differentiate between self and cross pollination.",
+    "Compare the insect pollinated and wind pollinated flower.",
+    "Describe the structure of a dicot seed.",
+    "Write a note on development and structure of seed.",
+    "What is mean by fission, culture and cloning? Explain.",
+    "What is mean by seed germination? What happens during seed germination? Explain how the epigeal and hypogeal germinations are different.",
+    "What conditions are necessary for the germination of seed?",
+    "Differentiate between external and internal fertilization.",
+    "Describe the male reproductive system of rabbit.",
+    "Describe the female reproductive system of rabbit.",
+    "Describe in detail the spermatogenesis and oogenesis.",
+    "Write a note on AIDS.",
+    "Write a note on human population and parthenogenesis.",
+    "Describe increase in human population and its consequences."
+    ],
+
+    mcqs: [
+        {
+        question: "Rhizopus reproduces asexually by:",
+        options: ["(A) Binary fission", "(B) Budding", "(C) Spore formation", "(D) Endospore formation"]
+    },
+    {
+        question: "Growing an entire new plant from part of the original plant is called:",
+        options: ["(A) Budding", "(B) Regeneration", "(C) Fragmentation", "(D) Vegetative propagation"]
+    },
+    {
+        question: "Pollination is the transfer of pollens from:",
+        options: ["(A) Anther to stigma", "(B) Stigma to anther", "(C) Sepal to petal", "(D) Petal to sepal"]
+    },
+    {
+        question: "A corm develops into new garlic plant. This is the process of:",
+        options: ["(A) Vegetative propagation", "(B) Gametogenesis", "(C) Meiosis", "(D) None of these"]
+    },
+    {
+        question: "After fertilization in plants, the fruit develops from:",
+        options: ["(A) Ovule wall", "(B) Ovary wall", "(C) Petals", "(D) Ovary"]
+    },
+    {
+        question: "Which part of the female reproductive system receives egg cells from the ovary?",
+        options: ["(A) Fallopian tube", "(B) Uterus", "(C) Vagina", "(D) Cervix"]
+    },
+    {
+        question: "Inside testes, the sperms are produced in:",
+        options: ["(A) Vas deferens", "(B) Sperm duct", "(C) Seminiferous tubules", "(D) Collecting ducts"]
+    },
+    {
+        question: "Which of these cells has haploid number of chromosomes?",
+        options: [
+            "(A) Spermatogonium",
+            "(B) Secondary spermatocyte",
+            "(C) Primary spermatocyte",
+            "(D) All of these"
+        ]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 6,
+    chapterName: "Ingeritance",
+    shortQuestions: [
+"What do you mean by dominant and recessive alleles?",
+    "What are homozygous and heterozygous genotypes?",
+    "Define genotype and phenotype.",
+    "Differentiate between natural selection and artificial selection."
+    ],
+    longQuestions: [
+    "Describe the Watson-Crick DNA model.",
+    "Write a note on DNA replication.",
+    "How does the DNA of chromosome work?",
+    "What is meant by genotype? Explain its different types with examples.",
+    "Why did Mendel select pea plant (pisumsativum) for his experiments on inheritance?",
+    "State and explain examples Mendel's law of segregation.",
+    "Explain Mendel's law of independent assortment with example.",
+    "What do you mean by incomplete dominance? Explain it with the help of example.",
+    "Differentiate between continuous variations and discontinuous variations.",
+    "How would you prove that variations lead to evolution?",
+    "Explain the mechanism of evolution by different examples.",
+    "Write a note on artificial selection."
+    ],
+
+    mcqs: [
+      {
+        question: "An organism expressed physical trait, such as seed color or pod shape is called its:",
+        options: ["(A) Genotype", "(B) Phenotype", "(C) Karyotype", "(D) Physical type"]
+    },
+    {
+        question: "An organism has two different alleles for a single trait. Its genotype is said to be:",
+        options: ["(A) Homozygous", "(B) Heterozygous", "(C) Homo", "(D) Hemizygous"]
+    },
+    {
+        question: "How many genetically different kinds of gametes an individual with genotype AaBb can produce?",
+        options: ["(A) One", "(B) Two", "(C) Four", "(D) Eight"]
+    },
+    {
+        question: "What plant did Mendel select for his experiment?",
+        options: ["(A) Vine", "(B) Grams", "(C) Pea plant", "(D) Maize plant"]
+    },
+    {
+        question: "If 'Ii' genotype has Ii phenotype?",
+        options: ["(A) Blood group A", "(B) Blood group B", "(C) Blood group O", "(D) Blood group AB"]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 7,
+    chapterName: "Man and his Environment",
+    shortQuestions: [
+"What are the different levels of ecological organization?",
+    "Define ecosystem and its components.",
+    "What do you mean by the concept of 3Rs with reference to the conservation of natural resources?",
+    "How the flow of energy is different from that of materials?",
+    "Define food chain and food web."
+    ],
+    longQuestions: [
+         "Discuss the biotic components of an ecosystem.",
+    "Write a note on flow of materials in an ecosystem.",
+    "Write a note on carbon cycle.",
+    "Write a note on energy flow and ecological pyramids.",
+    "Write a note on symbiosis.",
+    "What are consumers? Write down the different groups of consumers?",
+    "What is meant by acid rain? Write down the significant effects of acid rain.",
+    "Define green house effect. What is global warming? Write its effects.",
+    "What is water pollution? Describe its effects and control.",
+    "Honeyguide is a bird, what method does it adapt to open the honey comb?",
+    "What is air pollution? Write the effects of air pollution."
+    ],
+
+    mcqs: [
+       {
+        question: "Organisms in the ecosystem that are responsible for recycling of plant and animal wastes are:",
+        options: ["(A) Producers", "(B) Decomposers", "(C) Consumers", "(D) Competition"]
+    },
+    {
+        question: "Which of the following is the abiotic component of the ecosystem?",
+        options: ["(A) Producers", "(B) Herbivores", "(C) Carnivores", "(D) Producer"]
+    },
+    {
+        question: "When eras eats onions, our trophic level is?",
+        options: ["(A) Primary consumer", "(B) Secondary consumer", "(C) Tertiary consumer", "(D) Quaternary consumer"]
+    },
+    {
+        question: "In ecosystem, the flow of energy is one way, while materials are constantly recycled.",
+        options: ["(A) Minerals, energy", "(B) Energy, minerals", "(C) Oxygen, energy", "(D) Glucose, water"]
+    },
+    {
+        question: "Which form of nitrogen is taken by the producers of the ecosystem?",
+        options: ["(A) Nitrogen", "(B) Ammonia", "(C) Nitrates", "(D) Amino acids"]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 8,
+    chapterName: "Biotechnology",
+    shortQuestions: [
+ "How would you define fermentation with reference to biotechnology?",
+    "Name any two industrial products made by fermentation. Also describe their uses in the industry.",
+    "Give an example how biotechnology is helping for better environment?",
+    "What are the products of two types of carbohydrates fermentation?",
+    "In biotechnology, what is meant by genetically modified organism (GMO)? How is it made?"
+
+    ],
+    longQuestions: [
+         "Write down the scope and importance of biotechnology.",
+    "Write the important achievements of biotechnology with reference to medicine, agriculture and environment.",
+    "Write the uses of fermentation in biotechnology.",
+    "What do you know about fermentation? Explain briefly.",
+    "Describe different steps of carbohydrate fermentation.",
+    "Describe two basic types of carbohydrate fermentation.",
+    "Describe four to five groups of food obtained by fermentation.",
+    "Give the detail of two types of fermentation carried out in fermenter.",
+    "What basic steps does a genetic engineer adopt during the manipulation of genes?",
+    "Write down the achievements of genetic engineering.",
+    "Define genetic engineering. Write its important objectives.",
+    "What is meant by single-cell protein (SCP)? Write its importance."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Humans began using micro organisms as early as ...... for making wine:",
+        options: ["(A) 4000 BC", "(B) 2000 BC", "(C) 1000 BC", "(D) 5000 BC"]
+    },
+    {
+        question: "DNA carries:",
+        options: ["(A) Genetic information", "(B) Evolution", "(C) Both", "(D) None"]
+    },
+    {
+        question: "The scientist first prepared human insulin in:",
+        options: ["(A) 1970", "(B) 1972", "(C) 1975", "(D) 1978"]
+    },
+    {
+        question: "Scientist prepared human insulin by inserting the insulin gene in:",
+        options: ["(A) Bacteria", "(B) Virus", "(C) Fungi", "(D) Microorganisms"]
+    },
+    {
+        question: "Gene therapy is the treatment through:",
+        options: ["(A) DNA", "(B) RNA", "(C) Microorganisms", "(D) Bacteria"]
+    },
+    {
+        question: "The study of ...... in identification of criminals:",
+        options: ["(A) DNA", "(B) RNA", "(C) Microorganisms", "(D) Bacteria"]
+    },
+    {
+        question: "Malted food is:",
+        options: ["(A) Powdered milk", "(B) Beer", "(C) None", "(D) All"]
+    },
+    {
+        question: "Alcoholic fermentation is carried out by:",
+        options: ["(A) Yeast", "(B) Fungi", "(C) Ethanol", "(D) Lactic acid"]
+    },
+    {
+        question: "In lactic acid fermentation, pyruvic acid is reduced into:",
+        options: ["(A) Lactic acid", "(B) Acetic acid", "(C) Yogurt", "(D) None"]
+    },
+    {
+        question: "Lactic acid fermentation is carried out by:",
+        options: ["(A) Streptococcus", "(B) Saccharomyces", "(C) Carnitine", "(D) None"]
+    },
+    {
+        question: "The product duct in production of plastics is:",
+        options: ["(A) Acrylic acid", "(B) Ethanol", "(C) Formic acid", "(D) None"]
+    }
+    ],
+  },
+
+
+    {
+    class: 10,
+    subject: "Biology",
+    chapterNumber: 9,
+    chapterName: "Pharmacology",
+    shortQuestions: [
+ "Define pharmacology and distinguish it from pharmacy.",
+    "Differentiate between medical drugs and addictive drugs.",
+    "Differentiate between analgesics and antibiotics.",
+    "What is marijuana? For which group it is related to addictive drugs, it belongs?",
+    "Differentiate between narcotics and hallucinogens."
+    ],
+    longQuestions: [
+          "Describe different sources of drugs.",
+    "Into how many groups drugs are classified on the basis of their chemical properties and modes of action? Give examples.",
+    "Write a note on narcotics.",
+    "What do you know about hallucinogens?",
+    "Write a note on \"marijuana\".",
+    "Discuss some problems associated with \"drug addiction\".",
+    "Write down about drug addiction and associated problems.",
+    "Describe the main groups of antibiotics.",
+    "How do bacteria develop resistance against antibiotics?",
+    "Define and explain the terms vaccine and vaccination.",
+    "Describe the modes of action of vaccines."
+    ],
+
+    mcqs: [
+       {
+        question: "The drugs which do not occur naturally but are synthesized in laboratory are called:",
+        options: ["(A) Fungi", "(B) Antiseptic", "(C) Bacteria", "(D) Artificial drugs"]
+    },
+    {
+        question: "Streptomycin drug is obtained from:",
+        options: ["(A) Fungi", "(B) Antiseptic", "(C) Bacteria", "(D) Plants"]
+    },
+    {
+        question: "From which painkilling drug morphine is obtained?",
+        options: ["(A) Foxglove leave", "(B) Vaccines", "(C) Fish liver oil", "(D) Opium"]
+    },
+    {
+        question: "The drugs which are used to reduce pain include:",
+        options: ["(A) Analgesics", "(B) Sedatives", "(C) Antibiotics", "(D) All"]
+    },
+    {
+        question: "The pain reliever morphine is made from:",
+        options: ["(A) Heroin", "(B) Opium", "(C) Marijuana", "(D) Hashish"]
+    },
+    {
+        question: "The drug, derive from minerals is:",
+        options: ["(A) Morphine", "(B) Aspirin", "(C) Antitoxins", "(D) Tincture iodine"]
+    },
+    {
+        question: "The drugs which reduce the possibility of infections on skin are called:",
+        options: ["(A) Preservatives", "(B) Antiseptics", "(C) Sedatives", "(D) Analgesics"]
+    },
+    {
+        question: "The drugs reduced the possibility of infection on skin:",
+        options: ["(A) Disinfectants", "(B) Antibiotics", "(C) Antiseptics", "(D) Digitalis"]
+    },
+    {
+        question: "Which scientist promoted the idea of sterile surgery for the first time?",
+        options: ["(A) Al-Biruni", "(B) Alexander Fleming", "(C) Joseph Lister", "(D) Allama Iqbal"]
+    },
+    {
+        question: "Joseph Lister introduced an acid to sterile the surgical instruments and to clean wounds.",
+        options: ["(A) Acetic acid", "(B) Carbonic acid", "(C) Citric acid", "(D) Lactic acid"]
+    },
+    {
+        question: "Diazepam is a type of drug:",
+        options: ["(A) Analgesics", "(B) Sedatives", "(C) Antihistamines", "(D) Antibiotics"]
+    }
+    ],
+  },
+
+
+
 
  
 
