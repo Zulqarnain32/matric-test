@@ -2634,6 +2634,1028 @@ const questions = [
     ],
   },
 
+//?   chemistry 9
+
+ {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 1,
+    chapterName: "States of Matter and Phase Changes",
+    shortQuestions: [
+ "Why is there a need to divide Chemistry into many branches? Give three reasons.",
+    "Reactions may take place due to electrons present outside the nucleus or they may take place inside the nucleus. Which branch of Chemistry cover these two types of reactions?",
+    "What types of problems are solved in analytical chemistry?",
+    "Most of the molecules we study in biochemistry are organic in nature. Where does the difference exist in organic and biochemistry branches of Chemistry?",
+    "Which form of matter do most of the material things in this world belong to?",
+    "How does a supercritical state look like?",
+    "In what way is plasma created in a fluorescent tube?",
+    "Both graphite and graphene have hexagonal layered structures. What is the difference?",
+    "Why are supercritical fluids important?",
+    "In what state does matter exist in the Sun?",
+    "What is the history of graphene?",
+    "Give the reason of brilliance shown by diamond can improve it?",
+    "Why graphite is slippery to touch? Which property of graphite enables it to be used as lubricant?",
+    "Explain the dissolution of sodium chloride in water.",
+    "Why different compounds have a different solubilities in water and at a particular temperature?",
+    "Why NaCl can not be crystallized from water but like KNCs?"
+
+    ],
+    longQuestions: [
+         "Mention the name of the branch of chemistry in which you will study each of the following topics: (a) Rate of a reaction (b) Digestion of food in human body (c) Properties of plasma (d) Ecosystem (e) Reactions taking place during fireworks (f) Measurement of the absorption of wavelength in the help of ultraviolet spectrometer.",
+    "Differentiate between the areas which are studied under inorganic and organic chemistry.",
+    "What are types of movement are presents in gaseous and liquid molecules?",
+    "Graphene is called a miracle material and it is the material of the future. Which of its many properties make it very useful in electronics?",
+    "What are allotropic forms of carbon? Explain the allotropic forms of carbon and sulphur. How does a diamond differ from nano?",
+    "How they different from ordinary liquids?",
+    "Define solubility of a solution. How does the solubility of solutions change with the increase in temperature?",
+    "Preparation of solutions leads to an important process in chemistry which enables us to purify a compound through crystallization. Describe a process in which potassium nitrate is purified by crystallizing it in water."
+
+    ],
+
+    mcqs: [
+         {
+        question: "Hazardous effects of shopping bags are studied in:",
+        options: ["(A) Geochemistry", "(B) Inorganic Chemistry", "(C) Analytical Chemistry", "(D) Environmental Chemistry"],
+    },
+    {
+        question: "The man-made polymer is:",
+        options: ["(A) Starch", "(B) Polystyrene", "(C) Protein", "(D) Cellulose"],
+    },
+    {
+        question: "Matter is present in neon signs in the state of:",
+        options: ["(A) Supercritical fluid", "(B) Plasma", "(C) Liquid crystal", "(D) Dark matter"],
+    },
+    {
+        question: "Which ditch the following is a heterogeneous mixture?",
+        options: ["(A) Brass", "(B) Sulphur", "(C) Vinegar solution", "(D) Hot chocolate"],
+    },
+    {
+        question: "A state of matter whose properties are between those of liquids and crystalline solids",
+        options: ["(A) Liquid crystal", "(B) Supercritical fluid", "(C) Plasma", "(D) Dark matter"],
+    },
+    {
+        question: "The crystals of which substance has rhombous shape?",
+        options: ["(A) Brass", "(B) Sulphur", "(C) Graphite", "(D) Eritroze"],
+    },
+    {
+        question: "Which liquid among the following is a colloidal solution?",
+        options: ["(A) Milk", "(B) Vinegar solution", "(C) Honey", "(D) Water"],
+    },
+    {
+        question: "When the tiny visible particles of a substance are dispersed through a medium, the mixture is named as:",
+        options: ["(A) True solution", "(B) Colloid", "(C) Suspension", "(D) Saturated solution"],
+    },
+      
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 2,
+    chapterName: "Atomic Structure",
+    shortQuestions: [
+          "During discharge tube experiments, how did the scientists conclude that the same type of electrons and protons are present in all the elements?",
+    "Why is it said almost all the mass of an atom is concentrated in its nucleus?",
+    "How can an an atom absorb and evolve energy?",
+    "Why is it needed to lower the pressure of the gas inside the discharge tube?",
+    "What is the classical concept of an electron? How has this concept changed with time?",
+    "Why does the energy of electron increase as we move from first shell to second shell?",
+    "How many neutrons are present in Pb?",
+    "Why is tritium (H) a radioactive element?",
+    "Why are elements different from one another?",
+    "Why the nuclei of the radioactive elements are unstable?"
+
+
+    ],
+    longQuestions: [
+         "Explain the structure of a hydrogen atom.",
+    "A system just like our solar system exists in an atom. Comment on this statement.",
+    "How can scientists synthesize elements in the laboratory?",
+    "How does the theory of atomic structure explain the ionization of atoms by a radioactive isotope?",
+    "What is radioactivity? Explain any three applications of radioactive isotopes."
+
+    ],
+
+    mcqs: [
+       {
+        question: "How many electrons can be accommodated in the most in the third shell of the elements?",
+        options: ["(A) 8", "(B) 18", "(C) 10", "(D) 32"],
+    },
+    {
+        question: "What information was obtained from discharge tube experiments?",
+        options: ["(A) Structure of atom was discovered", "(B) Neutrons and protons were discovered", "(C) Electrons and protons are present in nucleus", "(D) Presence of nucleus in an atom was discovered"],
+    },
+    {
+        question: "How do electrodes keep themselves away from the oppositely charged nucleus?",
+        options: ["(A) By keeping themselves stationary", "(B) By revolving around the nucleus", "(C) Due to their wave-like nature", "(D) A magnetic field around the nucleus keeps them away"],
+    },
+    {
+        question: "Rubidium consists of two isotopes and . The percent abundance of the light isotope is 72.2%. What is the percent abundance of the heavier isotope if its atomic mass is 85.47?",
+        options: ["(A) 15%", "(B) 27.8%", "(C) 37%", "(D) 72%"],
+    },
+    {
+        question: "How is radiocarbon dating useful for archeologists?",
+        options: ["(A) It helps determine the age of organic matter", "(B) It helps determine the composition of matter", "(C) It helps determine the usefulness of matter", "(D) It helps determine whether the matter is radioactive or not"],
+    },
+    {
+        question: "What does keep the particles present in the nucleus intact?",
+        options: ["(A) Particles are held together by strong nuclear force", "(B) Particles are held together by weak nuclear force", "(C) Particles are held together by electrostatic force", "(D) Particles are held together by dipolar force"],
+    },
+    {
+        question: "Why have isotopes not been shown in the periodic table?",
+        options: ["(A) Periodic table cannot accommodate a large number of isotopes of different elements", "(B) Some of the isotopes are unstable and they give rise to different elements", "(C) All the isotopes have same atomic behavior", "(D) Isotopes do not show periodic behavior so there is no need to give them separate places"],
+    },
+    {
+        question: "Which particle is present in different number in the isotopes?",
+        options: ["(A) Electron", "(B) Neutron", "(C) Proton", "(D) Both neutron and proton"],
+    },
+    {
+        question: "In which isotope of oxygen there are the equal number of protons, electrons and neutrons?",
+        options: ["(A) O", "(B) O", "(C) O", "(D) None of these"],
+    },
+    {
+        question: "What will be the relative atomic mass of nitrogen given the abundances of its two isotopes N and N are 99.64 and 0.35 respectively.",
+        options: ["(A) 14.0210", "(B) 14.0021", "(C) 14.2100", "(D) 14.1200"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 3,
+    chapterName: "Chemical Bonding",
+    shortQuestions: [
+ "What type of elements lose their outer electron easily and what type of elements gain electron easily?",
+    "Is coordinate covalent bond a strong bond?",
+    "Write down and cross formula of HNO3.",
+    "How many oxides does nitrogen form. Write down the formula of oxides?",
+    "Why do lower molecular mass covalent compounds exist as gases or low boiling liquids.",
+    "Which property of metals makes them malleable and ductile?",
+    "How do metals conduct heat?",
+    "Why HF is a liquid while HCl is a gas?",
+    "Why ionic/covalent compounds are generally not soluble in water?",
+    "Give one example an element which exists as a crystalline solid and it has covalent bonds between its atoms.",
+    "What will happen if NaBr is treated with AgNO3 in water?",
+    "Why does iodine exist as a solid while Cl2 as a gas?"
+
+    ],
+    longQuestions: [
+         "Explain the formation of an ionic bond and a covalent bond.",
+    "How do ions arrange themselves to form NaCl crystal?",
+    "Explain the properties of metals keeping in view the nature of metallic bond.",
+    "Compare the properties of ionic and covalent compounds.",
+    "How will you explain the electrical conductivity of graphite crystals?",
+    "Why are metals usually hard and heavy?",
+    "The formula of AlCl3 in vapour phase is Al2Cl6 which means it exists as a dimer. Explain the bonding between its two molecules?",
+    "Explain the structure of sand (SiO2)."
+
+    ],
+
+    mcqs: [
+       {
+        question: "When molten copper and molten zinc are mixed together, they give rise to a new substance called brass. Predict what type of bond is formed between copper and zinc:",
+        options: ["(A) Ionic bond", "(B) Covalent bond", "(C) Metallic bond", "(D) Coordinate covalent bond"],
+    },
+    {
+        question: "Which element is capable of forming all the three types of bond, covalent, coordinate covalent and ionic?",
+        options: ["(A) Carbon", "(B) Oxygen", "(C) Magnesium", "(D) Silicon"],
+    },
+    {
+        question: "Which among the following has a double covalent bond?",
+        options: ["(A) Ethane", "(B) Methane", "(C) Ethylene", "(D) Acetylene"],
+    },
+    {
+        question: "Which form of carbon is used as a lubricant?",
+        options: ["(A) Coal", "(B) Diamond", "(C) Graphite", "(D) Charcoal"],
+    },
+    {
+        question: "Keeping in view the intermolecular forces of attraction, indicate which compound has the highest boiling point?",
+        options: ["(A) H2O", "(B) H2S", "(C) NH3", "(D) CH4"],
+    },
+    {
+        question: "Which metal has the lowest melting point?",
+        options: ["(A) Li", "(B) Na", "(C) K", "(D) Rb"],
+    },
+    {
+        question: "Which ionic compound has the highest melting point?",
+        options: ["(A) NaCl", "(B) KCl", "(C) LiCl", "(D) RbCl"],
+    },
+    {
+        question: "Which compound contains both covalent and ionic bonds?",
+        options: ["(A) MgCl2", "(B) CaSO4", "(C) PCl3", "(D) CaCl2"],
+    },
+    {
+        question: "Why is H2O a liquid while H2S is a gas?",
+        options: [
+            "(A) Because in water, the atomic size of oxygen is smaller than that of sulphur",
+            "(B) Because water is a polar compound and therefore exhibits strong forces of attraction",
+            "(C) Because water molecules are lighter than H2S molecules",
+            "(D) Because water can easily freeze into ice"
+        ],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 4,
+    chapterName: "Stoichometry",
+    shortQuestions: [
+ "Write down the chemical formula of barium nitride.",
+    "Write down the chemical formulas of the following compounds. Calcium phosphate, Aluminum nitride, Sodium acetate, Ammonium carbonate and Bismuth sulfate.",
+    "Find out the molecular formula of a compound whose empirical formula is C5H10O and its molar mass is 180.",
+    "Different compounds will never have the same molecular but they can have the same empirical formula. Explain.",
+    "Why does Avogadro's number have an immense importance in chemistry?",
+    "How many molecules are present in 1.5 g H2O?",
+    "What is the difference between a mole and Avogadro's number?",
+    "Write down the chemical equation of the following reaction: Copper + Sulphuric acid (Equation) Copper sulphate + Sulphur dioxide + Water",
+    "How can you calculate the masses of the products formed in a reversible reaction?",
+    "When 0.857g of a compound were converted into elements, it gave 5.217g of carbon, 0.952g of hydrogen and 2.478g of oxygen. Calculate the percentage of each element present in this compound."
+
+    ],
+    longQuestions: [
+        "The chemical formula for sand is SiO2 but the sand does not exist in the form of discrete molecules like H2O. How has its formula been determined keeping in view its structure?",
+    "Explain the concepts of Avogadro's number and mole.",
+    "Which conditions must be fulfilled before writing a chemical equation for a chemical reaction?",
+    "How many grams of CO2 will be produced when we react 10g of CH4 with excess of O2 according to the following equation? CH4(g) + 2O2(g) -> CO2(g) + 2H2O(g)",
+    "How many moles of coal are needed to produce 10 moles of CO according to the following equation? C(s) + O2(g) -> CO(g) + H2O(g)",
+    "How much SO2 is needed in grams to produce 10 moles of sulphur? S2(s) + O2(g) -> SO2(g)",
+    "How much ammonia is needed in grams to produce 1 kg of urea fertilizer? 2NH3(g) + CO2(g) -> (NH2)2CO(s) + H2O(g)",
+    "Calculate the number of atoms in the following: (a) 3g (b) 3.4 moles of N2 (c) 10g of CO2 (d) 10g of H2O",
+    "It is generally believed that drinking eight glasses of water every day is required to keep oneself hydrated especially in the summer. If a glass occupies 400 cm³ of water on the average, how many moles of water are needed for a single adult?"
+
+    ],
+
+    mcqs: [
+         {
+        question: "Which is the correct formula of calcium phosphide?",
+        options: ["(A) CaP", "(B) CaP2", "(C) Ca3P2", "(D) Ca3P3"],
+    },
+    {
+        question: "How many atomic mass units (amu) are there in one gram?",
+        options: ["(A) 1 amu", "(B) 10^23 amu", "(C) 6.022 x 10^23 amu", "(D) 6.022 x 10^-23 amu"],
+    },
+    {
+        question: "Structural formula of 2-hexene is CH3 - CH = CH - CH2 - CH3. What will be its empirical formula?",
+        options: ["(A) CH", "(B) CH2", "(C) CH3", "(D) C6H12"],
+    },
+    {
+        question: "How many moles are there in 25 g of H2SO4?",
+        options: ["(A) 0.765 moles", "(B) 0.51 moles", "(C) 0.255 moles", "(D) 0.1 moles"],
+    },
+    {
+        question: "A necklace has 8g of diamonds in it. What are the number of carbon atoms in it?",
+        options: ["(A) 6.02 x 10^23", "(B) 12.04 x 10^23", "(C) 1.003 x 10^23", "(D) 3.01 x 10^23"],
+    },
+    {
+        question: "Which one of the following compounds will have the highest percentage of the mass of nitrogen?",
+        options: ["(A) CO(NH2)2", "(B) (NH4)2", "(C) NH3", "(D) (NH4)2OH"],
+    },
+    {
+        question: "How many atoms are present in one gram of H2O?",
+        options: ["(A) 1002 x 10^23 atoms", "(B) 6.022 x 10^23 atoms", "(C) 0.334 x 10^23 atoms", "(D) 2.004 x 10^23 atoms"],
+    },
+    {
+        question: "What is the mass of Al in 20g of aluminum oxide, Al2O3.",
+        options: ["(A) 29g", "(B) 27g", "(C) 54g", "(D) 108g"],
+    },
+    {
+        question: "When one mole of each of the following compounds is reacted with oxygen, which will produce the maximum amount of CO2?",
+        options: ["(A) Ethane (C2H6)", "(B) Diamond", "(C) Ethylene (C2H4)", "(D) Methane (CH4)"],
+    },
+    {
+        question: "What mass of 95% CaCO3 will be required to neutralize 50 cm³ of 0.5M HCl solution?",
+        options: ["(A) 9.5g", "(B) 1.25g", "(C) 32g", "(D) 1.45g"],
+    },
+      
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 5,
+    chapterName: "Energetics",
+    shortQuestions: [
+ "What is the difference between enthalpy change?",
+    "Why is breaking of a bond an endothermic process?",
+    "Depict the transition state for the following reaction: H2 + Cl2(equation) 2HCl",
+    "Draw the reaction profiles for two exothermic reactions one of which moves faster than the other.",
+    "Explain why the reaction between atmospheric gases oxygen and nitrogen does not take place under normal conditions and in the presence of lightning these gases react to give NO. The reaction stops as soon as the lightning stops.",
+    "What is the role of glycogen in our body?",
+    ],
+    longQuestions: [
+        "Explain the difference between the terms heat and enthalpy.",
+    "Explain why formation of a bond is always an exothermic process.",
+    "Why does fireworks look spectacular? What type of chemical compounds undergo chemical reactions in this activity?",
+    "Find out the enthalpy change of the following reaction using the given data: N2 + O2 → 2NO. Bond dissociation energy of N2=568.30 KJ/mol. Bond dissociation energy of O2= 498 KJ/mol. Bond dissociation energy of NO= -626 KJ/mol.",
+    "Explain the role of lipids in our body.",
+    "Explain the following terms: Activation energy, Transition state, Aerobic respiration.",
+    "Why is it essential to cook some of the food items while others we can eat without cooking?"
+
+    ],
+
+    mcqs: [
+       {
+        question: "Formation of which hydrogen halide from the elements is an endothermic reaction?",
+        options: ["(A) HCl", "(B) HBr", "(C) HI", "(D) HF"],
+    },
+    {
+        question: "What does it show when a chemical reaction is exothermic?",
+        options: ["(A) It shows the bonds which break are weaker than those formed", "(B) It shows the bonds which break are stronger than those formed", "(C) Exothermic nature of the reaction is not concerned with bond breakage", "(D) It shows that the reactants are more stable than the products"],
+    },
+    {
+        question: "When NaOH and HCl are mixed the temperature increase. The reaction is:",
+        options: ["(A) exothermic with a positive enthalpy change", "(B) endothermic with a positive enthalpy change", "(C) endothermic with a negative enthalpy change", "(D) exothermic with a negative enthalpy change"],
+    },
+    {
+        question: "The average bond dissociation energy for the C-H bond is 412 kJ mol-¹. Which of the following process will have enthalpy change= 412 kJ mol-¹?",
+        options: ["(A) CH4 -> C + 4H", "(B) CH4 -> CH3 + H", "(C) CH4 -> CH2 + 2H", "(D) CH4 -> CH3 + H"],
+    },
+    {
+        question: "The average bond energies for I-O and I=O are 146 kJ mol⁻¹ and 485 kJ mol⁻¹ respectively. Find the enthalpy in kJ for following reaction?",
+        options: ["(A) -102KJ", "(B) +102KJ", "(C) +350KJ", "(D) -394KJ"],
+    },
+    {
+        question: "The following reaction is an exothermic reaction: H₂ + Cl₂ (equation) 2HCl. From where does the energy come to break the bonds of H₂ and Cl₂?",
+        options: ["(A) By collisions between the molecules", "(B) From sunlight", "(C) From the surrounding", "(D) By collision of the molecules with the walls of the container"],
+    },
+    {
+        question: "Which of the following reactions has the least value of activation energy?",
+        options: ["(A) 2H₂O(g) -> 2H₂(g) + O₂(g)", "(B) CO₂(g) -> C(s) + O₂(g)", "(C) AgCl(s) + NaNO₃(aq) -> AgNO₃(aq) + NaCl(s)", "(D) 2H₂(g) + O₂(g) -> 2H₂O(g)"],
+    },
+    {
+        question: "Which reaction do you expect to be a reversible reaction?",
+        options: ["(A) equation", "(B) equation", "(C) equation", "(D) equation"],
+    },
+    {
+        question: "What are the products of anaerobic respiration?",
+        options: ["(A) ATP + CO₂ + H₂O", "(B) CO₂ + H₂O", "(C) Ethanol + H₂O", "(D) Ethanol + H₂O"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 0,
+    chapterName: "Equilibria",
+    shortQuestions: [
+ "How the following reversible reaction will be affected if its temperature is increased? 2H2O(l) (equation) (pending)",
+    "How can you get the maximum yield in a reversible reaction?",
+    "How can you decrease the time to attain the position of equilibrium in a reversible reaction?",
+    "Why are some reactions irreversible while others are reversible?",
+    "Why any combustion reactions generally irreversible?",
+    "How can you make an irreversible reaction reversible or irreversible and vice versa?",
+    "How do you know if a reaction is reversible or irreversible?",
+    "Why is dynamic equilibrium different from the static equilibrium?",
+    "Do the phase/state changes in water (solid to liquid to vapour) reversible or irreversible?",
+    "What is the effect of increasing pressure on the following reaction at equilibrium? N2(g) + 3H2(g) <=> 2NO2(g)"
+
+    ],
+    longQuestions: [
+         "How can you drive the reversible reaction at equilibrium? (a) in the forward direction (b) in the backward direction.",
+    "Explain how the rates of forward and backward reactions change when the system approaches equilibrium.",
+    "How can the effect of a catalyst on the reversible reaction?",
+    "How can a reversible reaction be forced to go to completion?",
+    "Describe the change in temperature affect the reaction at equilibrium?",
+    "Study the effect of heat on hydrated copper sulphate. Why does this salt look coloured and why does it lose colour upon heating?",
+    "Synthesis of ammonia gas is very important industrially because it is used in the preparation of urea fertilizer. Explain the conditions you will use to get the maximum yield of ammonia."
+
+    ],
+
+    mcqs: [
+       {
+        question: "When a reaction will become a reversible one?",
+        options: [
+            "(A) If the activation energy of the forward reaction is comparable to that of backward reaction",
+            "(B) If the activation energy of the forward reaction is higher to that of backward reaction",
+            "(C) If the activation energy of the forward reaction is lower to that of backward reaction",
+            "(D) If the enthalpy change of both the reactions is zero"
+        ],
+    },
+    {
+        question: "Is reversible visible reaction useful for preparing compounds on large scale?",
+        options: [
+            "(A) No",
+            "(B) Yes",
+            "(C) They are useful only when equilibrium lies far to the right side",
+            "(D) They are useful only when equilibrium lies far to the left side"
+        ],
+    },
+    {
+        question: "What will happen to the concentrations of the products if a reversible reactions at equilibrium in min not disturbed?",
+        options: [
+            "(A) They will remain constant",
+            "(B) They will keep on increasing",
+            "(C) They will keep on decreasing",
+            "(D) They will remain constant time and then start decreasing"
+        ],
+    },
+    {
+        question: "What will happen if the rates of forward and reverse reaction are very high?",
+        options: [
+            "(A) The equilibrium point will reach very soon",
+            "(B) The equilibrium point will reach very late",
+            "(C) The reaction will not attain the state of dynamic equilibrium",
+            "(D) The reaction will be practically irreversible"
+        ],
+    },
+    {
+        question: "Predict which components of the atmosphere react in the presence of lightning:",
+        options: ["(A) N2 and H2O", "(B) O2 and H2O", "(C) O2 and CO2", "(D) N2 and O2"],
+    },
+    {
+        question: "What condition should be met for the reversible reaction to achieve the state of equilibrium?",
+        options: [
+            "(A) All the reactants should be converted into the products",
+            "(B) 50% of the reactants should be converted into products",
+            "(C) The concentrations of all the reactants and the products should become constant",
+            "(D) One of the products should be removed from the reaction mixture"
+        ],
+    },
+    {
+        question: "Why the gas starts coming out when you open a can of fizzy drink?",
+        options: [
+            "(A) Because the gas is lived by the solubility in water",
+            "(B) Because the gas is insoluble in water",
+            "(C) Because the pressure is decrease hence it comes out when pressure is decreased",
+            "(D) Because the gas is solubility of the gas at high pressure at high temperature"
+        ],
+    },
+    {
+        question: "The following reaction is performed in a closed vessel. CaCO3(s) (equation) CaO(s) + CO2(g). How the equilibrium will be affected if to increase the pressure?",
+        options: [
+            "(A) The forward reaction will be favoured",
+            "(B) The backward reaction will be favoured",
+            "(C) No effect on forward or backward reaction",
+            "(D) No effect on forward and backward reaction"
+        ],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 7,
+    chapterName: "Acid Base Chemistry",
+    shortQuestions: [
+ "Choose Arrhenius among the following compounds: HF, HNO3, H2SO4, SO2, H2S, H2O",
+    "How does calcium metal react with dilute H2SO4?",
+    "Which salt is an Bronsted-formed when HCl reacts with BaCO3?",
+    "How will you justify that HSO4 is a Bronsted-Lowry acid?",
+    "Why is HCl not edible although it is present in the stomach and responsible for digestion of food?",
+    "What chemical name will you give to soap as a compound?",
+    "In the presence of a drop of an acid, water is ionized as follows: H2O(l) <=> H+(aq) + OH-(aq). In your opinion which name will be suitable for water: an acid, a base or both?",
+    "Why does NaHCO3 behave like a base in water?",
+    "Is NaH2CO3 a base or an acid? Justify your answer.",
+    "What is the difference between a strong acid and a concentrated acid?"
+
+    ],
+    longQuestions: [
+         "Explain Arrhenius concept of acids and bases.",
+    "Compare Arrhenius and Brønsted-Lowry concepts of acids and bases.",
+    "How does sulphuric acid react with the following compounds? NH3, NH4Cl, NOx, MgO, H2CO3?",
+    "What happens when a base reacts with a non-metallic oxide? What do you infer about the nature of non-metallic oxide?",
+    "State the reason of showing acidic character by both dry HCl gas and HCl solution in water.",
+    "Differentiate between an acid and its conjugate base.",
+    "Acids play significant roles within human body. Comment on this statement.",
+    "What is observed when CO2 is passed through lime water (i) for a short duration (ii) for a long duration."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Which acid is not used as a food or mixed with food?",
+        options: ["(A) Tartaric acid", "(B) Ascorbic acid", "(C) Citric acid", "(D) Formic acid"],
+    },
+    {
+        question: "While baking, which gas is responsible for the bread making and it making it soft?",
+        options: ["(A) Oxygen", "(B) Carbon dioxide", "(C) Nitrogen", "(D) Carbon monoxide"],
+    },
+    {
+        question: "Predict the main characteristics of the reactions of metals with acids.",
+        options: [
+            "(A) Metals are dissolved",
+            "(B) Metals are converted into salts",
+            "(C) Hydrogen gas is evolved",
+            "(D) All the above mentioned characteristics are true"
+        ],
+    },
+    {
+        question: "How many hydroxide ions, calcium hydroxide will release in water?",
+        options: ["(A) 1", "(B) 2", "(C) Zero", "(D) 3"],
+    },
+    {
+        question: "In a neutralization reaction between KOH and H3PO4, how many molecules of KOH will react with one molecule of H3PO4?",
+        options: ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
+    },
+    {
+        question: "Which compound is formed when SO2 is dissolved in water?",
+        options: ["(A) H2SO3", "(B) H2SO4", "(C) H2SO5", "(D) Oxalic acid"],
+    },
+    {
+        question: "Which acid is used in the preparation of soap?",
+        options: ["(A) Tartaric acid", "(B) Citric acid", "(C) Stearic acid", "(D) Oxalic acid"],
+    },
+    {
+        question: "The following contains oxalic acid.",
+        options: ["(A) Tomato", "(B) Orange", "(C) Tamarind", "(D) Sour milk"],
+    },
+    {
+        question: "Which compound in the following reaction is behaving as a conjugate base?",
+        options: ["(A) CH3COOH", "(B) H2O", "(C) CH3COO-", "(D) H3O+"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 8,
+    chapterName: "Periodic Table and Perodicity",
+    shortQuestions: [
+"Why was atomic number chosen to arrange the elements in the periodic table?",
+    "What is the significance of the periodic table?",
+    "Why does the size of a period increase as we move down the periodic table?",
+    "In a group, the elements have the same number of electrons in the outermost shell. Why is it so?",
+    "Why do you expect calcium to be more reactive than sodium? Give the reason of your answer.",
+    "Which element has the maximum atomic radius and which element has the minimum atomic radius in third period?",
+    "Why are the most electronegative elements present in sixth and seventh groups?",
+    "The first ionization energy value of magnesium less than the second one. Give reason.",
+    "Is it possible for two metals or two non-metals to form an ionic bond?",
+    "Which element has the least value ionization energy and which element has the highest value of electronegativity?",
+    "Suppose a new element is discovered, where would you like to accommodate this element in the in the periodic table?",
+    "What is the first element of the periodic table? Will it lose an electron or gain it?",
+    "Atomic radio and aluminum are 88 pm and 125 pm respectively of an element. Which element is expected to lose electron or electrons?",
+    "How would you find the atomic radius of an boron and carbon?",
+    "Why is it not possible for an oxygen atom to accept three electrons to form O³⁻ ion like nitrogen which can accept electrons to form N³⁻?"
+
+    ],
+    longQuestions: [
+        "Which information is needed to locate the elements in the periodic table if you do not know its atomic number? Is atomic mass helpful for this purpose?",
+    "How many blocks of elements are present in the periodic table? Are these blocks helpful in studying the properties of elements?",
+    "Explain the variation in the following properties in the periods giving reasons: (a) Atomic radius (b) Ionization energy",
+    "Which physical properties of elements may lead us to know what type of bond it will form?",
+    "Write down the names of four non-metals which exist in solid state at normal temperature.",
+    "Why do second and third periods have equal number of elements while all other periods contain different number of elements?",
+    "Arrangement of the elements in the form of a periodic table is a remarkable achievement in chemistry. Comment on this statement on the benefits of the table.",
+    "Both lithium and beryllium show behaviour different from the of the alkali and alkaline earth metals respectively. Can you think of the possible reasons for this difference?",
+    "Modern periodic table is the amended form of the earlier table developed by Mendeleev. Elaborate how these two tables are different from each other."
+
+    ],
+
+    mcqs: [
+        {
+        question: "In which period and group will you place the element which is an important part of the solar cell?",
+        options: ["(A) Third period and 14th group", "(B) Second period and 15th group", "(C) Third period and 15th group", "(D) Third period and 16th group"],
+    },
+    {
+        question: "Identify the electronic configuration of the outermost shell of a transition metal.",
+        options: ["(A) ns¹np⁴", "(B) nd¹ns²", "(C) ns²np⁴", "(D) ns²np⁵"],
+    },
+    {
+        question: "Which is the softest metal?",
+        options: ["(A) Na", "(B) Ca", "(C) Al", "(D) Zn"],
+    },
+    {
+        question: "A yellow solid element exist in allotropic forms which is also present in fossil fuels. Indicate the name.",
+        options: ["(A) Carbon", "(B) Iodine", "(C) Aluminum", "(D) Sulphur"],
+    },
+    {
+        question: "How many electrons can nitrogen accept in its outermost shell?",
+        options: ["(A) 2", "(B) 3", "(C) 4", "(D) 5"],
+    },
+    {
+        question: "Which element is the most reactive element?",
+        options: ["(A) Oxygen", "(B) K", "(C) Rb", "(D) Cs"],
+    },
+    {
+        question: "Which element has the highest melting point?",
+        options: ["(A) Li", "(B) Na", "(C) K", "(D) Rb"],
+    },
+    {
+        question: "In what order does the metallic character change in the second group?",
+        options: ["(A) Mg>Na>Al>Si", "(B) Na>Mg>Al>Si", "(C) Mg<Na<Al<Si", "(D) Mg>Sr>Ba"],
+    },
+    {
+        question: "Which of the following best describes the correct order of oxygen, fluorine, and nitrogen's atomic radii?",
+        options: ["(A) O>N>F", "(B) F>O>N", "(C) N>O>F", "(D) O<F<N"],
+    },
+    {
+        question: "The element having less value of ionization energy and less value of electron affinity is likely to belong to:",
+        options: ["(A) Group 1", "(B) Group 13", "(C) Group 16", "(D) Group 17"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 9,
+    chapterName: "Group Properties and Elements",
+    shortQuestions: [
+"Why do metals become easier to cut an alkali metal when we move from top to bottom in a group 1?",
+    "Predict the reactivity of potassium towards halogens.",
+    "In the following reaction, chlorine acts as an oxidising agent. Which is the reducing agent? Cl2(aq) + 2NaBr(aq) → 2NaCl(aq) + Br2(aq)",
+    "Why does iodine exist in the solid state at room temperature?",
+    "How does Ni catalyst use the reaction involving hydrogenation of oil?",
+    "Which noble gas should have the lowest boiling point and why?",
+    "Why are the reactions of alkali metals with chlorine.",
+    "Why are almost all the metals solids while non-metals generally exist as gases and solids?",
+    "Name any three alkali elements in the periodic table which exist as liquids?",
+    "Why are transition elements different from normal elements?",
+    "Compare the reactivity of chlorine and bromine as an oxidising agent.",
+    "Which element is the most reactive and which is the least reactive among halogens? Give two reasons to explain your answer."
+
+    ],
+    longQuestions: [
+         "Explain the role of catalytic converter in an automobile.",
+    "Why do the chemical reactivities of alkali metals decrease down the group whereas they decrease down the group in case of halogens?",
+    "Why are metals generally tough and strong whereas non-metals are neither tough nor strong?",
+    "Both alkali metals and halogens are very reactive elements with roles opposite to each other. Explain.",
+    "Why hydrogen bromide is thermally unstable as compared to hydrogen chloride?",
+    "Compare the properties of metals and non-metals.",
+    "V2O5 catalyst catalyst is preferred over platinum in the oxidation of sulphur dioxide. Give reasons.",
+    "Explain the role of sodium as heat transfer agent in the atomic nuclear power plant. Which property of sodium is utilized in this role.",
+    "Why and how does lithium behave differently from the rest of the alkali metals?",
+    "Why aluminum metal is used in the manufacture of cooking utensils whereas magnesium is not considered useful for this purpose?"
+
+    ],
+
+    mcqs: [
+         {
+        question: "Which halogen will have the least reactivity with alkaline earth metals?",
+        options: ["(A) Chlorine", "(B) Iodine", "(C) Bromine", "(D) Fluorine"],
+    },
+    {
+        question: "Which compound do you expect to be coloured?",
+        options: ["(A) KCl", "(B) AlCl3", "(C) Sr", "(D) Ba"],
+    },
+    {
+        question: "In which element there exists the strongest forces of attraction between atoms?",
+        options: ["(A) Mg", "(B) Ca", "(C) Sr", "(D) Ba"],
+    },
+    {
+        question: "Elements of which group are all coloured?",
+        options: ["(A) Second group", "(B) Sixth group", "(C) Fourth group", "(D) Fifth group"],
+    },
+    {
+        question: "Which halogen acid is unstable at room temperature?",
+        options: ["(A) HBr", "(B) HI", "(C) HF", "(D) HCl"],
+    },
+    {
+        question: "Which oxide is the most basic, oxide?",
+        options: ["(A) Na2O", "(B) MgO", "(C) Li2O", "(D) CO"],
+    },
+    {
+        question: "Which group elements are the most reactive elements?",
+        options: ["(A) Transition metal group", "(B) First group", "(C) Second group", "(D) Third group"],
+    },
+    {
+        question: "The following solutions of a halogen and a sodium halide are mixed together. Which solution will turn dark because of a reaction?",
+        options: [
+            "(A) Br2 and NaCl",
+            "(B) Br2 and Nal",
+            "(C) Cl2 and Nal",
+            "(D) Cl2 and NaBr"
+        ],
+    },
+    {
+        question: "X is a monoatomic gas, which statement about this is correct?",
+        options: [
+            "(A) X burns in air",
+            "(B) X is coloured",
+            "(C) X is unreactive",
+            "(D) X will displace iodine from it"
+        ],
+    },
+    {
+        question: "Which property is correct for group 1 elements?",
+        options: ["(A) Low electrical conductivity", "(B) Low catalytic activity", "(C) High density", "(D) High melting point"],
+    },
+      
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 10,
+    chapterName: "Environmental Chemistry",
+    shortQuestions: [
+ "What is the main objective of environmental education?",
+    "How is particulate matter released in the atmosphere?",
+    "Which gas is more poisonous, CO2 or CO?",
+    "How does acid rain affect forests?",
+    "In what way sulphur present in fossil fuels becomes dangerous?",
+    "Name any three major sources responsible for the greenhouse effect.",
+    "Why is wind energy useful for us?",
+    "How is the excessive use of insecticides and pesticides harmful for birds?",
+    "Percentage of CO2 in air is only 0.04%. Then how does it become harmful for the ecosystem?",
+    "Why only some pollutant gases present in the atmosphere cause greenhouse effect while others do not?",
+    "How can you minimize the emission of CO present in the gases emitted by the burning of fuel in the automobile engines?",
+    "Mention three different ways in which solar energy can be useful for us?"
+
+    ],
+    longQuestions: [
+         "Describe the harmful effects of the major pollutants present in the air.",
+    "Explain greenhouse effect. How is global warming dangerous for us?",
+    "What is air quality index? What information does it convey?",
+    "Who are high risk groups and why is pollution more dangerous for them?",
+    "Describe five strategies to address environmental issues.",
+    "Major Pakistani cities experience a very high AQI in winter whereas residents the most polluted cities in the world. Point out some of the major cause of high AQI in these cities.",
+    "Why does AQI not rise in Pakistan in hot days of summer?",
+    "How has climate change affected Pakistan during the last five years?"
+    ],
+
+    mcqs: [
+       {
+        question: "Which gases are responsible for greenhouse effect?",
+        options: ["(A) SO₂ NO₂", "(B) CO₂ CH₄", "(C) O₃ N₂", "(D) O₂ N₂"],
+    },
+    {
+        question: "Indicate the source of sulphur which is responsible for the presence of oxides of sulphur in the atmosphere:",
+        options: ["(A) Decomposition of vegetation", "(B) Waste gases from digestion of animals", "(C) Photochemical smog", "(D) Combustion of fossil fuels"],
+    },
+    {
+        question: "Concentration of which of gas in the atmosphere is decreased by photosynthesis in plants?",
+        options: ["(A) CO₂", "(B) CO", "(C) NO", "(D) N₂"],
+    },
+    {
+        question: "Which substance remains unaffected in the catalytic converter fixed in the exhaust of the automobiles?",
+        options: ["(A) CO₂", "(B) CO", "(C) NO", "(D) N₂"],
+    },
+    {
+        question: "People of which age-groups are most affected by the air pollution?",
+        options: ["(A) Young adults", "(B) Middle age people", "(C) Children", "(D) Both children and old people"],
+    },
+    {
+        question: "In which area is there a greater possibility of acid rain?",
+        options: ["(A) Around village", "(B) Around big cities", "(C) Around industrial area", "(D) Around water bodies"],
+    },
+    {
+        question: "Why is smog not lit in summer?",
+        options: [
+            "(A) Because in summer fuels are burnt",
+            "(B) Because fog is not present in summer",
+            "(C) Because due to heat the smoke rises up",
+            "(D) Because less fossil fuels are burnt in summer"
+        ],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber:11,
+    chapterName: "Hydrocarbons",
+    shortQuestions: [
+        "Differentiate between an organic and an inorganic compound.",
+    "Why are organic compounds found in large numbers?",
+    "Name the products which are obtained when natural gas is oxidized under controlled conditions.",
+    "How naphtha fraction is decomposed to give lower hydrocarbons?",
+    "Write down the molecular formula, structural formula and the condensed structural formula for iso-butane.",
+    "How are organic compounds useful for us?",
+    "Write down the names of five organic compounds which exist naturally?",
+    "Give IUPAC name to the following compound. (image is missing in the source)",
+    "How do the melting and boiling points of alkanes change when we move from lower members to higher members?",
+    "Why do alkanes show little reactivity towards the other reagents?",
+    "Why does methane in natural gas and air explode?",
+    "How do you compare the melting and boiling points of inorganic and organic compounds?",
+    "Reactions of alkanes with chlorine take place in the presence of sunlight. What is the role of sunlight in the reaction?",
+    "How do you compare the boiling point of butane with that of iso-butane?",
+    "Why are organic compounds generally soluble in water?"
+
+
+    ],
+    longQuestions: [
+          "Describe the importance of organic compounds in daily life.",
+    "Why is carbon so important as an element that the whole branch of chemistry is based on it?",
+    "A carbon - carbon single bond (C-C) in alkanes does not behave as a functional group but a carbon carbon double bond (C=C) in alkanes does. Explain.",
+    "Explain IUPAC system of nomenclature for alkanes.",
+    "How combustion reaction of alkanes is useful for us?",
+    "When natural gas valve is kept open in the kitchen, the gas spreads through the whole kitchen. This may cause an explosion. What is the reasons of this explosion and how can you avoid it?",
+    "''Neem'' a common tree grown throughout our country. Comment on the medicinal benefits of this tree.",
+    "Name a few popular medicines which are, in fact, organic compounds?"
+    ],
+
+    mcqs: [
+      {
+        question: "Which other atom is always present along with carbon in all organic compounds?",
+        options: ["(A) Oxygen", "(B) Nitrogen", "(C) Hydrogen", "(D) Halogen"],
+    },
+    {
+        question: "Which metal can be used to reduce alkyl halides?",
+        options: ["(A) Ni", "(B) Mg", "(C) Co", "(D) Fe"],
+    },
+    {
+        question: "If naphtha undergoes a combustion reaction what products do you expect it to form?",
+        options: ["(A) Alkanes", "(B) Alkenes", "(C) CO₂ and H₂O", "(D) Both alkanes and alkenes"],
+    },
+    {
+        question: "Why does a mixture of zinc and hydrogen acid acts as a reducing agent?",
+        options: [
+            "(A) Because zinc acts as a reducing agent",
+            "(B) Because atomic hydrogen is produced with Zn / HCl which acts as a reducing agent",
+            "(C) Because molecular hydrogen is produced with Zn / HCl which acts as a reducing agent",
+            "(D) Because chlorine ions are produced with Zn / HCl which acts as a reducing agent"
+        ],
+    },
+    {
+        question: "Which alkane will evolve the most amount of heat when it is burnt with oxygen?",
+        options: ["(A) Ethane", "(B) Propane", "(C) n-Butane", "(D) Iso-Butane"],
+    },
+    {
+        question: "Which reaction is not given by alkanes?",
+        options: ["(A) Substitution", "(B) Addition", "(C) Combustion", "(D) Cracking"],
+    },
+    {
+        question: "Which hydrocarbon is responsible for explosions in coal mines?",
+        options: ["(A) Butane", "(B) Pentane", "(C) Methane", "(D) Ethane"],
+    },
+    {
+        question: "Which product will be formed when ethyl bromide (CH₃CH₂Br) is treated with Zn / HCl?",
+        options: ["(A) CH₄", "(B) CH₃ - CH₃", "(C) CH₃ - CH₂ - CH₃", "(D) CH₃ - CH₂ - CH₂ - CH₃"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 12,
+    chapterName: "Empirical Data Collection and Analysis",
+    shortQuestions: [
+ "What is consistency of results?",
+    "Why SI units are user friendly?",
+    "Define systematic error and random error.",
+    "What is reason behind a random error?",
+    "Does systematic error affect the accuracy?",
+    "Which other systems of measurements are used apart from SI units?",
+    "Define metre.",
+    "Mention two benefits scientists get by using SI units.",
+    "Compare the units in SI system with those in MKS system.",
+    "What are five basic SI units which are used in Chemistry?",
+    "Explain the units of three units derived for basic SI units.",
+    "Explain why do we prefer to use smaller units in Chemistry?",
+    "What difficulties we expect to encounter if we use different units of measurement in daily life?"
+
+    ],
+    longQuestions: [
+        "What are our indigenous units of measurement of mass, volume and length?",
+    "Elaborate the difference between precision and accuracy.",
+    "How can you avoid systematic errors in your measurements?",
+    "How do taking measurements in SI units ensure safety and reliability?",
+    "Can a student be both inaccurate and imprecise in his measurements?",
+    "Elaborate the importance of SI units in space exploration."
+    ],
+
+    mcqs: [
+       {
+        question: "Which of the following quantities may be measured in the same unit?",
+        options: ["(A) Heat and temperature", "(B) Heat and land", "(C) Heat and density", "(D) Length and work"],
+    },
+    {
+        question: "In which unit we usually measure the energy present in the food?",
+        options: ["(A) Kilojoules", "(B) Megajoules", "(C) Calorie", "(D) Joule"],
+    },
+    {
+        question: "What prefix is used for 10⁻¹²?",
+        options: ["(A) Mega", "(B) Pico", "(C) Giga", "(D) Tessa"],
+    },
+    {
+        question: "In SI unit of pressure is expressed in:",
+        options: ["(A) Newton per metre", "(B) Newton per metre square", "(C) Pascal", "(D) All"],
+    },
+    {
+        question: "Which symbol is used for kilogram in SI units?",
+        options: ["(A) K", "(B) KGm", "(C) kg", "(D) Kg"],
+    },
+    {
+        question: "What does a mole represent?",
+        options: ["(A) Volume", "(B) Mass", "(C) Number of particles", "(D) All of the above"],
+    },
+    {
+        question: "Which unit should usually be used in Chemistry?",
+        options: ["(A) Millilitre", "(B) Litre", "(C) Cubic centimetre", "(D) Cubic metre"],
+    },
+    {
+        question: "Express 0.000840 in scientific notation.",
+        options: ["(A) 8.40x10⁻⁴", "(B) 840x10⁻⁶", "(C) 8.40x10⁻⁵", "(D) 84.0x10⁻⁷"],
+    },
+    {
+        question: "In SI units prefix nano means:",
+        options: ["(A) 10⁻³", "(B) 10⁻⁶", "(C) 10⁻⁹", "(D) 10⁻¹²"],
+    },
+    {
+        question: "85°C is equivalent to:",
+        options: ["(A) 208 K", "(B) 338 K", "(C) 403 K", "(D) 300 K"],
+    },
+    ],
+  },
+
+   {
+    class: 9,
+    subject: "Chemistry",
+    chapterNumber: 13,
+    chapterName: "Laboratory",
+    shortQuestions: [
+ "Name some corrosive chemicals.",
+    "What type of safety precautions are adopted to avoid damage due to explosive chemicals?",
+    "What type of damages can reactive chemicals cause?",
+    "Indicate two safety instructions which are required to avoid radiation.",
+    "Which chemicals can cause suffocation?",
+    "Why signs and symbols are posted on lab. And chemical bottles?",
+    "How fire caused by chemicals should be handled?",
+    "Why emergency drills are important for face emergency situations?",
+    "How will you handle an emergency situation caused by fire due to short-circuiting?",
+    "What type of reactions should be carried out in fume cupboard?",
+    "Put forward at least two suggestions to improve safety in the lab.",
+    "Can you identify warning symbols posted for radiation and asphyxiant chemicals?",
+    "Why sudden shock cause some chemicals to explode?"
+    ],
+    longQuestions: [
+         "Explain hazards due to explosive and toxic chemicals.",
+    "Write down five such common safety instructions which are used to avoid all types of hazards.",
+    "Explain the importance of warning signs and symbols to avoid any accident in the lab.",
+    "Name some toxic chemicals. Describe the effects of spraying toxic gas in the lab.",
+    "A student has spilled some corrosive and explosive chemical due to an accident. Which emergency measures will you take to tackle the situation.",
+    "A few decades ago, a tanker carrying poisonous chlorine gas leaked and the gas spread over a large area in Lahore. A few persons were killed as well as animals. Give some concrete proposals to avoid such an accident in future."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Safety in the chemistry laboratory is:",
+        options: [
+            "(A) the responsibility of the students only",
+            "(B) the responsibility of the professor only",
+            "(C) the responsibility of the lab incharge only",
+            "(D) a shared responsibility"
+        ],
+    },
+    {
+        question: "Accident often result from:",
+        options: [
+            "(A) Making mistakes",
+            "(B) Failure to use common sense",
+            "(C) Failure to follow instructions",
+            "(D) All of the above"
+        ],
+    },
+    {
+        question: "The label \"Warning\" on a chemical bottle signifies that",
+        options: [
+            "(A) that the chemical can cause less serious injury",
+            "(B) that the chemical can cause serious injury",
+            "(C) that user should be careful when using chemical",
+            "(D) that user should use it only in the presence of a teacher"
+        ],
+    },
+    {
+        question: "The label \"Corrosive\" on a chemical bottle indicates:",
+        options: [
+            "(A) that the material is an oxidizing agent",
+            "(B) that the material can degrade rapidly upon exposure",
+            "(C) that its contact destroys living tissue",
+            "(D) that the chemical can explode"
+        ],
+    },
+    {
+        question: "Example of highly toxic chemical",
+        options: ["(A) Ethanol", "(B) Acetic acid", "(C) Potassium cyanide", "(D) Potassium permanganate"],
+    },
+    {
+        question: "Example of self-reactive chemical.",
+        options: ["(A) Potassium", "(B) Phenol", "(C) Picric acid", "(D) n-Hexane"],
+    },
+    {
+        question: "When diluting acid with water",
+        options: [
+            "(A) Always add acid to water",
+            "(B) Do it quickly",
+            "(C) Do not stir the container",
+            "(D) Always add water to acid"
+        ],
+    },
+    {
+        question: "What should you do in case of a fire drill in the lab?",
+        options: [
+            "(A) Run to safety shower",
+            "(B) Climb into the fume cupboard",
+            "(C) Close gas valves and turn off all equipments",
+            "(D) Carry chemicals out of the lab"
+        ],
+    },
+    ],
+  },
+
 
 
 
