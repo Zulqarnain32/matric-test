@@ -3001,8 +3001,8 @@ const questions = [
    {
     class: 9,
     subject: "Chemistry",
-    chapterNumber: 0,
-    chapterName: "Equilibria",
+    chapterNumber: 6,
+    chapterName: "Equilibrium",
     shortQuestions: [
  "How the following reversible reaction will be affected if its temperature is increased? 2H2O(l) (equation) (pending)",
     "How can you get the maximum yield in a reversible reaction?",
@@ -3564,7 +3564,7 @@ const questions = [
     class: 9,
     subject: "Chemistry",
     chapterNumber: 13,
-    chapterName: "Laboratory",
+    chapterName: "Laboratory and Practical Skills",
     shortQuestions: [
  "Name some corrosive chemicals.",
     "What type of safety precautions are adopted to avoid damage due to explosive chemicals?",
@@ -3653,6 +3653,1013 @@ const questions = [
             "(D) Carry chemicals out of the lab"
         ],
     },
+    ],
+  },
+
+
+//?   10 class chemistry
+
+
+  {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 1,
+    chapterName: "Chemical Equilibrium",
+    shortQuestions: [
+ "What are reversible reactions? Give a few characteristics of them?",
+    "Define chemical equilibrium state.",
+    "Give the characteristic of reversible reaction.",
+    "Why is dynamic equilibrium attained either way?",
+    "Why at what is the chemical equilibrium state reaction does not stop?",
+    "How is dynamic equilibrium attained either way?",
+    "What is the relationship between active mass and rate of reaction?",
+    "Derive equilibrium constant expression for the synthesis of ammonia from nitrogen and hydrogen.",
+    "How direction of a reaction can be predicted?",
+    "What are the characteristics of a reaction that establishes equilibrium state at once?",
+    "If reaction quotient Qc of a reaction is more than Kc, What will be the direction of the reaction?"
+
+    ],
+    longQuestions: [
+         "Describe a reversible reaction with the help of an example and graph.",
+    "Write down the macroscopic characteristics of dynamic equilibrium.",
+    "State the law of Mass action and derive the expression for equilibrium constant for a general reaction.",
+    "For the decomposition of dinitrogen oxide into nitrogen and oxygen, reversible reactions take place as follows: $2N_2O_5(g) \\rightleftharpoons 2N_2O_4(g) + O_2(g)$. The concentration of $N_2N_2O_4$ and $O_2$ are $3.90mol/dm^3$, $1.1mol/dm^3$ and $1.95mol/dm^3$ respectively at equilibrium. Find out $K_c$ for this equation.",
+    "Hydrogen iodide decomposes to form hydrogen and iodine. If the equilibrium concentration of HI is $0.078, 078mol/dm^3$ and $I_2$ is $0.011mol/dm^3$. Calculate the equilibrium constant value for this reversible reaction.",
+    "For the fixation of nitrogen following reaction takes place: $N_2(g) + O_2(g) \\rightleftharpoons 2NO(g)$. When the reaction takes place at $1500K$, $K_c$ for this is $1.1 \\times 10^{-5}$ and concentration of nitrogen and oxygen are $1, 7 \\times 10^{-7}mol/dm^3$ and $6.4 \\times 10^{-7}mol/dm^3$, respectively. How much NO is formed?",
+    "When nitrogen reacts with hydrogen to form ammonia, the equilibrium mixture contains $0.31mol/dm^3$ nitrogen, $0.50mol/dm^3$ hydrogen and $0.50mol/dm^3$ ammonia. What is the equilibrium concentration of ammonia?",
+    "What is the importance of equilibrium constant?"
+    ],
+
+    mcqs: [
+        {
+        question: "Reverse reaction is:",
+        options: [
+            "(A) which takes place from left to right",
+            "(B) in which reactants form products",
+            "(C) which gradually slows down",
+            "(D) which gradually speeds up"
+        ],
+    },
+    {
+        question: "When a system is in equilibrium, then:",
+        options: [
+            "(A) Concentration of reactants and products becomes equal",
+            "(B) The opposing reactions stop",
+            "(C) The rate of reverse reaction is very",
+            "(D) The rate of forward and reverse reaction becomes equal"
+        ],
+    },
+    {
+        question: "In dynamic equilibrium",
+        options: [
+            "(A) The reaction stops to proceed",
+            "(B) The quantities of reactants and products becomes equal",
+            "(C) The rate of forward and reverse reaction becomes equal",
+            "(D) The reaction can no longer be reversed"
+        ],
+    },
+    {
+        question: "In an irreversible reaction, dynamic equilibrium:",
+        options: [
+            "(A) Never establishes",
+            "(B) Establishes before the completion of reaction",
+            "(C) Establishes after the completion of reaction",
+            "(D) Establishes readily"
+        ],
+    },
+    {
+        question: "In the lime kiln, the reaction $CaCO_3(s) \\rightarrow CaO(s) + CO_2(g)$ goes to completion because:",
+        options: [
+            "(A) High temperature",
+            "(B) CaO is more stable",
+            "(C) Constant release of $CO_2$",
+            "(D) CaO is not"
+        ],
+    },
+    {
+        question: "What will be present in the equilibrium mixture? $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$",
+        options: [
+            "(A) Only $NH_3$",
+            "(B) $NH_3$ and $N_2$",
+            "(C) $NH_3$ and $H_2$",
+            "(D) Only $H_2$ and $N_2$"
+        ],
+    },
+    {
+        question: "For a reaction between $PCl_5$ and $Cl_2$ to form $PCl_3$, the units of Kc are:",
+        options: [
+            "(A) $mol/dm^3$",
+            "(B) $mol^{-1}dm^{-3}$",
+            "(C) $mol^2/dm^6$",
+            "(D) $mol^{-2}dm^6$"
+        ],
+    },
+    {
+        question: "Which of the following equilibrium expression is correct for the following reaction? $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$",
+        options: [
+            "$(A) \\frac{[N_2][H_2]^3}{[NH_3]^2}$",
+            "$(B) \\frac{[NH_3]^2}{[N_2][H_2]^3}$",
+            "$(C) \\frac{[NH_3]^2}{[N_2]^1[H_2]^1}$",
+            "$(D) \\frac{[NH_3]}{[N_2][H_2]}$"
+        ],
+    },
+    {
+        question: "When the value of $K_c$ is very small, it indicates:",
+        options: [
+            "(A) All reactants will never establish",
+            "(B) All reactants will convert into products",
+            "(C) Reaction will go to completion",
+            "(D) The number of products is negligible"
+        ],
+    },
+    {
+        question: "When the value of $K_c$ is very large, it indicates:",
+        options: [
+            "(A) Reaction mixture almost consists of all reactants",
+            "(B) Reaction mixture almost consists of all products",
+            "(C) Reaction has not gone to completion",
+            "(D) Reaction has not gone to completion"
+        ],
+    },
+    {
+        question: "Reactions which have comparable amounts of reactants and products at equilibrium state have:",
+        options: ["(A) Very small Kc value", "(B) Very large Kc value", "(C) Moderate Kc value", "(D) None of these"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 2,
+    chapterName: "Acids, Bases and Salts",
+    shortQuestions: [
+  "Define a base and explain alkalies are bases, but all bases are not alkalies.",
+    "Define Brønsted-Lowery base and explain with an example that water is a Brønsted-Lowery base.",
+    "How can you justify that Brønsted-Lowery concept of acid and base is applicable to non-aqueous solutions?",
+    "Which kind of bond forms between Lewis acid and a base?",
+    "Why $H^+$ ions act as Lewis acid?",
+    "Name two acids used in the preparation of fertilizers.",
+    "Name an acid used in the preservation of food.",
+    "Name the acids present in vinegar, and, citrus fruits, sour milk.",
+    "Name tree common household substance having:",
+    "What is the pH of pure water?",
+    "How many times solution of pH 1 will be stronger than that of a solution having pH 2?",
+    "Define the following: Normal salt, Basic salt.",
+    "$Na_2SO_4$ is a neutral salt while $NaHSO_3$ is an acid salt. Justify?",
+    "Give a few characteristic properties of salts.",
+    "How are soluble salts prepared?",
+    "How are insoluble salts prepared?",
+    "Why is salt is a neutral, explain with an example?",
+    "How can you justify that $Pb(OH)_2NO_3$ is a basic salt?",
+    "You are in a need of rain. acid salt. How can you prepare it?",
+    "Which salt is used to prepare plaster of Paris?"
+    ],
+    longQuestions: [
+         "Define an acid and a base according to Brønsted-Lowery concept and justify with examples that water is an amphoteric compound.",
+    "Explain the Lewis concept of acids and bases.",
+    "Give four uses of calcium oxide.",
+    "What is auto-ionization of water? How is it used to establish the pH of water?",
+    "Calculate the pH and pOH of 0.2 M $H_2SO_4$?",
+    "Calculate the pH of 0.1 M KOH?",
+    "Calculate the pOH of 0.004M $HNO_3$?",
+    "Define a salt and give the characteristic properties of salts.",
+    "Explain with examples that how soluble salts are prepared?",
+    "Give the characteristics of acidic salts."
+    ],
+
+    mcqs: [
+        {
+        question: "A base substance which neutralizes an acid. Which of these substances is not a base?",
+        options: ["(A) Aqueous ammonia", "(B) Sodium chloride", "(C) Calcium oxide", "(D) Sodium carbonate"],
+    },
+    {
+        question: "Lewis acid-base concept have the following characteristics except:",
+        options: [
+            "(A) Formation of an adduct",
+            "(B) Formation of a coordinate covalent bond",
+            "(C) Donation and acceptance of an electron pair",
+            "(D) Donation and acceptance of a proton"
+        ],
+    },
+    {
+        question: "Acetic acid is used for:",
+        options: ["(A) Flavoring explosive", "(B) Etching designs", "(C) Making removals", "(D) Etching designs"],
+    },
+    {
+        question: "Dilute acids react with carbonates to produce the given products except:",
+        options: ["(A) Salt", "(B) Water", "(C) Carbon dioxide", "(D) Hydrogen"],
+    },
+    {
+        question: "A reaction between an acid and base produces:",
+        options: ["(A) Salt and water", "(B) Salt and gas", "(C) Salt and an acid", "(D) Salt and a base"],
+    },
+    {
+        question: "The conjugate acid of $H_2PO_4$⁻ is:",
+        options: ["(A) $H_3PO_4$", "(B) $H_2PO_4$⁻", "(C) $H_2PO_4^{2-}$", "(D) $HPO_4^{2-}$"],
+    },
+    {
+        question: "The product of the adduct Lewis acid-base reaction is called adduct. The bond between the adduct species is called:",
+        options: ["(A) Ionic bond", "(B) Metallic bond", "(C) Coordinate covalent", "(D) Hydrogen bond"],
+    },
+    {
+        question: "The water of crystallization is responsible for the:",
+        options: ["(A) Melting points", "(B) Boiling points of crystal", "(C) Shapes of crystal", "(D) Transition point of crystal"],
+    },
+    {
+        question: "Which ion is the conjugate base of sulphuric acid?",
+        options: ["(A) $HSO_4^{2-}$", "(B) $SO_3^{2-}$", "(C) $SO_4^{2-}$", "(D) $HSO_4^{-}$"],
+    },
+    {
+        question: "Which one of the following is a Lewis base?",
+        options: ["(A) $NH_3$", "(B) $BF_3$", "(C) $H^+$", "(D) $AlCl_3$"],
+    },
+    {
+        question: "According to the Lewis concept, acid is a substance which can:",
+        options: [
+            "(A) Donate a proton",
+            "(B) Donate a pair of electron",
+            "(C) Accept a proton",
+            "(D) Accept a pair of electron"
+        ],
+    },
+    {
+        question: "Which one of the following species is not amphoteric?",
+        options: ["(A) $H_2O$", "(B) $NH_3$", "(C) $HCO_3^{-}$", "(D) $SO_4^{2-}$"],
+    },
+    {
+        question: "What is the pH of $Ca(OH)_2$ 0.02M solution?",
+        options: ["(A) 1.698", "(B) 1.397", "(C) 12.61", "(D) 12.61"],
+    },
+    {
+        question: "If a liquid has a pH 7 then it must:",
+        options: [
+            "(A) Be colorless and odorless",
+            "(B) Freeze at 0°C and boils at 100°C",
+            "(C) pH neutral",
+            "(D) Be a solution containing water"
+        ],
+    },
+    {
+        question: "A salt is not composed of:",
+        options: ["(A) A metallic cation", "(B) A non-metallic anion", "(C) An anion of a base", "(D) An anion of an acid"],
+    },
+    {
+        question: "You want to dry a gas which one of the following salt will you use:",
+        options: ["(A) $CaCO_3$", "(B) $NH_4Cl$", "(C) $CaO$", "(D) $Na_2SO_3$"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 3,
+    chapterName: "Organic Chemistry",
+    shortQuestions: [
+ "What is meant by the term catenation? Give two examples of a compound that displays catenation.",
+    "What are homocyclic compounds? Give two examples.",
+    "What are hetero-cyclic compounds? Give an example and explain with structure.",
+    "What is the difference between n-propyl and isopropyl? Explain with structure.",
+    "Write down the dot and cross formulae of propane and n-butane.",
+    "Define structural formula. Draw the structural formulae of n-butane and isobutane.",
+    "How is coal is formed?",
+    "What is the importance of natural gas?",
+    "Write classification of coal.",
+    "Justify that organic compounds are used as food.",
+    "How are all radial formed? Explain with examples.",
+    "Explain different radicals of butane.",
+    "Define homologous series.",
+    "Why benzene and other homologous compounds of benzene are called aromatic compounds?",
+    "What is an ester group? Write down the formula of ethyl acetate.",
+    "Define functional group with an example."
+    ],
+    longQuestions: [
+         "Why are organic compounds numerous?",
+    "What are general properties of organic compounds?",
+    "Write a detailed note on classification of organic compounds.",
+    "How is coal formed? What are the different types of coal?",
+    "Write down the composition and uses of different types of coal.",
+    "What is destructive distillation of coal?",
+    "Name the different types of products obtained by the destructive distillation of coal.",
+    "Give some uses of organic compounds in our daily life.",
+    "Write a detailed note on functional groups of alkenes and alkynes. How are they identified from other common compounds?",
+    "Write down the characteristics of homologous series.",
+    "What are amines? Explain the different types of amines giving an example of each type. How primary amino group is identified?",
+    "Describe the functional group of an alcohol. How alcoholic groups are identified?",
+    "Differentiate between aldehyde and ketonic functional groups. How both are identified from each other?"
+
+    ],
+
+    mcqs: [
+       {
+        question: "The ability of carbon atoms to form chains is called:",
+        options: ["(A) Isomerism", "(B) Catenation", "(C) Condensation", "(D) Resonance"],
+    },
+    {
+        question: "In laboratory urea was prepared by:",
+        options: ["(A) Wohler", "(B) Rutherford", "(C) Berzelius", "(D) Dalton"],
+    },
+    {
+        question: "Which one of the following is not a fossil fuel?",
+        options: ["(A) Coal", "(B) Natural gas", "(C) Biogas", "(D) Petroleum"],
+    },
+    {
+        question: "Which one of the following does not contain protein?",
+        options: ["(A) Poultry", "(B) Pulses", "(C) Eggs", "(D) Beans"],
+    },
+    {
+        question: "Which one of the following statements is not true about fossil fuels?",
+        options: [
+            "(A) They all contain carbon",
+            "(B) They are renewable",
+            "(C) They produce pollution when burnt",
+            "(D) They cause acid rain"
+        ],
+    },
+    {
+        question: "Coal having 90% carbon content is called:",
+        options: ["(A) Peat", "(B) Lignite", "(C) Anthracite", "(D) Bituminous"],
+    },
+    {
+        question: "Main component of natural gas is:",
+        options: ["(A) Methane", "(B) Propane", "(C) Ethane", "(D) Propyne"],
+    },
+    {
+        question: "The strong heating of coal in the absence of air is called:",
+        options: ["(A) Fractional Distillation", "(B) Roasting", "(C) Sublimation", "(D) Destructive distillation"],
+    },
+    {
+        question: "Pitch is black residue of:",
+        options: ["(A) Coal tar", "(B) Coal", "(C) Coal gas", "(D) Coke"],
+    },
+    {
+        question: "Natural gas is 85% methane. It is used to make:",
+        options: ["(A) Carbon black", "(B) Coal tar", "(C) Coal gas", "(D) Coke"],
+    },
+    {
+        question: "Which one of the following does not contain starch?",
+        options: ["(A) Sugar cane", "(B) Barley", "(C) Maize", "(D) Wheat"],
+    },
+    {
+        question: "Which one of the following is the hardest coal?",
+        options: ["(A) Peat", "(B) Lignite", "(C) Bituminous", "(D) Anthracite"],
+    },
+    {
+        question: "Carbonization process is the conversion of:",
+        options: [
+            "(A) Coal into coal gas",
+            "(B) Coal into wood",
+            "(C) Wood into coal",
+            "(D) Wood into coal tar"
+        ],
+    },
+    {
+        question: "Coal gas is a mixture of:",
+        options: [
+            "(A) $CH_4$ and $CO$",
+            "(B) $CO_2$, $CH_4$ and $CO$",
+            "(C) $H_2$, $CH_4$ and $CO_2$",
+            "(D) $CO_2$, $H_2$ and $CO$"
+        ],
+    },
+    {
+        question: "Conversion of dead plants into coal by the action of bacteria and heat is called:",
+        options: ["(A) Carbonization", "(B) Catenation", "(C) Hydrogenation", "(D) Cracking"],
+    },
+    {
+        question: "Which one of the following is a synthetic fiber?",
+        options: ["(A) Cotton", "(B) Wool", "(C) Nylon", "(D) Silk"],
+    },
+    {
+        question: "General formula of alkyl radicals is:",
+        options: ["(A) $C_nH_{2n}$", "(B) $C_nH_{2n+2}$", "(C) $C_nH_{2n+1}$", "(D) $C_nH_{2n-2}$"],
+    },
+    {
+        question: "Identify which one of the following compounds is a ketone:",
+        options: ["(A) $(CH_3)_3CH$", "(B) $(CH_3)_3CO$", "(C) $(CH_3)_2CHOH$", "(D) $(CH_3)_2CHOH$"],
+    },
+    {
+        question: "The functional group -COOH is found in:",
+        options: ["(A) Carboxylic acids", "(B) Aldehydes", "(C) Alcohols", "(D) Esters"],
+    },
+    {
+        question: "In which of the following groups, oxygen is attached on both sides with carbon atoms?",
+        options: ["(A) Ketone", "(B) Ether", "(C) Aldehyde", "(D) Ester"],
+    },
+    {
+        question: "Which one of the following compounds is an aldehyde?",
+        options: ["(A) $CH_3CHO$", "(B) $CH_3-OH$", "(C) $CH_3COCH_3$", "(D) $CH_3-CH_3COOH$"],
+    },
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 4,
+    chapterName: "Hydrocarbons",
+    shortQuestions: [
+         "Differentiate between saturated and unsaturated hydrocarbons.",
+    "Why alkanes are called paraffins?",
+    "Why are the alkanes used as fuel?",
+    "Why alkane can't be oxidized with $KMnO_4$ solution?",
+    "State one important use of each: Ethane and carbon tetrachloride.",
+    "Justify that alkanes give substitution reactions.",
+    "Why hydrocarbons are soluble in organic solvents?",
+    "Give the physical properties of alkanes.",
+    "What do you know about hydrogenation of alkenes?",
+    "How can you prepare ethene from alcohol and ethyl bromide?",
+    "Identify propane from propene with a chemical test.",
+    "How are alkenes called 'olefins'?",
+    "How can you identify ethene from ethyne?",
+    "Why color of bromine water discharge on addition of ethene in it?",
+    "What are the addition reactions? Explain with an example.",
+    "A compound consisting of four carbon atoms is a hepta bond in it. How many hydrogen atoms are present in it?",
+    "How are alkyl halides reduced?",
+    "Both alkenes and alkynes are unsaturated hydrocarbons. State the one most significant difference between them.",
+    "Write the molecular, dot and cross and structural formulae of ethyne."
+
+
+    ],
+    longQuestions: [
+         "What types of reactions are given by alkanes? Explain with reference to halogenation of alkanes.",
+    "Alkenes are a source of heat. Explain it.",
+    "Prepare the following as directed: a) Ethane from ethene b) Acetylene from tetrachloride c) Carbon tetrachloride from methane.",
+    "Prepare the following as directed: a) Ethylene glycol from ethane. b) 1,2-dibromoethane from methane.",
+    "Explain the oxidation of acetylene.",
+    "Write balanced chemical equations for the following reaction: Copper and hydrogen are formed. Name also the products that are formed. a) A mixture of ethyne and hydrogen is passed over heated nickel b) Ethyne is treated with chlorine c) Ethyne is burnt in air d) Ethyne is passed through bromine water.",
+    "Explain briefly a) Why butane undergoes substitution reactions? b) Why are there millions of organic compounds? c) Why Acetylene undergoes addition reactions in two stages. Why alkynes are more reactive than alkanes. Why?"
+
+    ],
+
+    mcqs: [
+       {
+        question: "Which one of these hydrocarbons molecules would have no effect on an aqueous solution of bromine?",
+        options: ["(A) $C_2H_2$", "(B) $C_2H_4$", "(C) $C_2H_6$", "(D) $C_2H_{12}$"],
+    },
+    {
+        question: "Halogenation of methane does not produce which one of the following:",
+        options: ["(A) Bromoform", "(B) Chloroform", "(C) Carbon black", "(D) Carbon tetrachloride"],
+    },
+    {
+        question: "Incomplete combustion of alkanes produces:",
+        options: [
+            "(A) Carbon dioxide only",
+            "(B) Carbon monoxide only",
+            "(C) Carbon monoxide and carbon black",
+            "(D) Carbon dioxide and carbon black"
+        ],
+    },
+    {
+        question: "Which one of these is a saturated hydrocarbon?",
+        options: ["(A) $C_2H_2$", "(B) $C_2H_4$", "(C) $C_3H_8$", "(D) $C_4H_8$"],
+    },
+    {
+        question: "One of the hydrocarbons reacts with one mole of hydrogen to form a saturated hydrocarbon. What is the alcohol that could be of the 'X'?",
+        options: ["(A) $C_2H_6O$", "(B) $C_2H_5OH$", "(C) $C_2H_6O_2$", "(D) $C_2H_4O_2$"],
+    },
+    {
+        question: "Dehydration of alcohols can be carried out with:",
+        options: ["(A) NaOH", "(B) KOH", "(C) $H_2SO_4$", "(D) None of these"],
+    },
+    {
+        question: "Substitution reaction is the characteristic of:",
+        options: ["(A) Alkanes", "(B) Alkenes", "(C) Alkynes", "(D) None of these"],
+    },
+    {
+        question: "Halogenation of methane in the presence of diffused sunlight takes place:",
+        options: [
+            "(A) Suddenly, only in a single step",
+            "(B) Slowly in a single step",
+            "(C) In a series of four steps",
+            "(D) Fastly in two steps"
+        ],
+    },
+    {
+        question: "Which one of the following is a substitution reaction?",
+        options: [
+            "(A) Halogenation of alkane",
+            "(B) Halogenation of ethene",
+            "(C) Bromination of ethane",
+            "(D) Hydrogenation of ethene"
+        ],
+    },
+    {
+        question: "What is the molecular formula for the eighth alkane member, octane, which is found in petrol?",
+        options: ["(A) $C_8H_{18}$", "(B) $C_8H_{16}$", "(C) $C_8H_{14}$", "(D) $C_8H_{10}$"],
+    },
+    {
+        question: "Alkenes are prepared from alcohol by a process called:",
+        options: ["(A) Dehydration", "(B) Dehalogenation", "(C) Hydrogenation", "(D) Dehydrogenation"],
+    },
+    {
+        question: "Dehydrohalogenation takes place in the presence of:",
+        options: [
+            "(A) Aqueous NaOH",
+            "(B) Alcoholic KOH",
+            "(C) Aqueous KOH",
+            "(D) Alcoholic NaOH"
+        ],
+    },
+    {
+        question: "Oxidation of ethene with $KMnO_4$ produces:",
+        options: ["(A) Oxalic acid", "(B) Glyoxal", "(C) Ethylene glycol", "(D) Propene glycol"],
+    },
+    {
+        question: "The end product of oxidation of acetylene is:",
+        options: ["(A) Glycol", "(B) Oxalic acid", "(C) Formaldehyde", "(D) Formic acid"],
+    },
+    {
+        question: "Dehalogenation of tetrahalides produces acetylene. This reaction takes place in the presence of:",
+        options: ["(A) Sodium metal", "(B) Zinc metal", "(C) Magnesium", "(D) Potassium metal"],
+    },
+    {
+        question: "The order of reactivity of hydrogen halides with alkenes:",
+        options: ["(A) $HI > HBr > HCl$", "(B) $HBr > HI > HCl$", "(C) $HCl > HBr > HI$", "(D) $HBr > HCl > HI$"],
+    },
+    {
+        question: "The oxidation of alkene produce:",
+        options: ["(A) Glycol", "(B) Glyoxal", "(C) Malic acid", "(D) Formic acid"],
+    },
+    {
+        question: "The reduction of alkynes takes place in the presence of:",
+        options: ["(A) $Zn/HCl$", "(B) $Mg/HCl$", "(C) $Ni/HCl$", "(D) $Cu/HCl$"],
+    },
+    {
+        question: "A hydrocarbon has molecular formula $C_4H_6$. What is the molecular formula of the next member of the same homologous series?",
+        options: ["(A) $C_5H_8$", "(B) $C_5H_{10}$", "(C) $C_5H_{12}$", "(D) $C_6H_{10}$"],
+    },
+    ],
+  },
+
+
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 5,
+    chapterName: "Biochemistry",
+    shortQuestions: [
+  "How plants synthesize carbohydrates?",
+    "Give the characteristics of monosaccharides.",
+    "What is different between glucose and fructose?",
+    "Give an example of a disaccharide. How it is hydrolyzed into monosaccharides?",
+    "Give the characteristics of polysaccharides.",
+    "Describe the uses of carbohydrates.",
+    "Lactose is disaccharide; which monosaccharide are present in it?",
+    "Where are the proteins found?",
+    "Why ten amino acids are essential for us?",
+    "How are proteins formed?",
+    "How gelatin obtained?",
+    "Give the general formula of the lipids.",
+    "Name two fatty acids with formulae.",
+    "What do you mean by genetic code of life?",
+    "What is the function of DNA?",
+    "How you justify RNA works like a messenger?",
+    "What is the type of vitamins?",
+    "What is the significance of vitamins?",
+    "Describe the sources and uses of vitamins A.",
+    "Which disease is produced due to the deficiency of vitamin K?",
+    "Justify water soluble vitamins are not injurious to health."
+    ],
+    longQuestions: [
+        "What are carbohydrates? How monosaccharides are synthesizes? Give their characteristics.",
+    "Explain oligosaccharides.",
+    "What are polysaccharides? Give their properties.",
+    "Explain the sources and uses of proteins.",
+    "Explain the amino acids are building blocks of proteins.",
+    "Explain the sources and uses of lipids.",
+    "Give the importance of vitamins.",
+    "Describe the sources, uses and deficiency symptoms of water soluble vitamins."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Carbohydrates are synthesized by plants through photosynthesis process which requires the following except:",
+        options: ["(A) Water and $CO_2$", "(B) Presence of sunlight", "(C) $Cl_2$", "(D) Chlorophyll II"]
+    },
+    {
+        question: "Which of the following is a disaccharide?",
+        options: ["(A) Glucose", "(B) Fructose", "(C) Sucrose", "(D) Starch"]
+    },
+    {
+        question: "Photosynthesis process produces:",
+        options: ["(A) Starch", "(B) Cellulose", "(C) Sucrose", "(D) Glucose"]
+    },
+    {
+        question: "Which one of the following is tasteless?",
+        options: ["(A) Glucose", "(B) Fructose", "(C) Cellulose", "(D) Starch"]
+    },
+    {
+        question: "When glucose and fructose combine they produce:",
+        options: ["(A) Starch", "(B) Cellulose", "(C) Sucrose", "(D) None of these"]
+    },
+    {
+        question: "Glucose is:",
+        options: ["(A) Hexahydroxy aldehyde", "(B) Hexahydroxy ketone", "(C) Pentahydroxy aldehyde", "(D) Pentahydroxy ketone"]
+    },
+    {
+        question: "Which one of the following is not a characteristic of monosaccharide?",
+        options: ["(A) White crystalline solids", "(B) Soluble in water", "(C) Hydrolyzable", "(D) Reducing in nature"]
+    },
+    {
+        question: "Which one of the following statement about glucose and sucrose is incorrect?",
+        options: ["(A) Naturally occurring", "(B) Soluble in water", "(C) Carbohydrates", "(D) Disaccharides"]
+    },
+    {
+        question: "Which one of the following is a reducing sugar?",
+        options: ["(A) Glucose", "(B) Maltose", "(C) Sucrose", "(D) Starch"]
+    },
+    {
+        question: "The most important oligosaccharide is:",
+        options: ["(A) Sucrose", "(B) Glucose", "(C) Fructose", "(D) Maltose"]
+    },
+    {
+        question: "Thousands of the amino acid polymerize to form:",
+        options: ["(A) Carbohydrates", "(B) Proteins", "(C) Lipids", "(D) Vitamins"]
+    },
+    {
+        question: "Enzymes are proteins which have the following properties except:",
+        options: [
+            "(A) They are highly reactive",
+            "(B) They catalyze reactions",
+            "(C) They are highly non-specific",
+            "(D) They are produced by living cells"
+        ]
+    },
+    {
+        question: "The organic compounds used as drug to control bleeding are:",
+        options: ["(A) Carbohydrates", "(B) Proteins", "(C) Lipids", "(D) Vitamins"]
+    },
+    {
+        question: "Which one of the following is a triglyceride?",
+        options: ["(A) Vitamins", "(B) Carbohydrates", "(C) Lipids", "(D) Glycerides"]
+    },
+    {
+        question: "Lipids are more macromolecules. They have characteristics except one of the following:",
+        options: [
+            "(A) They are high energy food",
+            "(B) They are soluble in water",
+            "(C) They are poor conductor of heat",
+            "(D) They are esters of fatty acids"
+        ]
+    },
+    {
+        question: "Which one of the following vitamins is water soluble?",
+        options: ["(A) Vitamin A", "(B) Vitamin B", "(C) Vitamin C", "(D) Vitamin D"]
+    },
+    {
+        question: "Which one of the following is a fat soluble Vitamin?",
+        options: ["(A) Vitamin A", "(B) Vitamin E", "(C) Vitamin K", "(D) All of these"]
+    },
+    {
+        question: "Night blindness is because of deficiency of:",
+        options: ["(A) Vitamin A", "(B) Rickets", "(C) Scurvy", "(D) Night blindness"]
+    },
+    {
+        question: "Deficiency of vitamin E causes:",
+        options: ["(A) Beriberi", "(B) Rickets", "(C) Scurvy", "(D) Anemia in babies"]
+    }
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 6,
+    chapterName: "The Atmosphere",
+    shortQuestions: [
+ "Explain the phenomenon of decreasing temperature in troposphere.",
+    "Why 75% of the atmospheric mass lies within the troposphere?",
+    "What differentiate primary and secondary air pollutants?",
+    "State the major sources of $CO$ and $CO_2$ emission.",
+    "What threats are to human health due to $SO_2$ gas as air pollutants?",
+    "Why do densely populated areas are becoming uninhabitable?",
+    "How acid rain increases the acidity of soil?",
+    "If there was no $CO_2$ in the air, could we survive?",
+    "$CO_2$ is responsible for heating up atmosphere, how?",
+    "Point out two serious effects of ozone depletion.",
+    "How ozone layer forms in stratosphere?",
+    "How ozone layer being depleted by chlorofluorocarbons?"
+    ],
+    longQuestions: [
+         "Write down the significance of atmospheric gases.",
+    "Give the characteristics of troposphere. Why temperature decreases upwards in this sphere?",
+    "What are the characteristics of stratosphere? Why temperature increases upwards in this sphere?",
+    "Why is CO considered a health hazard?",
+    "Compounds of sulphur are air pollutants. Describe the sources of these compounds along with their effects.",
+    "Oxides of nitrogen cause air pollution. Describe the sources of compounds with their effects.",
+    "Which air pollutant is produced on anaerobic decomposition of organic matter?",
+    "Define acid rain. How it forms and what are its effects?",
+    "Is it necessary for plants but why is increasing concentration of $CO_2$ alarming for us?",
+    "Where does ozone layer lie in atmosphere? How it is depleted and how we can prevent its depletion?"
+
+    ],
+
+    mcqs: [
+       {
+        question: "About 99% atmosphere mass lies within:",
+        options: ["(A) 30 km", "(B) 35 km", "(C) 11 km", "(D) Four"]
+    },
+    {
+        question: "Depending upon temperature variation, atmosphere is divided into how many regions?",
+        options: ["(A) One", "(B) Two", "(C) Three", "(D) Four"]
+    },
+    {
+        question: "Just above the earth's surface is:",
+        options: ["(A) Mesosphere", "(B) Stratosphere", "(C) Thermosphere", "(D) Troposphere"]
+    },
+    {
+        question: "A group of gases that maintains temperature of atmosphere is:",
+        options: ["(A) Carbon dioxide and water vapours", "(B) Nitrogen and carbon dioxide", "(C) Oxygen and water vapours", "(D) Nitrogen and oxygen"]
+    },
+    {
+        question: "The earth's atmosphere is getting hotter because of:",
+        options: [
+            "(A) Increasing concentration of $CO_2$",
+            "(B) Increasing concentration of $O_3$",
+            "(C) Increasing concentration of $SO_2$",
+            "(D) Increasing concentration of $NO_2$"
+        ]
+    },
+    {
+        question: "Which one of the following is not a greenhouse effect?",
+        options: [
+            "(A) Increasing atmospheric temperature",
+            "(B) Increasing food chains",
+            "(C) Increasing sea level",
+            "(D) Increasing atmospheric pressure"
+        ]
+    },
+    {
+        question: "Which one of the following is not an air pollutant?",
+        options: ["(A) Carbon dioxide", "(B) Carbon monoxide", "(C) Nitrogen dioxide", "(D) Ozone"]
+    },
+    {
+        question: "Which one of these pollutants are not found in car exhaust fumes?",
+        options: ["(A) CO", "(B) $O_3$", "(C) $NO_2$", "(D) $SO_2$"]
+    },
+    {
+        question: "Normally rain water is weakly acidic because of:",
+        options: ["(A) $CO$", "(B) $SO_2$", "(C) $CO_2$", "(D) $NO_3$"]
+    },
+    {
+        question: "Buildings are being damaged by acid rain because it attacks:",
+        options: ["(A) Calcium sulphate", "(B) Calcium nitrate", "(C) Calcium carbonate", "(D) Calcium oxalate"]
+    },
+    {
+        question: "Acid rain affects the aquatic life by clogging fish gills because of:",
+        options: ["(A) Lead metal", "(B) Chromium metal", "(C) Mercury metal", "(D) Aluminium metal"]
+    },
+    {
+        question: "Iron and steel structures are damaged by:",
+        options: ["(A) Carbon monoxide", "(B) Carbon dioxide", "(C) Sulphur oxides", "(D) Nitrogen oxides"]
+    },
+    {
+        question: "Ozone is beneficial for us as it:",
+        options: [
+            "(A) Absorbs infrared radiations",
+            "(B) Absorbs ultraviolet radiations",
+            "(C) Absorbs chlorofluorocarbons",
+            "(D) Absorbs air pollutants"
+        ]
+    },
+    {
+        question: "Infrared radiations emitted by the earth are absorbed by:",
+        options: ["(A) $CO_2$ and $H_2O$", "(B) $O_2$ and $N_2$", "(C) $SO_2$", "(D) $O_3$"]
+    },
+    {
+        question: "Global warming causes rising of the sea level. The cause of global warming is:",
+        options: ["(A) $CO_2$", "(B) $SO_2$", "(C) $NO_X$", "(D) $O_3$"]
+    },
+    {
+        question: "Which gas protects the earth's surface from ultraviolet radiations?",
+        options: ["(A) $CO_2$", "(B) $O_3$", "(C) $N_2$", "(D) $H_2O$"]
+    },
+    {
+        question: "Effects of ozone depletion are following except the one:",
+        options: [
+            "(A) Increases infectious diseases",
+            "(B) Increases crops production",
+            "(C) Can cause skin cancer",
+            "(D) Can cause climatic changes"
+        ]
+    }
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 7,
+    chapterName: "Water",
+    shortQuestions: [
+"How water plays roller plants?",
+    "Which forces are responsible for dissolving polar substances in water?",
+    "Why non-polar compounds are insoluble in water?",
+    "Why sugar and alcohol are not dissolved?",
+    "How limestones dissolves in water?",
+    "Differentiate between soft and hard water?",
+    "What are the causes of hardness in water?",
+    "What is the effect of temporary hardness in water?",
+    "Mention the disadvantages of detergents.",
+    "What is the difference between biodegradable and non-biodegradable substances?",
+    "Why are pesticides used?",
+    "How detergents make the water unfit for the aquatic life?",
+    "What are the reasons of waterborne diseases?",
+    "How waterborne diseases can be prevented?"
+    ],
+    longQuestions: [
+         "How polarity of water molecule plays its role to dissolve the substances?",
+    "Explain the reasons, why is water considered a universal solvent?",
+    "Explain the methods of removing permanent hardness.",
+    "Give some disadvantages of hard water.",
+    "Explain the water pollution because of industrial waste.",
+    "Justify the statement: household water is the reason of water pollution.",
+    "What is water pollution?",
+    "Describe the effects of using polluted water.",
+    "Explain agricultural effluents are fatal for aquatic life.",
+    "Explain five important waterborne diseases. How can these be prevented?"
+    ],
+
+    mcqs: [
+       {
+        question: "Which one of the following properties of water is responsible for rising of water in plants?",
+        options: ["(A) Specific heat capacity", "(B) Surface tension", "(C) Excellent solvent", "(D) Capillary action"]
+    },
+    {
+        question: "Specific heat capacity of water is:",
+        options: ["(A) 4.2 $KJg^{-1}K^{-1}$", "(B) 4.2 $Jg^{-1}K^{-1}$", "(C) 4.2 $KJg^{-1}C^{-1}$", "(D) 2.4 $KJg^{-1}K^{-1}$"]
+    },
+    {
+        question: "Water dissolves non-ionic non-compounds by:",
+        options: ["(A) Ion-dipole forces", "(B) Dipole-dipole forces", "(C) Hydrogen bonding", "(D) Ion-dipole forces"]
+    },
+    {
+        question: "Ionic compounds are soluble in water due to:",
+        options: ["(A) Hydrogen bonding", "(B) Ion-dipole forces", "(C) Dipole-dipole forces", "(D) Dipole-induced dipole forces"]
+    },
+    {
+        question: "Temporary hardness is because of:",
+        options: ["(A) $MgCO_3$", "(B) $Ca(HCO_3)_2$", "(C) $CaCO_3$", "(D) $MgSO_4$"]
+    },
+    {
+        question: "Temporary hardness is removed by adding:",
+        options: ["(A) Quick lime", "(B) Slaked lime", "(C) Limestone", "(D) Lime water"]
+    },
+    {
+        question: "Permanent hardness is removed by adding:",
+        options: ["(A) Sodium zeolite", "(B) Soda lime", "(C) Lime water", "(D) Quick lime"]
+    },
+    {
+        question: "Which one of the following salts makes the water permanently hard?",
+        options: ["(A) $NaHCO_3$", "(B) $Ca(HCO_3)_2$", "(C) $CaSO_4$", "(D) $Na_2CO_3$"]
+    },
+    {
+        question: "Which one of the following ions does not cause hardness in water?",
+        options: ["(A) $Al^{3+}$", "(B) $Mg^{2+}$", "(C) $Fe^{2+}$", "(D) $Na^{+}$"]
+    },
+    {
+        question: "Rapid growth of algae in water bodies is because of detergent having:",
+        options: ["(A) Carbonates salts", "(B) Sulphuric acid salts", "(C) Sulphate salts", "(D) Phosphate salts"]
+    },
+    {
+        question: "Depletion of $O_2$ from water is not because of:",
+        options: [
+            "(A) Decaying of aquatic plants",
+            "(B) Biodegradation of aquatic plants",
+            "(C) Rapid growth of aquatic plants",
+            "(D) Decomposition of aquatic plants"
+        ]
+    },
+    {
+        question: "The chemicals used to kill or control pests are pesticides. They are:",
+        options: [
+            "(A) Dangerous inorganic chemicals",
+            "(B) Dangerous organic chemicals",
+            "(C) Beneficial inorganic chemicals",
+            "(D) Beneficial organic chemicals"
+        ]
+    },
+    {
+        question: "Which one of the following diseases causes liver inflammation?",
+        options: ["(A) Typhoid", "(B) Jaundice", "(C) Cholera", "(D) Hepatitis"]
+    },
+    {
+        question: "Which one of the following diseases causes severe diarrhea and can be fatal?",
+        options: ["(A) Jaundice", "(B) Dysentery", "(C) Cholera", "(D) Typhoid"]
+    },
+    {
+        question: "Which one of the following is used to destroy harmful bacteria in water?",
+        options: ["(A) Iodine", "(B) Fluorine", "(C) Bromine", "(D) Chlorine"]
+    },
+    {
+        question: "A disease that causes bone and tooth damage is:",
+        options: ["(A) Fluorosis", "(B) Hepatitis", "(C) Cholera", "(D) Jaundice"]
+    }
+    ],
+  },
+
+    {
+    class: 10,
+    subject: "Chemistry",
+    chapterNumber: 8,
+    chapterName: "Chemical Industries",
+    shortQuestions: [
+"What role is played by pine oil in the Froth floatation process?",
+    "Name the various metallurgical operations.",
+    "How is roasting carried out?",
+    "Explain process of electrorefining.",
+    "What are the advantages of Solvay's process?",
+    "What is the principle of Solvay's process?",
+    "What happens when ammoniacal brine is carbonated?",
+    "How $NaHCO_3$ is converted into $Na_2CO_3$?",
+    "How is ammonia recovered in the Solvay's process?",
+    "How is ammonia prepared for the synthesis of urea?",
+    "Describe the formation of petroleum.",
+    "What is refining of petroleum and how it is carried out?",
+    "Give use of kerosene oil.",
+    "Describe the difference between diesel oil and fuel oil.",
+    "Write down the names of four characteristics obtained by the fractional distillation of residual oil.",
+    "What is the difference between crude oil and residual oil?",
+    "Which petroleum fraction is used in dry cleaning?"
+    ],
+    longQuestions: [
+         "Describe in detail the various process involved in the concentration of ore. Explain your answer with the help of diagrams.",
+    "Explain the process of roasting with reference to copper.",
+    "Write a note in detail on smelting and bessemerization, giving a specific example.",
+    "Write a detailed note on ammonia-Solvay's process.",
+    "How urea is manufactured? Explain by showing the flow sheet diagram?",
+    "Write a note on fractional distillation of petroleum.",
+    "How crude oil is refined? Explain two important fractions of petroleum along with their usage."
+
+    ],
+
+    mcqs: [
+       {
+        question: "Concentration is a:",
+        options: ["(A) Mixing technique", "(B) Separating technique", "(C) Boiling technique", "(D) Cooling technique"]
+    },
+    {
+        question: "Froth flotation process is used to concentrate the ore on:",
+        options: ["(A) Density basis", "(B) Wetting basis", "(C) Magnetic basis", "(D) Gravity basis"]
+    },
+    {
+        question: "Matte is a mixture of:",
+        options: ["(A) $CaO$ and $FeS$", "(B) $FeS$ and $Cu_2S$", "(C) $Fe_2O_3$ and $CuS$", "(D) $FeO$ and $CuS$"]
+    },
+    {
+        question: "In the bessemerization process:",
+        options: [
+            "(A) Roasted ore is removed",
+            "(B) Molten matte is removed",
+            "(C) Molten matte is added",
+            "(D) Distillation"
+        ]
+    },
+    {
+        question: "Concentration of the copper ore is carried out by:",
+        options: ["(A) Calcination", "(B) Roasting", "(C) Froth flotation", "(D) Distillation"]
+    },
+    {
+        question: "When $CO_2$ is passed through the ammoniacal brine, the only salt that precipitates are:",
+        options: ["(A) $NaHCO_3$", "(B) $NH_4HCO_3$", "(C) $Na_2CO_3$", "(D) $(NH_4)_2CO_3$"]
+    },
+    {
+        question: "In Solvay's process slaked lime is used to:",
+        options: ["(A) Prepare $CO_2$", "(B) Prepare quick lime", "(C) Recover ammonia", "(D) Form $Na_2CO_3$"]
+    },
+    {
+        question: "When $NaHCO_3$ is heated it forms:",
+        options: ["(A) $CO_2$", "(B) $Ca(OH)_2$", "(C) $CaCO_3$", "(D) $CaO$"]
+    },
+    {
+        question: "Formula of urea is:",
+        options: ["(A) $(NH_2)_2CO$", "(B) $NH_2COONH_4$", "(C) $NH_4HCO_3$", "(D) $NH_2CONH_2$"]
+    },
+    {
+        question: "The nitrogen present in urea is used by plants to synthesize:",
+        options: ["(A) Sugar", "(B) Proteins", "(C) Fats", "(D) DNA"]
+    },
+    {
+        question: "Crude oil is heated in the furnace up to:",
+        options: ["(A) $300^{\circ}C$", "(B) $350^{\circ}C$", "(C) $450^{\circ}C$", "(D) $250^{\circ}C$"]
+    },
+    {
+        question: "Which one of the following is used as jet fuel?",
+        options: ["(A) Kerosene oil", "(B) Lubricating oil", "(C) Fuel oil", "(D) Diesel oil"]
+    },
+    {
+        question: "Which one of the following is not fraction of crude oil?",
+        options: ["(A) Paraffin wax", "(B) Asphalt", "(C) Fuel oil", "(D) Petroleum coke"]
+    },
+    {
+        question: "Which one of the following is not a fraction of petroleum?",
+        options: ["(A) Kerosene oil", "(B) Diesel oil", "(C) Alcohol", "(D) Lubricating oil"]
+    },
+ 
     ],
   },
 
