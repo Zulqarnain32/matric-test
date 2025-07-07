@@ -5,6 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import { AuthContext } from "../global/AuthContext";
 import { toast } from "react-toastify";
 import axios from "axios"
+import React from "react";
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const { user, setUser } = useContext(AuthContext);

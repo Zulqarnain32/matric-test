@@ -7,7 +7,7 @@ import Registration from './components/Registration';
 import ResetPassword from './components/ResetPassword';
 import ForgotPassword from './components/ForgotPassword';
 import EmailVerification from './components/EmailVerification';
-
+import React from 'react';
 import { ToastContainer } from 'react-toastify';
 import { AuthContext } from './global/AuthContext'
 import { useContext } from 'react';
